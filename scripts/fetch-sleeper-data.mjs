@@ -401,13 +401,16 @@ async function main() {
 
   seasons.sort((a, b) => b.year - a.year);
 
-  // Preserve any manually/Excel-imported historical seasons that aren't
-  // sourced from Sleeper, keyed by year.
+  // Manually/Excel-imported historical seasons are the authoritative record
+  // (they capture true final placement including playoffs, which Sleeper's
+  // regular-season-only roster stats don't) — they win over Sleeper for any
+  // year they cover. Sleeper only fills in years the import doesn't have,
+  // which in practice means the current/upcoming season.
   const manualSeasons = (existing.seasons || []).filter((s) => s.source !== "sleeper");
-  const sleeperYears = new Set(seasons.map((s) => s.year));
-  const keptManual = manualSeasons.filter((s) => !sleeperYears.has(s.year));
+  const manualYears = new Set(manualSeasons.map((s) => s.year));
+  const keptSleeperSeasons = seasons.filter((s) => !manualYears.has(s.year));
 
-  const allSeasons = [...seasons, ...keptManual].sort((a, b) => b.year - a.year);
+  const allSeasons = [...manualSeasons, ...keptSleeperSeasons].sort((a, b) => b.year - a.year);
   const allTime = computeAggregates(allSeasons);
 
   // Use the most current Sleeper season's avatar as the site logo.

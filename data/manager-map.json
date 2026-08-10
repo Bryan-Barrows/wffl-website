@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "personId": "p1",
+    "canonicalName": "Bryan",
+    "sleeperUsernames": [
+      "Wazwimo"
+    ],
+    "excelNames": [
+      "Bryan"
+    ]
+  },
+  {
+    "personId": "p2",
+    "canonicalName": "Brendan",
+    "sleeperUsernames": [
+      "bjherbs"
+    ],
+    "excelNames": [
+      "Brendan"
+    ]
+  },
+  {
+    "personId": "p3",
+    "canonicalName": "Ken",
+    "sleeperUsernames": [
+      "kenwinhamjr"
+    ],
+    "excelNames": [
+      "Ken"
+    ]
+  },
+  {
+    "personId": "p4",
+    "canonicalName": "Ted",
+    "sleeperUsernames": [
+      "Tedmastaflex"
+    ],
+    "excelNames": [
+      "Ted"
+    ]
+  },
+  {
+    "personId": "p5",
+    "canonicalName": "Luke",
+    "sleeperUsernames": [
+      "BoatBoyz"
+    ],
+    "excelNames": [
+      "Luke"
+    ]
+  },
+  {
+    "personId": "p6",
+    "canonicalName": "Steve",
+    "sleeperUsernames": [
+      "scaproni"
+    ],
+    "excelNames": [
+      "Steve"
+    ]
+  },
+  {
+    "personId": "p7",
+    "canonicalName": "Tim",
+    "sleeperUsernames": [
+      "timsimon4"
+    ],
+    "excelNames": [
+      "Tim"
+    ]
+  },
+  {
+    "personId": "p8",
+    "canonicalName": "Mark",
+    "sleeperUsernames": [
+      "mpros21"
+    ],
+    "excelNames": [
+      "Mark"
+    ]
+  },
+  {
+    "personId": "p9",
+    "canonicalName": "Justin",
+    "sleeperUsernames": [
+      "JSimsRL"
+    ],
+    "excelNames": [
+      "Justin"
+    ]
+  },
+  {
+    "personId": "p10",
+    "canonicalName": "Lefty",
+    "sleeperUsernames": [
+      "RubeusHagroid"
+    ],
+    "excelNames": [
+      "Lefty"
+    ]
+  },
+  {
+    "personId": "p11",
+    "canonicalName": "Dave",
+    "sleeperUsernames": [
+      "superdwang"
+    ],
+    "excelNames": [
+      "Dave"
+    ]
+  },
+  {
+    "personId": "p12",
+    "canonicalName": "Lou",
+    "sleeperUsernames": [
+      "ChrisFedero"
+    ],
+    "excelNames": [
+      "Lou"
+    ]
+  },
+  {
+    "personId": "p13",
+    "canonicalName": "Spatola",
+    "sleeperUsernames": [],
+    "excelNames": [
+      "Spatola"
+    ]
+  },
+  {
+    "personId": "p14",
+    "canonicalName": "McIvor",
+    "sleeperUsernames": [],
+    "excelNames": [
+      "McIvor"
+    ]
+  }
+]

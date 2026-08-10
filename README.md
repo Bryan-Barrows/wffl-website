@@ -4,8 +4,10 @@ A free, static website for the WFFL — current standings, career stats, league
 history/champions, a full record book, head-to-head matchups, and the league
 constitution.
 
-**Right now the site is running on fabricated sample data** (see "Sample data"
-below) so it can be previewed end-to-end before real history is imported.
+**Real historical data (2012–2025) is now imported from the league's Excel
+archive.** The current/upcoming season will populate once Sleeper is fetched
+for real (see "Bringing in real data" below). See "Sample data" for how the
+placeholder-data preview mode works if you ever want to regenerate it.
 
 ## Site map
 
@@ -57,14 +59,47 @@ and set `isSampleData: false`, making the banner disappear.
 
 ## Bringing in real data
 
-Two data sources are expected:
+Two data sources feed the site:
 
-1. **Sleeper (2025–present)** — via `scripts/fetch-sleeper-data.mjs`, either run
-   manually or by the scheduled Action once this is live on `main`.
-2. **Excel import (2012–2024)** — an importer script that reads the league's
-   historical spreadsheet and writes seasons into the same schema (marked
-   `"source": "excel"` or `"manual"` so the Sleeper fetch never overwrites them).
-   This script will be added once the spreadsheet is provided.
+1. **Sleeper (current/upcoming season)** — via `scripts/fetch-sleeper-data.mjs`,
+   run by the scheduled Action once this is live on `main`, or manually
+   (`node scripts/fetch-sleeper-data.mjs`).
+2. **Excel import (historical seasons)** — `scripts/import-excel-history.mjs`
+   reads a season-by-season spreadsheet and writes seasons into the same
+   schema, marked `"source": "excel"`.
+
+Excel-imported seasons are treated as the authoritative historical record and
+take priority over Sleeper for any year both cover — Sleeper's job is really
+just to keep the current/upcoming season live-updating.
+
+### Running the Excel import
+
+```bash
+npm install                              # one-time, installs the xlsx package
+node scripts/import-excel-history.mjs    # reads data/source/wffl_raw.xlsx
+```
+
+The source spreadsheet lives at `data/source/wffl_raw.xlsx` (committed to the
+repo so the import is reproducible — re-run it anytime that file is updated,
+e.g. after fixing a typo or adding the next completed season). Pass a
+different path as an argument to use a different file instead.
+
+It expects three sheets:
+
+- **Owners**: `Owner Name | Sleeper Username` — current managers mapped to
+  their Sleeper identity.
+- **Season Data**: `Year | Team | Place` — final standing per owner per year
+  (playoff-aware: 1st/2nd/3rd/4th reflect the actual playoff bracket, not
+  just regular-season record).
+- **Player Data**: one row per team per game (`Owner | Opponent | Year | Week
+  | Points For | Points Against | Win | Loss | Tie | ...`) — every game
+  appears twice, once from each side's perspective; the importer de-duplicates
+  and pairs them (matching by name first, falling back to matching scores for
+  the rare row with a typo'd opponent name).
+
+The importer also updates `data/manager-map.json` automatically from the
+Owners sheet (see below) — no manual mapping work needed for anyone who
+appears there.
 
 ### The manager identity problem
 
@@ -94,12 +129,14 @@ Sleeper seasons, one with their Excel seasons.
 - `excelNames` matches against however they appear in the historical
   spreadsheet.
 
-**To fill this in**, provide a list of all 12 managers as: their real first
-name → their Sleeper username (or the display name shown in the league). The
-fetch script warns (in the Action's log) about any Sleeper manager it can't
-find in the map, so gaps are easy to spot. Until someone is mapped, they still
-show up on the site under their raw Sleeper identity — nothing breaks, their
-history just won't merge with pre-Sleeper seasons yet.
+This file is populated automatically by `scripts/import-excel-history.mjs`
+from the Owners sheet (plus anyone who only appears in Player Data — e.g. a
+departed manager with no Sleeper account, who gets an entry with an empty
+`sleeperUsernames`). It's safe to re-run the import; existing `personId`s are
+reused rather than duplicated. The fetch script warns (in the Action's log)
+about any *current* Sleeper manager it can't find in the map, so gaps are easy
+to spot — until someone is mapped, they still show up on the site under their
+raw Sleeper identity rather than breaking anything.
 
 ## One-time setup
 
@@ -127,6 +164,9 @@ Sleeper data for whatever seasons your league played there.
 # Pull real data from Sleeper (requires Node 18+)
 node scripts/fetch-sleeper-data.mjs
 # or explicitly: node scripts/fetch-sleeper-data.mjs <leagueId>
+
+# Re-import the historical Excel spreadsheet (after npm install, see above)
+node scripts/import-excel-history.mjs
 
 # Regenerate the sample/placeholder data (dev tool, not for production use)
 node scripts/dev/generate-sample-data.mjs
