@@ -1,0 +1,498 @@
+:root {
+  --bg: #0a0f1f;
+  --bg-elevated: #101a33;
+  --card: #16213e;
+  --border: #29406e;
+  --text: #f5f7fb;
+  --text-muted: #94a3c4;
+  --accent: #4d8dff;
+  --accent-dark: #1d4ed8;
+  --gold: #ef4444; /* repurposed for the red/white/blue theme: champion/rank-1 highlight color */
+  --danger: #f87171;
+  --radius: 10px;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header.site-header {
+  background: linear-gradient(135deg, #16265a 0%, #0a0f1f 100%);
+  border-bottom: 3px solid var(--gold);
+  padding: 1.5rem 1rem 0;
+}
+
+.league-logo {
+  height: 2rem;
+  width: 2rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.site-title .ball {
+  margin-right: 0.4rem;
+}
+
+.site-subtitle {
+  color: var(--text-muted);
+  margin: 0.15rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+nav.site-nav {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+nav.site-nav a {
+  color: var(--text-muted);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+nav.site-nav a:hover {
+  color: var(--text);
+}
+
+nav.site-nav a.active {
+  color: var(--text);
+  background: var(--bg);
+  border-color: var(--border);
+  border-bottom: 3px solid var(--gold);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.card h2::before,
+.banner-hall h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  background: var(--gold);
+  margin-right: 0.5rem;
+  vertical-align: -0.15em;
+  border-radius: 2px;
+}
+
+.stat-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.stat-tile {
+  flex: 1 1 160px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+}
+
+.stat-tile .value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stat-tile .label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+table caption {
+  text-align: left;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+thead th {
+  text-align: left;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 2px solid var(--gold);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rank-1 {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.trophy {
+  margin-right: 0.3rem;
+}
+
+.empty-state {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.empty-state code {
+  background: var(--bg-elevated);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+  border-top: 3px solid var(--gold);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--accent-dark);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin-left: 0.4rem;
+}
+
+.sample-banner {
+  background: #3a2f0f;
+  border: 1px solid #7a5f16;
+  color: #f5d98a;
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.sample-banner strong {
+  color: var(--gold);
+}
+
+.manager-picker {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.manager-picker select,
+.manager-picker input[type="search"] {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  min-width: 220px;
+}
+
+.manager-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.manager-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+}
+
+.manager-card .team {
+  font-weight: 700;
+}
+
+.manager-card .owner {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.record-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.record-tile {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+}
+
+.record-tile .record-label {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.record-tile .record-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.record-tile .record-detail {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.h2h-table th,
+.h2h-table td {
+  text-align: center;
+}
+
+.h2h-table th:first-child,
+.h2h-table td:first-child {
+  text-align: left;
+}
+
+.h2h-diag {
+  color: var(--border);
+}
+
+.rules-content {
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+.notes-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.notes-list li {
+  margin-bottom: 0.5rem;
+}
+
+.notes-list li:last-child {
+  margin-bottom: 0;
+}
+
+.notes-subheading {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 1.1rem 0 0.5rem;
+}
+
+.notes-subheading:first-child {
+  margin-top: 0;
+}
+
+.settings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.settings-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.settings-list li:last-child {
+  border-bottom: none;
+}
+
+.settings-list .k {
+  color: var(--text-muted);
+}
+
+/* Championship banners, hung across the top of the homepage like a sports
+   arena rafter. */
+.banner-hall {
+  margin-bottom: 1.5rem;
+}
+
+.banner-hall h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.rafter-beam {
+  height: 8px;
+  background: linear-gradient(180deg, #3a4d80, #1a2547);
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.banner-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1.1rem 0.5rem 0.75rem;
+}
+
+.championship-banner {
+  flex: 0 0 auto;
+  width: 128px;
+  position: relative;
+  background: linear-gradient(180deg, #1a2b52, #101a33);
+  border: 2px solid var(--gold);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 0.9rem 0.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.championship-banner::before,
+.championship-banner::after {
+  content: "";
+  position: absolute;
+  top: -1.1rem;
+  width: 2px;
+  height: 1.1rem;
+  background: var(--border);
+}
+
+.championship-banner::before {
+  left: 16px;
+}
+
+.championship-banner::after {
+  right: 16px;
+}
+
+.championship-banner.latest {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 6px 18px rgba(77, 141, 255, 0.35);
+}
+
+.championship-banner .banner-year {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.championship-banner.latest .banner-year {
+  color: var(--accent);
+}
+
+.championship-banner .banner-trophy {
+  font-size: 1.5rem;
+  margin: 0.3rem 0;
+}
+
+.championship-banner .banner-team {
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.championship-banner .banner-owner {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  margin-top: 0.15rem;
+}

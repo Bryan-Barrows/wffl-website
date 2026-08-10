@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Constitution – Whippany Fantasy Football League</title>
+<meta name="description" content="League rules and constitution for the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading constitution…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const latestSeason = (data.seasons || [])[0];
+      if (latestSeason?.settings) {
+        content.appendChild(
+          el("div", { class: "card" }, [
+            el("h2", {}, "League Settings"),
+            el("p", { class: "site-subtitle" }, `Auto-pulled from Sleeper for the ${latestSeason.year} season — always reflects the current rules.`),
+            buildSettingsList(latestSeason.settings),
+          ])
+        );
+      }
+
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "Constitution"),
+          data.constitutionText
+            ? el("div", { class: "rules-content" }, data.constitutionText)
+            : emptyState([
+                "The full league constitution hasn't been added yet. Once your rules document is uploaded, ",
+                "it will appear here.",
+              ]),
+        ])
+      );
+
+      content.appendChild(buildProposedChangesCard(data.constitutionUpdates));
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function buildProposedChangesCard(updates) {
+    const ruleChanges = updates?.ruleChanges || [];
+    const discussionItems = updates?.discussionItems || [];
+
+    const body = [];
+    if (ruleChanges.length === 0 && discussionItems.length === 0) {
+      body.push(
+        emptyState([
+          "Nothing noted yet. Rule changes decided for next season, or open items to discuss/vote on, ",
+          "can be added by hand to ",
+          el("code", {}, "constitutionUpdates"),
+          " in ",
+          el("code", {}, "data/league-data.json"),
+          ".",
+        ])
+      );
+    } else {
+      if (ruleChanges.length > 0) {
+        body.push(el("div", { class: "notes-subheading" }, "Rule Changes for Next Season"));
+        body.push(el("ul", { class: "notes-list" }, ruleChanges.map((item) => el("li", {}, item))));
+      }
+      if (discussionItems.length > 0) {
+        body.push(el("div", { class: "notes-subheading" }, "To Discuss / Vote On"));
+        body.push(el("ul", { class: "notes-list" }, discussionItems.map((item) => el("li", {}, item))));
+      }
+    }
+
+    return el("div", { class: "card" }, [el("h2", {}, "📝 Proposed Changes for Next Season"), ...body]);
+  }
+
+  function buildSettingsList(settings) {
+    const items = [];
+    if (settings.numTeams != null) items.push(["Teams", settings.numTeams]);
+    if (settings.playoffTeams != null) items.push(["Playoff Teams", settings.playoffTeams]);
+    if (settings.playoffWeekStart != null) items.push(["Playoffs Start", `Week ${settings.playoffWeekStart}`]);
+    if (settings.rosterPositions) items.push(["Roster", summarizeRoster(settings.rosterPositions)]);
+    if (settings.scoringSettings) {
+      const s = settings.scoringSettings;
+      const bits = [];
+      if (s.rec != null) bits.push(`${s.rec} pt/reception (${s.rec === 1 ? "Full PPR" : s.rec === 0.5 ? "Half PPR" : s.rec === 0 ? "Standard" : "PPR"})`);
+      if (s.pass_td != null) bits.push(`${s.pass_td} pt/passing TD`);
+      if (s.rush_td != null) bits.push(`${s.rush_td} pt/rushing TD`);
+      if (s.rec_td != null) bits.push(`${s.rec_td} pt/receiving TD`);
+      if (bits.length) items.push(["Scoring", bits.join(", ")]);
+    }
+
+    return el(
+      "ul",
+      { class: "settings-list" },
+      items.map(([k, v]) => el("li", {}, [el("span", { class: "k" }, k), el("span", {}, String(v))]))
+    );
+  }
+
+  function summarizeRoster(positions) {
+    const counts = {};
+    positions.forEach((p) => (counts[p] = (counts[p] || 0) + 1));
+    return Object.entries(counts)
+      .map(([pos, n]) => `${n} ${pos}`)
+      .join(", ");
+  }
+
+  render();
+</script>
+</body>
+</html>

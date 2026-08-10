@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Draft Central – Whippany Fantasy Football League</title>
+<meta name="description" content="Draft countdown, draft order, keepers, and trades affecting the draft for the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading draft info…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  let countdownTimer = null;
+
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const dc = data.draftCentral;
+      if (!dc) {
+        content.appendChild(
+          emptyState([
+            "No draft data yet. Once the scheduled GitHub Action runs (or you run ",
+            el("code", {}, "node scripts/fetch-sleeper-data.mjs"),
+            " yourself) close enough to draft day, the countdown and draft order will show up here.",
+          ])
+        );
+        return;
+      }
+
+      content.appendChild(
+        el("div", { class: "card" }, [el("h2", {}, `${dc.year} Draft Countdown`), buildCountdown(dc)])
+      );
+
+      if (dc.draftOrder && dc.draftOrder.length > 0) {
+        content.appendChild(
+          el("div", { class: "card" }, [
+            el("h2", {}, "Draft Order"),
+            el("div", { class: "table-scroll" }, buildDraftOrderTable(dc.draftOrder)),
+          ])
+        );
+      }
+
+      const keepers = dc.keepers || [];
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "Keepers"),
+          keepers.length > 0
+            ? el("div", { class: "table-scroll" }, buildKeepersTable(keepers))
+            : emptyState(["No keepers entered yet. Keepers aren't tracked by Sleeper, so add them by hand to ", el("code", {}, "data/league-data.json"), " under ", el("code", {}, "draftCentral.keepers"), "."]),
+        ])
+      );
+
+      const tradedPicks = dc.tradedPicks || [];
+      if (tradedPicks.length > 0) {
+        content.appendChild(
+          el("div", { class: "card" }, [
+            el("h2", {}, "Trades Affecting This Draft"),
+            el("div", { class: "table-scroll" }, buildTradedPicksTable(tradedPicks)),
+          ])
+        );
+      }
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function statTile(value, label) {
+    return el("div", { class: "stat-tile" }, [
+      el("div", { class: "value" }, String(value)),
+      el("div", { class: "label" }, label),
+    ]);
+  }
+
+  function buildCountdown(dc) {
+    if (dc.status === "drafting") {
+      return el("div", { class: "stat-row" }, [statTile("LIVE 🔴", "The draft is happening right now!")]);
+    }
+    if (dc.status === "complete") {
+      return emptyState([`The ${dc.year} draft is complete. See you next season!`]);
+    }
+    if (!dc.startTime) {
+      return emptyState(["Draft date hasn't been scheduled yet."]);
+    }
+
+    const wrap = el("div", {});
+    const tilesRow = el("div", { class: "stat-row" }, [
+      statTile("--", "Days"),
+      statTile("--", "Hours"),
+      statTile("--", "Minutes"),
+      statTile("--", "Seconds"),
+    ]);
+    const dateLine = el(
+      "p",
+      { class: "site-subtitle" },
+      new Date(dc.startTime).toLocaleString(undefined, { dateStyle: "full", timeStyle: "short" })
+    );
+    wrap.appendChild(tilesRow);
+    wrap.appendChild(dateLine);
+
+    const valueEls = tilesRow.querySelectorAll(".value");
+    const target = new Date(dc.startTime).getTime();
+
+    function tick() {
+      const diff = target - Date.now();
+      if (diff <= 0) {
+        valueEls.forEach((v) => (v.textContent = "0"));
+        if (countdownTimer) clearInterval(countdownTimer);
+        return;
+      }
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const minutes = Math.floor((diff % 3600000) / 60000);
+      const seconds = Math.floor((diff % 60000) / 1000);
+      [days, hours, minutes, seconds].forEach((v, i) => (valueEls[i].textContent = String(v)));
+    }
+
+    tick();
+    if (countdownTimer) clearInterval(countdownTimer);
+    countdownTimer = setInterval(tick, 1000);
+
+    return wrap;
+  }
+
+  function buildDraftOrderTable(draftOrder) {
+    const table = el("table");
+    table.appendChild(el("thead", {}, [el("tr", {}, [el("th", {}, "Pick"), el("th", {}, "Team"), el("th", {}, "Manager")])]));
+    const tbody = el("tbody");
+    draftOrder.forEach((row) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", { class: row.pick === 1 ? "rank-1" : "" }, String(row.pick)),
+          el("td", {}, managerLink(row.ownerId, row.teamName)),
+          el("td", {}, row.managerName),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function buildKeepersTable(keepers) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [el("th", {}, "Team"), el("th", {}, "Keeper"), el("th", {}, "Round Cost"), el("th", {}, "Notes")]),
+      ])
+    );
+    const tbody = el("tbody");
+    keepers.forEach((k) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, managerLink(k.ownerId, k.teamName)),
+          el("td", {}, k.playerName),
+          el("td", {}, k.round != null ? `Round ${k.round}` : "—"),
+          el("td", {}, k.notes || "—"),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function buildTradedPicksTable(tradedPicks) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [el("th", {}, "Round"), el("th", {}, "Original Team"), el("th", {}, "Now Owned By")]),
+      ])
+    );
+    const tbody = el("tbody");
+    tradedPicks.forEach((p) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, String(p.round)),
+          el("td", {}, managerLink(p.originalOwnerId, p.originalTeamName)),
+          el("td", {}, managerLink(p.currentOwnerId, p.currentTeamName)),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  render();
+</script>
+</body>
+</html>

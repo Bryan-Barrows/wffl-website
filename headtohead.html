@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Head-to-Head – Whippany Fantasy Football League</title>
+<meta name="description" content="All-time head-to-head records between every manager in the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading head-to-head records…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const standings = data.allTime?.standings || [];
+      const h2h = data.allTime?.headToHead || [];
+      if (standings.length === 0 || h2h.length === 0) {
+        content.appendChild(
+          emptyState([
+            "No head-to-head data yet. Once game-by-game results are imported, the all-time matchup grid ",
+            "between every manager will show up here.",
+          ])
+        );
+        return;
+      }
+
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "All-Time Head-to-Head"),
+          el("p", { class: "site-subtitle" }, "Row manager's record vs. column manager. Read as wins-losses(-ties)."),
+          el("div", { class: "table-scroll" }, buildMatrix(standings, h2h)),
+        ])
+      );
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function lookup(h2h, aId, bId) {
+    const entry = h2h.find((h) => h.ownerIds.includes(aId) && h.ownerIds.includes(bId));
+    if (!entry) return null;
+    return {
+      wins: entry.wins[aId] || 0,
+      losses: entry.wins[bId] || 0,
+      ties: entry.ties,
+    };
+  }
+
+  function buildMatrix(standings, h2h) {
+    const table = el("table", { class: "h2h-table" });
+    const headRow = el("tr", {}, [
+      el("th", {}, ""),
+      ...standings.map((s) => el("th", {}, managerLink(s.ownerId, initials(s.teamName)))),
+    ]);
+    table.appendChild(el("thead", {}, [headRow]));
+
+    const tbody = el("tbody");
+    standings.forEach((rowOwner) => {
+      const cells = [el("td", {}, managerLink(rowOwner.ownerId, rowOwner.teamName))];
+      standings.forEach((colOwner) => {
+        if (rowOwner.ownerId === colOwner.ownerId) {
+          cells.push(el("td", { class: "h2h-diag" }, "—"));
+          return;
+        }
+        const rec = lookup(h2h, rowOwner.ownerId, colOwner.ownerId);
+        cells.push(el("td", {}, rec ? `${rec.wins}-${rec.losses}${rec.ties ? `-${rec.ties}` : ""}` : "—"));
+      });
+      tbody.appendChild(el("tr", {}, cells));
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function initials(teamName) {
+    return teamName
+      .split(/\s+/)
+      .map((w) => w[0])
+      .join("")
+      .slice(0, 3)
+      .toUpperCase();
+  }
+
+  render();
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>League History – Whippany Fantasy Football League</title>
+<meta name="description" content="Season-by-season champions and history for the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading history…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      if (!data.seasons || data.seasons.length === 0) {
+        content.appendChild(
+          emptyState([
+            "No history yet. Once the scheduled GitHub Action runs (or you run ",
+            el("code", {}, "node scripts/fetch-sleeper-data.mjs"),
+            " yourself), season-by-season champions will show up here.",
+          ])
+        );
+        return;
+      }
+
+      const champCounts = data.allTime?.championships || [];
+      if (champCounts.length > 0) {
+        content.appendChild(
+          el("div", { class: "card" }, [
+            el("h2", {}, "🏆 Hall of Fame"),
+            el("div", { class: "table-scroll" }, buildChampsTable(champCounts)),
+          ])
+        );
+      }
+
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "Champions by Season"),
+          el("div", { class: "table-scroll" }, buildSeasonTable(data.seasons)),
+        ])
+      );
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function buildChampsTable(champs) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [el("tr", {}, [el("th", {}, "Manager"), el("th", {}, "Team"), el("th", {}, "Championships")])])
+    );
+    const tbody = el("tbody");
+    champs.forEach((c) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, managerLink(c.ownerId, c.managerName)),
+          el("td", {}, managerLink(c.ownerId, c.teamName)),
+          el("td", {}, "🏆".repeat(c.count) + ` (${c.count})`),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function buildSeasonTable(seasons) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [
+          el("th", {}, "Year"),
+          el("th", {}, "Status"),
+          el("th", {}, "Champion"),
+          el("th", {}, "Runner-Up"),
+        ]),
+      ])
+    );
+    const tbody = el("tbody");
+    seasons.forEach((s) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, String(s.year) + (s.source === "manual" ? " *" : "")),
+          el("td", {}, (s.status || "").replace("_", " ") || "—"),
+          el(
+            "td",
+            { class: s.champion ? "rank-1" : "" },
+            s.champion ? el("span", {}, ["🏆 ", managerLink(s.champion.ownerId, s.champion.teamName)]) : "TBD"
+          ),
+          el("td", {}, s.runnerUp ? managerLink(s.runnerUp.ownerId, s.runnerUp.teamName) : "—"),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  render();
+</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Manager Profile – Whippany Fantasy Football League</title>
+<meta name="description" content="Career stats, championships, and head-to-head record for a Whippany Fantasy Football League (WFFL) manager." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading manager…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const ownerId = getParam("id");
+      const career = ownerId ? careerStanding(data, ownerId) : null;
+
+      if (!ownerId || !career) {
+        content.appendChild(
+          emptyState([
+            ownerId
+              ? `No manager found for that link. `
+              : `No manager specified. `,
+            "Head over to the ",
+            el("a", { href: "stats.html" }, "Stats page"),
+            " to look someone up.",
+          ])
+        );
+        return;
+      }
+
+      document.title = `${career.teamName} – Manager Profile`;
+
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, `${career.teamName}`),
+          el("p", { class: "site-subtitle" }, `Managed by ${career.managerName} · ${career.seasonsPlayed} season${career.seasonsPlayed === 1 ? "" : "s"} (${career.years[0]}–${career.years[career.years.length - 1]})`),
+          el("div", { class: "stat-row" }, [
+            statTile(`${career.wins}-${career.losses}${career.ties ? `-${career.ties}` : ""}`, "Career Record"),
+            statTile(winPct(career.wins, career.losses, career.ties), "Win %"),
+            statTile(career.championships, "Championships"),
+            statTile(career.pointsFor.toFixed(1), "Career Points For"),
+          ]),
+        ])
+      );
+
+      const rows = seasonRowsFor(data, ownerId);
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "Year by Year"),
+          el("div", { class: "table-scroll" }, buildYearByYearTable(rows)),
+        ])
+      );
+
+      const h2h = headToHeadFor(data, ownerId).sort((a, b) => b.meetings - a.meetings);
+      if (h2h.length > 0) {
+        content.appendChild(
+          el("div", { class: "card" }, [
+            el("h2", {}, "Head-to-Head"),
+            el("div", { class: "table-scroll" }, buildH2HTable(data, h2h)),
+          ])
+        );
+      }
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function statTile(value, label) {
+    return el("div", { class: "stat-tile" }, [
+      el("div", { class: "value" }, String(value)),
+      el("div", { class: "label" }, label),
+    ]);
+  }
+
+  function buildYearByYearTable(rows) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [
+          el("th", {}, "Year"),
+          el("th", {}, "Team"),
+          el("th", {}, "Rank"),
+          el("th", {}, "W"),
+          el("th", {}, "L"),
+          el("th", {}, "T"),
+          el("th", {}, "PF"),
+          el("th", {}, "PA"),
+          el("th", {}, "Result"),
+        ]),
+      ])
+    );
+    const tbody = el("tbody");
+    [...rows].reverse().forEach(({ year, row, isChampion, isRunnerUp }) => {
+      let result = "—";
+      if (isChampion) result = "🏆 Champion";
+      else if (isRunnerUp) result = "🥈 Runner-Up";
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, String(year)),
+          el("td", {}, row.teamName),
+          el("td", {}, String(row.rank ?? "—")),
+          el("td", {}, String(row.wins)),
+          el("td", {}, String(row.losses)),
+          el("td", {}, String(row.ties)),
+          el("td", {}, row.pointsFor.toFixed(2)),
+          el("td", {}, row.pointsAgainst.toFixed(2)),
+          el("td", { class: isChampion ? "rank-1" : "" }, result),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function buildH2HTable(data, h2h) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [
+          el("th", {}, "Opponent"),
+          el("th", {}, "Record"),
+          el("th", {}, "Meetings"),
+          el("th", {}, "PF"),
+          el("th", {}, "PA"),
+        ]),
+      ])
+    );
+    const tbody = el("tbody");
+    h2h.forEach((entry) => {
+      const opp = careerStanding(data, entry.opponentId);
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, managerLink(entry.opponentId, opp ? opp.teamName : "Unknown")),
+          el("td", {}, `${entry.wins}-${entry.losses}${entry.ties ? `-${entry.ties}` : ""}`),
+          el("td", {}, String(entry.meetings)),
+          el("td", {}, entry.pointsFor.toFixed(2)),
+          el("td", {}, entry.pointsAgainst.toFixed(2)),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  render();
+</script>
+</body>
+</html>

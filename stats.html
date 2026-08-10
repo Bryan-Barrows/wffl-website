@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stats – Whippany Fantasy Football League</title>
+<meta name="description" content="Look up any manager's career stats, back to 2012, for the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading stats…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const standings = data.allTime?.standings || [];
+      if (standings.length === 0) {
+        content.appendChild(
+          emptyState([
+            "No stats yet. Once league data is imported, every manager's career stats back through the years ",
+            "will show up here — click a name to look someone up.",
+          ])
+        );
+        return;
+      }
+
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "Look Up a Manager"),
+          el("p", { class: "site-subtitle" }, "Click any manager below to see their full career page — record, championships, head-to-head, and year-by-year history."),
+          el(
+            "div",
+            { class: "manager-grid" },
+            standings.map((row) =>
+              el("a", { class: "manager-card", href: `manager.html?id=${encodeURIComponent(row.ownerId)}` }, [
+                el("div", { class: "team" }, row.teamName),
+                el("div", { class: "owner" }, row.managerName),
+              ])
+            )
+          ),
+        ])
+      );
+
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "All-Time Standings"),
+          el("div", { class: "table-scroll" }, buildAllTimeTable(standings)),
+        ])
+      );
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function buildAllTimeTable(standings) {
+    const sorted = [...standings].sort((a, b) => {
+      const aPct = (a.wins + a.ties * 0.5) / Math.max(1, a.wins + a.losses + a.ties);
+      const bPct = (b.wins + b.ties * 0.5) / Math.max(1, b.wins + b.losses + b.ties);
+      return bPct - aPct;
+    });
+
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [
+          el("th", {}, "#"),
+          el("th", {}, "Manager"),
+          el("th", {}, "Team"),
+          el("th", {}, "Seasons"),
+          el("th", {}, "W"),
+          el("th", {}, "L"),
+          el("th", {}, "T"),
+          el("th", {}, "Win %"),
+          el("th", {}, "PF"),
+          el("th", {}, "PA"),
+          el("th", {}, "🏆"),
+        ]),
+      ])
+    );
+    const tbody = el("tbody");
+    sorted.forEach((row, i) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", { class: i === 0 ? "rank-1" : "" }, String(i + 1)),
+          el("td", {}, managerLink(row.ownerId, row.managerName)),
+          el("td", {}, managerLink(row.ownerId, row.teamName)),
+          el("td", {}, String(row.seasonsPlayed)),
+          el("td", {}, String(row.wins)),
+          el("td", {}, String(row.losses)),
+          el("td", {}, String(row.ties)),
+          el("td", {}, winPct(row.wins, row.losses, row.ties)),
+          el("td", {}, row.pointsFor.toFixed(2)),
+          el("td", {}, row.pointsAgainst.toFixed(2)),
+          el("td", {}, row.championships > 0 ? `${row.championships}` : "—"),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  render();
+</script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Whippany Fantasy Football League</title>
+<meta name="description" content="Current standings, history, and records for the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading standings…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const bannerHall = buildBannerHall(data.seasons || []);
+      if (bannerHall) content.appendChild(bannerHall);
+
+      if (!data.seasons || data.seasons.length === 0) {
+        content.appendChild(
+          emptyState([
+            "No league data yet. Once the scheduled GitHub Action runs (or you run ",
+            el("code", {}, "node scripts/fetch-sleeper-data.mjs"),
+            " yourself), current standings will show up here.",
+          ])
+        );
+        return;
+      }
+
+      const current = data.seasons[0]; // seasons sorted newest-first
+
+      const statRow = el("div", { class: "stat-row" }, [
+        statTile(current.year, "Season"),
+        statTile(current.status?.replace("_", " ") || "unknown", "Status"),
+        statTile(current.champion ? current.champion.teamName : "TBD", "Defending Champ"),
+      ]);
+
+      content.appendChild(statRow);
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, `${current.year} Standings`),
+          el("div", { class: "table-scroll" }, buildStandingsTable(current.standings)),
+        ])
+      );
+
+      const weeklyAwardsCard = buildWeeklyAwardsCard(data.weeklyAwards);
+      if (weeklyAwardsCard) content.appendChild(weeklyAwardsCard);
+
+      const champs = data.allTime?.standings || [];
+      if (champs.length > 0) {
+        content.appendChild(
+          el("div", { class: "card" }, [
+            el("h2", {}, "🏆 Championships by Owner"),
+            el("div", { class: "table-scroll" }, buildChampionshipCountsTable(champs)),
+          ])
+        );
+      }
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function buildBannerHall(seasons) {
+    const champSeasons = seasons.filter((s) => s.champion).sort((a, b) => a.year - b.year);
+    if (champSeasons.length === 0) return null;
+
+    const banners = champSeasons.map((s, i) => {
+      const isLatest = i === champSeasons.length - 1;
+      return el("div", { class: `championship-banner${isLatest ? " latest" : ""}` }, [
+        el("div", { class: "banner-year" }, String(s.year)),
+        el("div", { class: "banner-trophy" }, "🏆"),
+        el("div", { class: "banner-team" }, managerLink(s.champion.ownerId, s.champion.teamName)),
+        el("div", { class: "banner-owner" }, s.champion.managerName),
+      ]);
+    });
+
+    return el("div", { class: "banner-hall" }, [
+      el("h2", {}, "🏟️ Championship Banners"),
+      el("div", { class: "rafter-beam" }),
+      el("div", { class: "banner-row" }, banners),
+    ]);
+  }
+
+  function buildWeeklyAwardsCard(awards) {
+    if (!awards) return null;
+    const tiles = [];
+
+    if (awards.mostPoints) {
+      const r = awards.mostPoints;
+      tiles.push(
+        recordTile("Most Points", `${r.points.toFixed(2)} pts`, [managerLink(r.ownerId, r.teamName), ` vs ${r.opponentTeamName}`])
+      );
+    }
+    if (awards.fewestPoints) {
+      const r = awards.fewestPoints;
+      tiles.push(
+        recordTile("Fewest Points 💩", `${r.points.toFixed(2)} pts`, [managerLink(r.ownerId, r.teamName), ` vs ${r.opponentTeamName}`])
+      );
+    }
+    if (awards.biggestMargin) {
+      const r = awards.biggestMargin;
+      tiles.push(
+        recordTile("Biggest Margin", `${r.margin.toFixed(2)} pts`, [
+          managerLink(r.winner.ownerId, r.winner.teamName),
+          " def. ",
+          managerLink(r.loser.ownerId, r.loser.teamName),
+        ])
+      );
+    }
+    if (awards.topPlayer) {
+      const p = awards.topPlayer;
+      const posTeam = [p.position, p.nflTeam].filter(Boolean).join(" – ");
+      tiles.push(
+        recordTile("Top Player Performance", `${p.points.toFixed(2)} pts`, [
+          `${p.playerName}${posTeam ? ` (${posTeam})` : ""} — `,
+          managerLink(p.fantasyOwnerId, p.fantasyTeamName),
+        ])
+      );
+    }
+
+    if (tiles.length === 0) return null;
+
+    return el("div", { class: "card" }, [
+      el("h2", {}, `📅 Week ${awards.week}, ${awards.year} Awards`),
+      el("div", { class: "record-tiles" }, tiles),
+    ]);
+  }
+
+  function recordTile(label, value, detailParts) {
+    return el("div", { class: "record-tile" }, [
+      el("div", { class: "record-label" }, label),
+      el("div", { class: "record-value" }, value),
+      el("div", { class: "record-detail" }, detailParts),
+    ]);
+  }
+
+  function statTile(value, label) {
+    return el("div", { class: "stat-tile" }, [
+      el("div", { class: "value" }, String(value)),
+      el("div", { class: "label" }, label),
+    ]);
+  }
+
+  function buildStandingsTable(standings) {
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [
+          el("th", {}, "#"),
+          el("th", {}, "Team"),
+          el("th", {}, "Manager"),
+          el("th", {}, "W"),
+          el("th", {}, "L"),
+          el("th", {}, "T"),
+          el("th", {}, "Win %"),
+          el("th", {}, "PF"),
+          el("th", {}, "PA"),
+        ]),
+      ])
+    );
+    const tbody = el("tbody");
+    (standings || []).forEach((row) => {
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", { class: row.rank === 1 ? "rank-1" : "" }, row.rank === 1 ? `🏆 ${row.rank}` : String(row.rank)),
+          el("td", {}, managerLink(row.ownerId, row.teamName)),
+          el("td", {}, row.managerName),
+          el("td", {}, String(row.wins)),
+          el("td", {}, String(row.losses)),
+          el("td", {}, String(row.ties)),
+          el("td", {}, winPct(row.wins, row.losses, row.ties)),
+          el("td", {}, row.pointsFor.toFixed(2)),
+          el("td", {}, row.pointsAgainst.toFixed(2)),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function buildChampionshipCountsTable(standings) {
+    const sorted = [...standings].sort((a, b) => b.championships - a.championships);
+    const table = el("table");
+    table.appendChild(
+      el("thead", {}, [
+        el("tr", {}, [el("th", {}, "Manager"), el("th", {}, "Team"), el("th", {}, "Championships"), el("th", {}, "Years Won")]),
+      ])
+    );
+    const tbody = el("tbody");
+    sorted.forEach((row) => {
+      const years = row.championshipYears || [];
+      tbody.appendChild(
+        el("tr", {}, [
+          el("td", {}, row.managerName),
+          el("td", {}, managerLink(row.ownerId, row.teamName)),
+          el("td", { class: row.championships > 0 ? "rank-1" : "" }, row.championships > 0 ? "🏆".repeat(row.championships) + ` (${row.championships})` : "—"),
+          el("td", {}, years.length > 0 ? years.join(", ") : "—"),
+        ])
+      );
+    });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  render();
+</script>
+</body>
+</html>

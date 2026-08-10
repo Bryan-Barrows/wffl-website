@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Records – Whippany Fantasy Football League</title>
+<meta name="description" content="League record book: biggest blowouts, highest scores, longest streaks, and more for the Whippany Fantasy Football League (WFFL)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><span class="ball">🏈</span><span id="league-name">Whippany Fantasy Football League</span></h1>
+    <p class="site-subtitle">Current standings, league history, and all-time records</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="draftcentral.html">Draft Central</a>
+      <a href="stats.html">Stats</a>
+      <a href="records.html">Records</a>
+      <a href="headtohead.html">Head-to-Head</a>
+      <a href="history.html">History</a>
+      <a href="constitution.html">Constitution</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="content">
+    <div class="empty-state">Loading records…</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p id="last-updated"></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  async function render() {
+    const content = document.getElementById("content");
+    try {
+      const data = await loadLeagueData();
+      document.getElementById("league-name").textContent = data.leagueName;
+      applyLogo(data);
+      setLastUpdated(data);
+
+      content.innerHTML = "";
+      const banner = sampleBanner(data);
+      if (banner) content.appendChild(banner);
+
+      const records = data.allTime?.records;
+      if (!records || Object.values(records).every((v) => !v)) {
+        content.appendChild(
+          emptyState([
+            "No records yet. Once game-by-game data is imported (from Sleeper or your Excel history), ",
+            "records like biggest blowout, highest score, and longest win streak will show up here.",
+          ])
+        );
+        return;
+      }
+
+      const tiles = [];
+
+      if (records.mostPointsGame) {
+        const r = records.mostPointsGame;
+        tiles.push(
+          recordTile("Most Points, Single Game", `${r.points.toFixed(2)} pts`, [
+            managerLink(r.ownerId, r.teamName),
+            ` — Week ${r.week}, ${r.year} vs ${r.opponentTeamName}`,
+          ])
+        );
+      }
+
+      if (records.fewestPointsGame) {
+        const r = records.fewestPointsGame;
+        tiles.push(
+          recordTile("Fewest Points, Single Game 💩", `${r.points.toFixed(2)} pts`, [
+            managerLink(r.ownerId, r.teamName),
+            ` — Week ${r.week}, ${r.year} vs ${r.opponentTeamName}`,
+          ])
+        );
+      }
+
+      if (records.mostPointsSeason) {
+        const r = records.mostPointsSeason;
+        tiles.push(
+          recordTile("Most Points, Single Season", `${r.points.toFixed(2)} pts`, [
+            managerLink(r.ownerId, r.teamName),
+            ` — ${r.year}`,
+          ])
+        );
+      }
+
+      if (records.fewestPointsSeason) {
+        const r = records.fewestPointsSeason;
+        tiles.push(
+          recordTile("Fewest Points, Single Season", `${r.points.toFixed(2)} pts`, [
+            managerLink(r.ownerId, r.teamName),
+            ` — ${r.year}`,
+          ])
+        );
+      }
+
+      if (records.biggestBlowout) {
+        const r = records.biggestBlowout;
+        tiles.push(
+          recordTile("Biggest Blowout", `${r.margin.toFixed(2)} pt margin`, [
+            managerLink(r.winner.ownerId, r.winner.teamName),
+            ` (${r.winner.score.toFixed(2)}) def. `,
+            managerLink(r.loser.ownerId, r.loser.teamName),
+            ` (${r.loser.score.toFixed(2)}) — Week ${r.week}, ${r.year}`,
+          ])
+        );
+      }
+
+      if (records.closestGame) {
+        const r = records.closestGame;
+        tiles.push(
+          recordTile("Closest Game", `${r.margin.toFixed(2)} pt margin`, [
+            managerLink(r.teamA.ownerId, r.teamA.teamName),
+            ` (${r.teamA.score.toFixed(2)}) vs `,
+            managerLink(r.teamB.ownerId, r.teamB.teamName),
+            ` (${r.teamB.score.toFixed(2)}) — Week ${r.week}, ${r.year}`,
+          ])
+        );
+      }
+
+      if (records.longestWinStreak) {
+        const r = records.longestWinStreak;
+        tiles.push(
+          recordTile("Longest Win Streak", `${r.length} games`, [
+            managerLink(r.ownerId, r.teamName),
+            ` — ${r.start.year} Wk${r.start.week} through ${r.end.year} Wk${r.end.week}`,
+          ])
+        );
+      }
+
+      content.appendChild(el("div", { class: "record-tiles" }, tiles));
+    } catch (err) {
+      content.innerHTML = "";
+      content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
+    }
+  }
+
+  function recordTile(label, value, detailParts) {
+    return el("div", { class: "record-tile" }, [
+      el("div", { class: "record-label" }, label),
+      el("div", { class: "record-value" }, value),
+      el("div", { class: "record-detail" }, detailParts),
+    ]);
+  }
+
+  render();
+</script>
+</body>
+</html>
