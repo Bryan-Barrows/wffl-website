@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-08-11T01:03:00.490Z",
+  "lastUpdated": "2026-08-11T01:13:18.252Z",
   "seasons": [
     {
       "year": 2026,
@@ -123,8 +123,8 @@
         },
         {
           "rosterId": 10,
-          "ownerId": "458904462526771200",
-          "managerName": "RubeusHagrid",
+          "ownerId": "p10",
+          "managerName": "Lefty",
           "teamName": "RubeusHagrid",
           "wins": 0,
           "losses": 0,
@@ -254,7 +254,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 10,
           "losses": 4,
@@ -399,7 +399,7 @@
       "champion": {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "Lefty"
+        "teamName": "RubeusHagrid"
       },
       "runnerUp": {
         "ownerId": "p12",
@@ -445,7 +445,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 114.63
           }
         },
@@ -566,7 +566,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 119.65
           },
           "teamB": {
@@ -641,7 +641,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129.42
           }
         },
@@ -725,7 +725,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 187.42
           }
         },
@@ -776,7 +776,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 117.27
           },
           "teamB": {
@@ -879,7 +879,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 141.14
           }
         },
@@ -949,7 +949,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 98.58
           }
         },
@@ -1019,7 +1019,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 119.98
           }
         },
@@ -1117,7 +1117,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 98.76
           }
         },
@@ -1201,7 +1201,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 132.8
           }
         },
@@ -1285,7 +1285,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 111.64
           }
         },
@@ -1392,7 +1392,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 141.21
           },
           "teamB": {
@@ -1481,7 +1481,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 104.43
           }
         },
@@ -1509,7 +1509,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 103.34
           }
         },
@@ -1616,7 +1616,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 163.55
           },
           "teamB": {
@@ -1644,7 +1644,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 113.49
           },
           "teamB": {
@@ -1705,7 +1705,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 8,
           "losses": 6,
@@ -2026,7 +2026,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 154.2
           }
         },
@@ -2166,7 +2166,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 127.24
           }
         },
@@ -2194,7 +2194,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 133.94
           }
         },
@@ -2348,7 +2348,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 120.54
           }
         },
@@ -2446,7 +2446,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 120.7
           }
         },
@@ -2530,7 +2530,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 162.6
           }
         },
@@ -2558,7 +2558,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 132.4
           }
         },
@@ -2670,7 +2670,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 113.66
           }
         },
@@ -2698,7 +2698,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 103.96
           }
         },
@@ -2824,7 +2824,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 117.74
           }
         },
@@ -2880,7 +2880,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 107.6
           }
         },
@@ -2922,7 +2922,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 127.6
           }
         },
@@ -2964,7 +2964,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 95.64
           }
         },
@@ -3015,7 +3015,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 93.34
           },
           "teamB": {
@@ -3029,7 +3029,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105.18
           },
           "teamB": {
@@ -3043,7 +3043,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 147.26
           },
           "teamB": {
@@ -3057,7 +3057,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 149.94
           },
           "teamB": {
@@ -3120,7 +3120,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 9,
           "losses": 5,
@@ -3258,7 +3258,7 @@
       "runnerUp": {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "Lefty"
+        "teamName": "RubeusHagrid"
       },
       "games": [
         {
@@ -3453,7 +3453,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 128.24
           }
         },
@@ -3579,7 +3579,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 139.32
           }
         },
@@ -3719,7 +3719,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 92.8
           }
         },
@@ -3747,7 +3747,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 83.18
           }
         },
@@ -3817,7 +3817,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 142.94
           }
         },
@@ -3943,7 +3943,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 124.8
           }
         },
@@ -3985,7 +3985,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 149.86
           }
         },
@@ -4097,7 +4097,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105.8
           }
         },
@@ -4223,7 +4223,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 81.64
           }
         },
@@ -4321,7 +4321,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 150.4
           }
         },
@@ -4391,7 +4391,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 114.92
           }
         },
@@ -4428,7 +4428,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 120.74
           },
           "teamB": {
@@ -4442,7 +4442,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 139.68
           },
           "teamB": {
@@ -4456,7 +4456,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 134.52
           },
           "teamB": {
@@ -4470,7 +4470,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 151.1
           },
           "teamB": {
@@ -4484,7 +4484,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 138.5
           },
           "teamB": {
@@ -4643,7 +4643,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 5,
           "losses": 9,
@@ -4824,7 +4824,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 91
           }
         },
@@ -5076,7 +5076,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 56.86
           }
         },
@@ -5160,7 +5160,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 124.54
           }
         },
@@ -5314,7 +5314,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 72.36
           }
         },
@@ -5454,7 +5454,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 85.8
           }
         },
@@ -5482,7 +5482,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 68.2
           }
         },
@@ -5538,7 +5538,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 85.58
           }
         },
@@ -5678,7 +5678,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129.48
           }
         },
@@ -5790,7 +5790,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 71.4
           }
         },
@@ -5818,7 +5818,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 91.48
           }
         },
@@ -5888,7 +5888,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 133.26
           }
         },
@@ -5902,7 +5902,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 139.04
           }
         },
@@ -5925,7 +5925,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 128.32
           },
           "teamB": {
@@ -5939,7 +5939,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 98.94
           },
           "teamB": {
@@ -6010,7 +6010,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 9,
           "losses": 5,
@@ -6251,7 +6251,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 123.6
           }
         },
@@ -6405,7 +6405,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 111.26
           }
         },
@@ -6573,7 +6573,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 124.3
           }
         },
@@ -6601,7 +6601,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 163.94
           }
         },
@@ -6671,7 +6671,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129.94
           }
         },
@@ -6769,7 +6769,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 109.4
           }
         },
@@ -6853,7 +6853,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 159.46
           }
         },
@@ -7007,7 +7007,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 116.44
           }
         },
@@ -7091,7 +7091,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 118.36
           }
         },
@@ -7175,7 +7175,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 122.72
           }
         },
@@ -7189,7 +7189,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 115.22
           }
         },
@@ -7217,7 +7217,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 132.62
           }
         },
@@ -7301,7 +7301,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 91.32
           }
         },
@@ -7315,7 +7315,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 90.7
           }
         },
@@ -7329,7 +7329,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 134.66
           }
         },
@@ -7357,7 +7357,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 133.38
           }
         },
@@ -7371,7 +7371,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 165.6
           }
         }
@@ -7497,7 +7497,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 6,
           "losses": 7,
@@ -7664,7 +7664,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 132.98
           }
         },
@@ -7916,7 +7916,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 102.38
           }
         },
@@ -8014,7 +8014,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 102.2
           }
         },
@@ -8098,7 +8098,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 144.38
           }
         },
@@ -8196,7 +8196,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 118.62
           }
         },
@@ -8266,7 +8266,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 112.24
           }
         },
@@ -8392,7 +8392,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 154.4
           }
         },
@@ -8490,7 +8490,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105.24
           }
         },
@@ -8560,7 +8560,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 103.32
           }
         },
@@ -8602,7 +8602,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 93.66
           }
         },
@@ -8644,7 +8644,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 125.9
           }
         },
@@ -8700,7 +8700,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 86.24
           }
         },
@@ -8714,7 +8714,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 117
           }
         }
@@ -8792,7 +8792,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 6,
           "losses": 7,
@@ -9035,7 +9035,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 130.2
           }
         },
@@ -9077,7 +9077,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 96.2
           }
         },
@@ -9189,7 +9189,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 120.3
           }
         },
@@ -9371,7 +9371,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 137.9
           }
         },
@@ -9441,7 +9441,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 84.3
           }
         },
@@ -9525,7 +9525,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 111.7
           }
         },
@@ -9595,7 +9595,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 114.3
           }
         },
@@ -9791,7 +9791,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 158.4
           }
         },
@@ -9833,7 +9833,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105.4
           }
         },
@@ -9889,7 +9889,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 97.8
           }
         },
@@ -9917,7 +9917,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 106.8
           }
         },
@@ -10001,7 +10001,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 97.9
           }
         },
@@ -10029,7 +10029,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105.9
           }
         },
@@ -10057,7 +10057,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 86.6
           }
         }
@@ -10135,7 +10135,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 9,
           "losses": 4,
@@ -10350,7 +10350,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 148
           }
         },
@@ -10490,7 +10490,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 71
           }
         },
@@ -10672,7 +10672,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105
           }
         },
@@ -10742,7 +10742,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 98
           }
         },
@@ -10812,7 +10812,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 123
           }
         },
@@ -10882,7 +10882,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 154
           }
         },
@@ -10924,7 +10924,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 106
           }
         },
@@ -11078,7 +11078,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 150
           }
         },
@@ -11204,7 +11204,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 120
           }
         },
@@ -11227,7 +11227,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 135
           },
           "teamB": {
@@ -11241,7 +11241,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 97
           },
           "teamB": {
@@ -11255,7 +11255,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 124
           },
           "teamB": {
@@ -11269,7 +11269,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 137
           },
           "teamB": {
@@ -11283,7 +11283,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 157
           },
           "teamB": {
@@ -11454,7 +11454,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 7,
           "losses": 6,
@@ -11693,7 +11693,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 112
           }
         },
@@ -11777,7 +11777,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 109
           }
         },
@@ -11833,7 +11833,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 103
           }
         },
@@ -12015,7 +12015,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 81
           }
         },
@@ -12141,7 +12141,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 89
           }
         },
@@ -12211,7 +12211,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 116
           }
         },
@@ -12239,7 +12239,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 94
           }
         },
@@ -12267,7 +12267,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 115
           }
         },
@@ -12379,7 +12379,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 109
           }
         },
@@ -12435,7 +12435,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 63
           }
         },
@@ -12547,7 +12547,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129
           }
         },
@@ -12570,7 +12570,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 134
           },
           "teamB": {
@@ -12584,7 +12584,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 89
           },
           "teamB": {
@@ -12598,7 +12598,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 98
           },
           "teamB": {
@@ -12612,7 +12612,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 135
           },
           "teamB": {
@@ -12626,7 +12626,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 112
           },
           "teamB": {
@@ -12785,7 +12785,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 7,
           "losses": 6,
@@ -13036,7 +13036,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129
           }
         },
@@ -13148,7 +13148,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 98
           }
         },
@@ -13400,7 +13400,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 102
           }
         },
@@ -13456,7 +13456,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 146
           }
         },
@@ -13540,7 +13540,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 139
           }
         },
@@ -13652,7 +13652,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 77
           }
         },
@@ -13722,7 +13722,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 77
           }
         },
@@ -13778,7 +13778,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 138
           }
         },
@@ -13876,7 +13876,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 126
           }
         },
@@ -13918,7 +13918,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 92
           }
         },
@@ -13927,7 +13927,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129
           },
           "teamB": {
@@ -13941,7 +13941,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 105
           },
           "teamB": {
@@ -13955,7 +13955,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 107
           },
           "teamB": {
@@ -13969,7 +13969,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 106
           },
           "teamB": {
@@ -13983,7 +13983,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 116
           },
           "teamB": {
@@ -13997,7 +13997,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 124
           },
           "teamB": {
@@ -18269,7 +18269,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "Lefty",
+          "teamName": "RubeusHagrid",
           "isActive": true,
           "wins": 9,
           "losses": 3,
@@ -18492,7 +18492,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 129
           }
         },
@@ -18576,7 +18576,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 117
           }
         },
@@ -18688,7 +18688,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 84
           }
         },
@@ -18870,7 +18870,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 103
           }
         },
@@ -19038,7 +19038,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 131
           }
         },
@@ -19178,7 +19178,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 119
           }
         },
@@ -19220,7 +19220,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 150
           }
         },
@@ -19304,7 +19304,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 124
           }
         },
@@ -19388,7 +19388,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 75
           }
         },
@@ -19402,7 +19402,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 131
           }
         },
@@ -19444,7 +19444,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 108
           }
         },
@@ -19500,7 +19500,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 133
           }
         },
@@ -19514,7 +19514,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 104
           }
         },
@@ -19570,7 +19570,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 147
           }
         },
@@ -19584,7 +19584,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 158
           }
         },
@@ -19598,7 +19598,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "Lefty",
+            "teamName": "RubeusHagrid",
             "score": 146
           }
         }
@@ -19613,7 +19613,7 @@
     "year": 2026,
     "draftId": "1378040940878393344",
     "status": "pre_draft",
-    "startTime": null,
+    "startTime": "2026-09-08T00:00:00.000Z",
     "draftOrder": [
       {
         "pick": 1,
@@ -19683,9 +19683,9 @@
       },
       {
         "pick": 12,
-        "ownerId": "458904462526771200",
+        "ownerId": "p10",
         "teamName": "RubeusHagrid",
-        "managerName": "RubeusHagrid"
+        "managerName": "Lefty"
       }
     ],
     "tradedPicks": [
@@ -19703,11 +19703,11 @@
         "round": 2,
         "season": "2026",
         "originalTeamName": "RubeusHagrid",
-        "originalOwnerId": "458904462526771200",
+        "originalOwnerId": "p10",
         "currentTeamName": "Tsar Putin",
         "currentOwnerId": "p7",
         "previousTeamName": "RubeusHagrid",
-        "previousOwnerId": "458904462526771200"
+        "previousOwnerId": "p10"
       },
       {
         "round": 2,
@@ -19725,7 +19725,7 @@
         "originalTeamName": "Sweetwater All Stars",
         "originalOwnerId": "p1",
         "currentTeamName": "RubeusHagrid",
-        "currentOwnerId": "458904462526771200",
+        "currentOwnerId": "p10",
         "previousTeamName": "Sweetwater All Stars",
         "previousOwnerId": "p1"
       },
@@ -19733,11 +19733,11 @@
         "round": 4,
         "season": "2026",
         "originalTeamName": "RubeusHagrid",
-        "originalOwnerId": "458904462526771200",
+        "originalOwnerId": "p10",
         "currentTeamName": "Sweetwater All Stars",
         "currentOwnerId": "p1",
         "previousTeamName": "RubeusHagrid",
-        "previousOwnerId": "458904462526771200"
+        "previousOwnerId": "p10"
       },
       {
         "round": 4,
@@ -19773,21 +19773,21 @@
         "round": 5,
         "season": "2026",
         "originalTeamName": "RubeusHagrid",
-        "originalOwnerId": "458904462526771200",
+        "originalOwnerId": "p10",
         "currentTeamName": "Tsar Putin",
         "currentOwnerId": "p7",
         "previousTeamName": "RubeusHagrid",
-        "previousOwnerId": "458904462526771200"
+        "previousOwnerId": "p10"
       },
       {
         "round": 6,
         "season": "2026",
         "originalTeamName": "RubeusHagrid",
-        "originalOwnerId": "458904462526771200",
+        "originalOwnerId": "p10",
         "currentTeamName": "Sweetwater All Stars",
         "currentOwnerId": "p1",
         "previousTeamName": "RubeusHagrid",
-        "previousOwnerId": "458904462526771200"
+        "previousOwnerId": "p10"
       }
     ],
     "keepers": []
@@ -20037,7 +20037,7 @@
       {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "Lefty",
+        "teamName": "RubeusHagrid",
         "seasonsPlayed": 11,
         "wins": 85,
         "losses": 62,
@@ -20347,7 +20347,7 @@
       {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "Lefty",
+        "teamName": "RubeusHagrid",
         "count": 1,
         "years": [
           2025
