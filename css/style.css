@@ -10,7 +10,10 @@
   --gold: #ef4444; /* repurposed for the red/white/blue theme: champion/rank-1 highlight color */
   --danger: #f87171;
   --radius: 10px;
-  --max-width: 1000px;
+  /* Fluid width: stays app-narrow on phones/tablets (94vw), caps at 1400px so
+     PC/large-monitor visitors get a genuinely wider layout instead of a
+     1000px column with huge empty margins on either side. */
+  --max-width: min(1400px, 94vw);
 }
 
 * {
@@ -187,6 +190,15 @@ thead th {
   padding: 0.5rem 0.6rem;
   border-bottom: 2px solid var(--gold);
   white-space: nowrap;
+}
+
+thead th.sortable-th {
+  cursor: pointer;
+  user-select: none;
+}
+
+thead th.sortable-th:hover {
+  color: var(--text);
 }
 
 tbody td {
@@ -495,4 +507,24 @@ footer.site-footer {
   color: var(--text-muted);
   font-size: 0.72rem;
   margin-top: 0.15rem;
+}
+
+/* Homepage dashboard layout: standings alongside a sidebar on wide screens,
+   stacked back into a single column on narrow ones. */
+.home-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-sidebar > .card:last-child,
+.home-sidebar > .record-tiles:last-child {
+  margin-bottom: 0;
 }

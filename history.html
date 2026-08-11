@@ -37,10 +37,13 @@
 
 <script src="js/data.js"></script>
 <script>
+  let pageData = null;
+
   async function render() {
     const content = document.getElementById("content");
     try {
       const data = await loadLeagueData();
+      pageData = data;
       document.getElementById("league-name").textContent = data.leagueName;
       applyLogo(data);
       setLastUpdated(data);
@@ -60,12 +63,15 @@
         return;
       }
 
-      const champCounts = data.allTime?.championships || [];
-      if (champCounts.length > 0) {
+      const podiumFinishers = (data.allTime?.standings || [])
+        .filter((s) => s.championships > 0 || s.runnerUps > 0 || s.thirdPlaces > 0)
+        .sort((a, b) => b.championships - a.championships || b.runnerUps - a.runnerUps || b.thirdPlaces - a.thirdPlaces);
+
+      if (podiumFinishers.length > 0) {
         content.appendChild(
           el("div", { class: "card" }, [
             el("h2", {}, "🏆 Hall of Fame"),
-            el("div", { class: "table-scroll" }, buildChampsTable(champCounts)),
+            el("div", { class: "table-scroll" }, buildHallOfFameTable(podiumFinishers)),
           ])
         );
       }
@@ -76,24 +82,38 @@
           el("div", { class: "table-scroll" }, buildSeasonTable(data.seasons)),
         ])
       );
+
+      content.appendChild(buildSeasonViewerCard(data.seasons));
     } catch (err) {
       content.innerHTML = "";
       content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
     }
   }
 
-  function buildChampsTable(champs) {
+  function buildHallOfFameTable(rows) {
     const table = el("table");
     table.appendChild(
-      el("thead", {}, [el("tr", {}, [el("th", {}, "Manager"), el("th", {}, "Team"), el("th", {}, "Championships")])])
+      el("thead", {}, [
+        el("tr", {}, [
+          el("th", {}, "Manager"),
+          el("th", {}, "🏆 Championships"),
+          el("th", {}, "🥈 Runner-Up"),
+          el("th", {}, "🥉 3rd Place"),
+        ]),
+      ])
     );
     const tbody = el("tbody");
-    champs.forEach((c) => {
+    rows.forEach((r) => {
       tbody.appendChild(
         el("tr", {}, [
-          el("td", {}, managerLink(c.ownerId, c.managerName)),
-          el("td", {}, managerLink(c.ownerId, c.teamName)),
-          el("td", {}, "🏆".repeat(c.count) + ` (${c.count})`),
+          el("td", {}, managerLink(r.ownerId, r.managerName)),
+          el(
+            "td",
+            { class: r.championships > 0 ? "rank-1" : "" },
+            r.championships > 0 ? `${"🏆".repeat(r.championships)} (${r.championshipYears.join(", ")})` : "—"
+          ),
+          el("td", {}, r.runnerUps > 0 ? `${r.runnerUps} (${r.runnerUpYears.join(", ")})` : "—"),
+          el("td", {}, r.thirdPlaces > 0 ? `${r.thirdPlaces} (${r.thirdPlaceYears.join(", ")})` : "—"),
         ])
       );
     });
@@ -104,32 +124,91 @@
   function buildSeasonTable(seasons) {
     const table = el("table");
     table.appendChild(
+      el("thead", {}, [el("tr", {}, [el("th", {}, "Year"), el("th", {}, "Champion"), el("th", {}, "Runner-Up")])])
+    );
+    const tbody = el("tbody");
+    seasons
+      .filter((s) => s.champion || s.runnerUp)
+      .forEach((s) => {
+        tbody.appendChild(
+          el("tr", {}, [
+            el("td", {}, String(s.year)),
+            el(
+              "td",
+              { class: s.champion ? "rank-1" : "" },
+              s.champion ? el("span", {}, ["🏆 ", managerLink(s.champion.ownerId, s.champion.teamName)]) : "TBD"
+            ),
+            el("td", {}, s.runnerUp ? managerLink(s.runnerUp.ownerId, s.runnerUp.teamName) : "—"),
+          ])
+        );
+      });
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function buildSeasonViewerCard(seasons) {
+    const eligible = seasons.filter((s) => s.standings && s.standings.length > 0);
+    const select = el(
+      "select",
+      { id: "season-picker" },
+      eligible.map((s) => el("option", { value: String(s.year) }, String(s.year)))
+    );
+    const resultsDiv = el("div", { id: "season-picker-results" });
+
+    select.addEventListener("change", () => renderSeasonStandings(eligible, select.value, resultsDiv));
+
+    // Default to the most recent *completed* season (has a champion) rather
+    // than a not-yet-played placeholder, which would just show all zeros.
+    const defaultSeason = eligible.find((s) => s.champion) || eligible[0];
+    if (defaultSeason) {
+      select.value = String(defaultSeason.year);
+      renderSeasonStandings(eligible, defaultSeason.year, resultsDiv);
+    }
+
+    return el("div", { class: "card" }, [
+      el("h2", {}, "Final Standings by Season"),
+      el("div", { class: "manager-picker" }, [el("label", { for: "season-picker" }, "Season:"), select]),
+      resultsDiv,
+    ]);
+  }
+
+  function renderSeasonStandings(eligible, year, resultsDiv) {
+    const season = eligible.find((s) => String(s.year) === String(year));
+    resultsDiv.innerHTML = "";
+    if (!season) return;
+
+    const table = el("table");
+    table.appendChild(
       el("thead", {}, [
         el("tr", {}, [
-          el("th", {}, "Year"),
-          el("th", {}, "Status"),
-          el("th", {}, "Champion"),
-          el("th", {}, "Runner-Up"),
+          el("th", {}, "#"),
+          el("th", {}, "Manager"),
+          el("th", {}, "W"),
+          el("th", {}, "L"),
+          el("th", {}, "T"),
+          el("th", {}, "PF"),
+          el("th", {}, "PA"),
         ]),
       ])
     );
     const tbody = el("tbody");
-    seasons.forEach((s) => {
-      tbody.appendChild(
-        el("tr", {}, [
-          el("td", {}, String(s.year) + (s.source === "manual" ? " *" : "")),
-          el("td", {}, (s.status || "").replace("_", " ") || "—"),
-          el(
-            "td",
-            { class: s.champion ? "rank-1" : "" },
-            s.champion ? el("span", {}, ["🏆 ", managerLink(s.champion.ownerId, s.champion.teamName)]) : "TBD"
-          ),
-          el("td", {}, s.runnerUp ? managerLink(s.runnerUp.ownerId, s.runnerUp.teamName) : "—"),
-        ])
-      );
-    });
+    [...season.standings]
+      .sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999))
+      .forEach((row) => {
+        tbody.appendChild(
+          el("tr", {}, [
+            el("td", { class: row.rank === 1 ? "rank-1" : "" }, row.rank === 1 ? `🏆 ${row.rank}` : String(row.rank ?? "—")),
+            el("td", {}, managerLink(row.ownerId, row.managerName)),
+            el("td", {}, String(row.wins)),
+            el("td", {}, String(row.losses)),
+            el("td", {}, String(row.ties)),
+            el("td", {}, row.pointsFor.toFixed(2)),
+            el("td", {}, row.pointsAgainst.toFixed(2)),
+          ])
+        );
+      });
     table.appendChild(tbody);
-    return table;
+    resultsDiv.appendChild(el("div", { class: "table-scroll" }, table));
   }
 
   render();

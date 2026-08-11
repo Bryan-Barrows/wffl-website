@@ -49,7 +49,7 @@
       const banner = sampleBanner(data);
       if (banner) content.appendChild(banner);
 
-      const standings = data.allTime?.standings || [];
+      const standings = (data.allTime?.standings || []).filter((s) => s.isActive !== false);
       const h2h = data.allTime?.headToHead || [];
       if (standings.length === 0 || h2h.length === 0) {
         content.appendChild(
@@ -110,12 +110,13 @@
   }
 
   function initials(teamName) {
-    return teamName
-      .split(/\s+/)
-      .map((w) => w[0])
-      .join("")
-      .slice(0, 3)
-      .toUpperCase();
+    const words = teamName.split(/\s+/);
+    // Multi-word team names ("Blitz Brigade" -> "BB") get one letter per
+    // word; a single-word name (a plain first name, common for historical
+    // seasons that never had a fantasy team nickname) takes its first three
+    // letters instead, so e.g. "Lou" and "Luke" don't both collapse to "L".
+    const abbrev = words.length > 1 ? words.map((w) => w[0]).join("") : words[0].slice(0, 3);
+    return abbrev.slice(0, 3).toUpperCase();
   }
 
   render();

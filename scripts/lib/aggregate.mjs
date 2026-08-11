@@ -79,6 +79,11 @@ function computeCareerStandings(seasons) {
           pointsAgainst: 0,
           championships: 0,
           championshipYears: [],
+          runnerUps: 0,
+          runnerUpYears: [],
+          thirdPlaces: 0,
+          thirdPlaceYears: [],
+          isActive: true,
           years: [],
         };
       agg.seasonsPlayed += 1;
@@ -90,6 +95,11 @@ function computeCareerStandings(seasons) {
       agg.teamName = row.teamName; // most recent team name wins
       agg.managerName = row.managerName;
       agg.years.push(season.year);
+      if (row.isActive === false) agg.isActive = false;
+      if (row.rank === 3) {
+        agg.thirdPlaces += 1;
+        agg.thirdPlaceYears.push(season.year);
+      }
       byOwner.set(row.ownerId, agg);
     }
     if (season.champion?.ownerId) {
@@ -99,6 +109,13 @@ function computeCareerStandings(seasons) {
         agg.championshipYears.push(season.year);
       }
     }
+    if (season.runnerUp?.ownerId) {
+      const agg = byOwner.get(season.runnerUp.ownerId);
+      if (agg) {
+        agg.runnerUps += 1;
+        agg.runnerUpYears.push(season.year);
+      }
+    }
   }
 
   for (const agg of byOwner.values()) {
@@ -106,6 +123,8 @@ function computeCareerStandings(seasons) {
     agg.pointsAgainst = Number(agg.pointsAgainst.toFixed(2));
     agg.years.sort((a, b) => a - b);
     agg.championshipYears.sort((a, b) => a - b);
+    agg.runnerUpYears.sort((a, b) => a - b);
+    agg.thirdPlaceYears.sort((a, b) => a - b);
   }
 
   return byOwner;

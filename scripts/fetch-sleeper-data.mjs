@@ -404,13 +404,20 @@ async function main() {
   // Manually/Excel-imported historical seasons are the authoritative record
   // (they capture true final placement including playoffs, which Sleeper's
   // regular-season-only roster stats don't) — they win over Sleeper for any
-  // year they cover. Sleeper only fills in years the import doesn't have,
-  // which in practice means the current/upcoming season.
-  const manualSeasons = (existing.seasons || []).filter((s) => s.source !== "sleeper");
-  const manualYears = new Set(manualSeasons.map((s) => s.year));
-  const keptSleeperSeasons = seasons.filter((s) => !manualYears.has(s.year));
+  // year they cover. A "placeholder" season (a stand-in for the current/
+  // upcoming year before Sleeper has anything for it yet) is the opposite:
+  // it yields the moment real Sleeper data for that year shows up, and is
+  // otherwise kept as-is. A leftover "sample" season is always dropped —
+  // never real data, never worth preserving.
+  const authoritativeSeasons = (existing.seasons || []).filter((s) => s.source === "excel" || s.source === "manual");
+  const authoritativeYears = new Set(authoritativeSeasons.map((s) => s.year));
+  const sleeperYears = new Set(seasons.map((s) => s.year));
+  const keptPlaceholders = (existing.seasons || []).filter(
+    (s) => s.source === "placeholder" && !authoritativeYears.has(s.year) && !sleeperYears.has(s.year)
+  );
+  const keptSleeperSeasons = seasons.filter((s) => !authoritativeYears.has(s.year));
 
-  const allSeasons = [...manualSeasons, ...keptSleeperSeasons].sort((a, b) => b.year - a.year);
+  const allSeasons = [...authoritativeSeasons, ...keptSleeperSeasons, ...keptPlaceholders].sort((a, b) => b.year - a.year);
   const allTime = computeAggregates(allSeasons);
 
   // Use the most current Sleeper season's avatar as the site logo.

@@ -50,7 +50,10 @@
       if (banner) content.appendChild(banner);
 
       const bannerHall = buildBannerHall(data.seasons || []);
-      if (bannerHall) content.appendChild(bannerHall);
+      if (bannerHall) {
+        content.appendChild(bannerHall);
+        startBannerAutoScroll(bannerHall.querySelector(".banner-row"));
+      }
 
       if (!data.seasons || data.seasons.length === 0) {
         content.appendChild(
@@ -65,32 +68,29 @@
 
       const current = data.seasons[0]; // seasons sorted newest-first
 
-      const statRow = el("div", { class: "stat-row" }, [
-        statTile(current.year, "Season"),
-        statTile(current.status?.replace("_", " ") || "unknown", "Status"),
-        statTile(current.champion ? current.champion.teamName : "TBD", "Defending Champ"),
-      ]);
-
-      content.appendChild(statRow);
-      content.appendChild(
+      const mainCol = el("div", { class: "home-main" }, [
         el("div", { class: "card" }, [
           el("h2", {}, `${current.year} Standings`),
           el("div", { class: "table-scroll" }, buildStandingsTable(current.standings)),
-        ])
-      );
+        ]),
+      ]);
 
+      const sidebarChildren = [];
       const weeklyAwardsCard = buildWeeklyAwardsCard(data.weeklyAwards);
-      if (weeklyAwardsCard) content.appendChild(weeklyAwardsCard);
+      if (weeklyAwardsCard) sidebarChildren.push(weeklyAwardsCard);
 
       const champs = data.allTime?.standings || [];
       if (champs.length > 0) {
-        content.appendChild(
+        sidebarChildren.push(
           el("div", { class: "card" }, [
             el("h2", {}, "🏆 Championships by Owner"),
             el("div", { class: "table-scroll" }, buildChampionshipCountsTable(champs)),
           ])
         );
       }
+      const sidebar = el("div", { class: "home-sidebar" }, sidebarChildren);
+
+      content.appendChild(el("div", { class: "home-grid" }, [mainCol, sidebar]));
     } catch (err) {
       content.innerHTML = "";
       content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
@@ -116,6 +116,31 @@
       el("div", { class: "rafter-beam" }),
       el("div", { class: "banner-row" }, banners),
     ]);
+  }
+
+  // Slowly ping-pongs the banner row back and forth so all the banners get
+  // seen without anyone needing to manually scroll — pauses whenever the
+  // pointer/touch is over it so it doesn't fight someone trying to read or
+  // click a banner.
+  function startBannerAutoScroll(row) {
+    if (!row) return;
+    let direction = 1;
+    let paused = false;
+    const speed = 0.6; // px per tick
+
+    row.addEventListener("mouseenter", () => (paused = true));
+    row.addEventListener("mouseleave", () => (paused = false));
+    row.addEventListener("touchstart", () => (paused = true), { passive: true });
+    row.addEventListener("touchend", () => (paused = false));
+
+    setInterval(() => {
+      if (paused) return;
+      const maxScroll = row.scrollWidth - row.clientWidth;
+      if (maxScroll <= 0) return;
+      row.scrollLeft += direction * speed;
+      if (row.scrollLeft >= maxScroll) direction = -1;
+      else if (row.scrollLeft <= 0) direction = 1;
+    }, 16);
   }
 
   function buildWeeklyAwardsCard(awards) {
@@ -168,13 +193,6 @@
       el("div", { class: "record-label" }, label),
       el("div", { class: "record-value" }, value),
       el("div", { class: "record-detail" }, detailParts),
-    ]);
-  }
-
-  function statTile(value, label) {
-    return el("div", { class: "stat-tile" }, [
-      el("div", { class: "value" }, String(value)),
-      el("div", { class: "label" }, label),
     ]);
   }
 

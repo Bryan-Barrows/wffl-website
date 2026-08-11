@@ -37,6 +37,21 @@
 
 <script src="js/data.js"></script>
 <script>
+  const SORT_COLUMNS = [
+    { key: "manager", label: "Manager", numeric: false },
+    { key: "seasons", label: "Seasons", numeric: true },
+    { key: "wins", label: "W", numeric: true },
+    { key: "losses", label: "L", numeric: true },
+    { key: "ties", label: "T", numeric: true },
+    { key: "winpct", label: "Win %", numeric: true },
+    { key: "pf", label: "Avg PF", numeric: true },
+    { key: "pa", label: "Avg PA", numeric: true },
+    { key: "champs", label: "🏆", numeric: true },
+  ];
+
+  // Defaults to the same ordering the table opens with (best win% first).
+  const sortState = { key: "winpct", dir: "desc" };
+
   async function render() {
     const content = document.getElementById("content");
     try {
@@ -54,34 +69,36 @@
         content.appendChild(
           emptyState([
             "No stats yet. Once league data is imported, every manager's career stats back through the years ",
-            "will show up here — click a name to look someone up.",
+            "will show up here.",
           ])
         );
         return;
       }
 
-      content.appendChild(
-        el("div", { class: "card" }, [
-          el("h2", {}, "Look Up a Manager"),
-          el("p", { class: "site-subtitle" }, "Click any manager below to see their full career page — record, championships, head-to-head, and year-by-year history."),
-          el(
-            "div",
-            { class: "manager-grid" },
-            standings.map((row) =>
-              el("a", { class: "manager-card", href: `manager.html?id=${encodeURIComponent(row.ownerId)}` }, [
-                el("div", { class: "team" }, row.teamName),
-                el("div", { class: "owner" }, row.managerName),
-              ])
-            )
-          ),
-        ])
+      const select = el(
+        "select",
+        { id: "manager-picker" },
+        standings
+          .slice()
+          .sort((a, b) => a.managerName.localeCompare(b.managerName))
+          .map((row) => el("option", { value: row.ownerId }, `${row.managerName} (${row.teamName})`))
       );
+      select.addEventListener("change", () => {
+        if (select.value) window.location.href = `manager.html?id=${encodeURIComponent(select.value)}`;
+      });
 
       content.appendChild(
         el("div", { class: "card" }, [
-          el("h2", {}, "All-Time Standings"),
-          el("div", { class: "table-scroll" }, buildAllTimeTable(standings)),
+          el("h2", {}, "Look Up a Manager"),
+          el("div", { class: "manager-picker" }, [el("label", { for: "manager-picker" }, "Manager:"), select]),
         ])
+      );
+
+      const tableContainer = el("div", { class: "table-scroll" });
+      renderAllTimeTable(tableContainer, standings);
+
+      content.appendChild(
+        el("div", { class: "card" }, [el("h2", {}, "All-Time Standings"), tableContainer])
       );
     } catch (err) {
       content.innerHTML = "";
@@ -89,51 +106,71 @@
     }
   }
 
-  function buildAllTimeTable(standings) {
-    const sorted = [...standings].sort((a, b) => {
-      const aPct = (a.wins + a.ties * 0.5) / Math.max(1, a.wins + a.losses + a.ties);
-      const bPct = (b.wins + b.ties * 0.5) / Math.max(1, b.wins + b.losses + b.ties);
-      return bPct - aPct;
+  function statsFor(row) {
+    const games = Math.max(1, row.wins + row.losses + row.ties);
+    return {
+      manager: row.managerName.toLowerCase(),
+      seasons: row.seasonsPlayed,
+      wins: row.wins,
+      losses: row.losses,
+      ties: row.ties,
+      winpct: (row.wins + row.ties * 0.5) / games,
+      pf: row.pointsFor / games,
+      pa: row.pointsAgainst / games,
+      champs: row.championships,
+    };
+  }
+
+  function renderAllTimeTable(container, standings) {
+    const computed = standings.map((row) => ({ row, s: statsFor(row) }));
+    computed.sort((a, b) => {
+      const av = a.s[sortState.key];
+      const bv = b.s[sortState.key];
+      const cmp = typeof av === "string" ? av.localeCompare(bv) : av - bv;
+      return sortState.dir === "asc" ? cmp : -cmp;
     });
 
     const table = el("table");
-    table.appendChild(
-      el("thead", {}, [
-        el("tr", {}, [
-          el("th", {}, "#"),
-          el("th", {}, "Manager"),
-          el("th", {}, "Team"),
-          el("th", {}, "Seasons"),
-          el("th", {}, "W"),
-          el("th", {}, "L"),
-          el("th", {}, "T"),
-          el("th", {}, "Win %"),
-          el("th", {}, "PF"),
-          el("th", {}, "PA"),
-          el("th", {}, "🏆"),
-        ]),
-      ])
-    );
+    const headerCells = [el("th", {}, "#")];
+    SORT_COLUMNS.forEach((col) => {
+      const isActive = sortState.key === col.key;
+      const arrow = isActive ? (sortState.dir === "asc" ? " ▲" : " ▼") : "";
+      const th = el("th", { class: "sortable-th" }, col.label + arrow);
+      th.addEventListener("click", () => {
+        if (sortState.key === col.key) {
+          sortState.dir = sortState.dir === "asc" ? "desc" : "asc";
+        } else {
+          sortState.key = col.key;
+          sortState.dir = col.numeric ? "desc" : "asc";
+        }
+        renderAllTimeTable(container, standings);
+      });
+      headerCells.push(th);
+    });
+    table.appendChild(el("thead", {}, [el("tr", {}, headerCells)]));
+
     const tbody = el("tbody");
-    sorted.forEach((row, i) => {
+    computed.forEach(({ row }, i) => {
+      const games = Math.max(1, row.wins + row.losses + row.ties);
       tbody.appendChild(
         el("tr", {}, [
           el("td", { class: i === 0 ? "rank-1" : "" }, String(i + 1)),
           el("td", {}, managerLink(row.ownerId, row.managerName)),
-          el("td", {}, managerLink(row.ownerId, row.teamName)),
           el("td", {}, String(row.seasonsPlayed)),
           el("td", {}, String(row.wins)),
           el("td", {}, String(row.losses)),
           el("td", {}, String(row.ties)),
           el("td", {}, winPct(row.wins, row.losses, row.ties)),
-          el("td", {}, row.pointsFor.toFixed(2)),
-          el("td", {}, row.pointsAgainst.toFixed(2)),
+          el("td", {}, (row.pointsFor / games).toFixed(1)),
+          el("td", {}, (row.pointsAgainst / games).toFixed(1)),
           el("td", {}, row.championships > 0 ? `${row.championships}` : "—"),
         ])
       );
     });
     table.appendChild(tbody);
-    return table;
+
+    container.innerHTML = "";
+    container.appendChild(table);
   }
 
   render();

@@ -108,7 +108,7 @@ async function updateManagerMap(ownersRows, extraOwnerNames) {
 function personFor(map, excelName) {
   const entry = resolveByExcelName(map, excelName);
   if (!entry) throw new Error(`No manager-map entry for Excel owner "${excelName}" (updateManagerMap should have created one).`);
-  return { ownerId: entry.personId, managerName: entry.canonicalName };
+  return { ownerId: entry.personId, managerName: entry.canonicalName, isActive: (entry.sleeperUsernames || []).length > 0 };
 }
 
 // Finds the other row representing the same game. Tries the stated
@@ -175,6 +175,7 @@ function buildSeasons(playerRows, seasonRows, map) {
         ownerId: person.ownerId,
         managerName: person.managerName,
         teamName: person.managerName,
+        isActive: person.isActive,
         wins: rows.reduce((s, r) => s + (r.Win || 0), 0),
         losses: rows.reduce((s, r) => s + (r.Loss || 0), 0),
         ties: rows.reduce((s, r) => s + (r.Tie || 0), 0),
@@ -213,6 +214,48 @@ function buildSeasons(playerRows, seasonRows, map) {
   return seasons;
 }
 
+// If there's no real season yet for the year right after the latest Excel
+// import (i.e. Sleeper hasn't been fetched for it), synthesize an honest
+// "nothing played yet" placeholder using the current roster's real names —
+// better than either showing stale prior-year data as "current" or nothing
+// at all. Sleeper overwrites this the moment it's actually fetched for that
+// year (see fetch-sleeper-data.mjs's merge priority, which — unlike for
+// "excel"/"manual" seasons — does not let a "placeholder" source block it).
+function buildPlaceholderSeason(year, ownersRows, map) {
+  const standings = ownersRows
+    .map((row) => row["Owner Name"])
+    .filter(Boolean)
+    .map((excelName, i) => {
+      const person = personFor(map, excelName);
+      return {
+        ownerId: person.ownerId,
+        managerName: person.managerName,
+        teamName: person.managerName,
+        isActive: person.isActive,
+        wins: 0,
+        losses: 0,
+        ties: 0,
+        pointsFor: 0,
+        pointsAgainst: 0,
+        rank: i + 1,
+      };
+    });
+
+  return {
+    year,
+    leagueId: null,
+    status: "pre_draft",
+    name: `WFFL ${year}`,
+    source: "placeholder",
+    standings,
+    champion: null,
+    runnerUp: null,
+    games: [],
+    settings: null,
+    previousLeagueId: null,
+  };
+}
+
 async function main() {
   const xlsxPath = process.argv[2] || DEFAULT_XLSX_PATH;
   console.log(`Reading ${xlsxPath}...`);
@@ -245,7 +288,16 @@ async function main() {
   // than just not having that season yet.
   const excelYears = new Set(excelSeasons.map((s) => s.year));
   const keptOtherSeasons = (existing.seasons || []).filter((s) => !excelYears.has(s.year) && s.source !== "sample");
-  const allSeasons = [...excelSeasons, ...keptOtherSeasons].sort((a, b) => b.year - a.year);
+
+  const latestExcelYear = Math.max(...excelSeasons.map((s) => s.year));
+  const nextYear = latestExcelYear + 1;
+  const haveNextYearAlready = excelYears.has(nextYear) || keptOtherSeasons.some((s) => s.year === nextYear);
+  const placeholderSeasons = haveNextYearAlready ? [] : [buildPlaceholderSeason(nextYear, ownersRows, map)];
+  if (placeholderSeasons.length > 0) {
+    console.log(`No data yet for ${nextYear} — added a placeholder season with the current roster (all 0-0-0) until Sleeper is fetched for it.`);
+  }
+
+  const allSeasons = [...excelSeasons, ...keptOtherSeasons, ...placeholderSeasons].sort((a, b) => b.year - a.year);
 
   const allTime = computeAggregates(allSeasons);
 
