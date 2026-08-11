@@ -1,0 +1,37 @@
+name: Update League Data
+
+on:
+  schedule:
+    # Every day at 09:00 UTC. During the season you may want this more frequent
+    # (e.g. every hour on game days) — just add more cron lines.
+    - cron: "0 9 * * *"
+  workflow_dispatch: {} # lets you click "Run workflow" manually in the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch latest Sleeper data
+        run: node scripts/fetch-sleeper-data.mjs
+
+      - name: Commit changes if data updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p assets
+          git add data/league-data.json data/manager-map.json assets/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Auto-update league data"
+            git push
+          fi
