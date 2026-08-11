@@ -139,6 +139,25 @@ about any *current* Sleeper manager it can't find in the map, so gaps are easy
 to spot — until someone is mapped, they still show up on the site under their
 raw Sleeper identity rather than breaking anything.
 
+### Team names come from Sleeper, everywhere, automatically
+
+`scripts/fetch-sleeper-data.mjs` writes each manager's current Sleeper team
+name onto their entry in `data/manager-map.json` as `currentTeamName`, and
+then stamps that name across **every** season in `league-data.json` —
+current, past Sleeper seasons, and Excel-imported history alike — instead of
+leaving old seasons showing whatever name was in effect back then (or, for
+Excel seasons, the person's real first name, since the spreadsheet has no
+team-name column). `import-excel-history.mjs` does the same stamping pass
+using whatever `currentTeamName` is already on file, so re-importing Excel
+data doesn't reset team names back to first names.
+
+Practically: rename your team on Sleeper any time, and the new name shows up
+site-wide (including every year of your history) the next time either script
+runs — no manual editing required. If a manager has never been resolved
+against a real Sleeper account (no `currentTeamName` on file yet), their
+seasons just keep showing their real name until the first successful Sleeper
+fetch.
+
 ## One-time setup
 
 ### 1. Enable GitHub Pages (free hosting)

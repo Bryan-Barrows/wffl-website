@@ -45,7 +45,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import { computeAggregates } from "./lib/aggregate.mjs";
-import { loadManagerMap, resolveByExcelName } from "./lib/manager-map.mjs";
+import { loadManagerMap, resolveByExcelName, applyCurrentTeamNames } from "./lib/manager-map.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "data", "league-data.json");
@@ -298,6 +298,13 @@ async function main() {
   }
 
   const allSeasons = [...excelSeasons, ...keptOtherSeasons, ...placeholderSeasons].sort((a, b) => b.year - a.year);
+
+  // Excel has no team-name column (teamName defaults to the person's real
+  // name above), so stamp in whatever current Sleeper team name is already
+  // on file in the manager map (set by fetch-sleeper-data.mjs) — keeps
+  // historical seasons showing real team names instead of first names as
+  // soon as a Sleeper fetch has ever run, without waiting for the next one.
+  applyCurrentTeamNames(allSeasons, map);
 
   const allTime = computeAggregates(allSeasons);
 

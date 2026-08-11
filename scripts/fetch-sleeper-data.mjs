@@ -25,7 +25,12 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { computeAggregates, computeWeekAwards } from "./lib/aggregate.mjs";
-import { loadManagerMap, resolveBySleeperIdentity } from "./lib/manager-map.mjs";
+import {
+  loadManagerMap,
+  resolveBySleeperIdentity,
+  updateCurrentTeamNames,
+  applyCurrentTeamNames,
+} from "./lib/manager-map.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "data", "league-data.json");
@@ -418,6 +423,23 @@ async function main() {
   const keptSleeperSeasons = seasons.filter((s) => !authoritativeYears.has(s.year));
 
   const allSeasons = [...authoritativeSeasons, ...keptSleeperSeasons, ...keptPlaceholders].sort((a, b) => b.year - a.year);
+
+  // Refresh each manager's current Sleeper team name (from the most current/
+  // upcoming league specifically, since that's the truest "current" name),
+  // then stamp it across every season — including Excel-imported history and
+  // older Sleeper seasons — so team names read consistently everywhere and
+  // automatically pick up any rename the next time this runs.
+  if (currentRosterMeta) {
+    const updates = [];
+    for (const meta of currentRosterMeta.values()) {
+      if (meta.ownerId && managerMap.some((e) => e.personId === meta.ownerId)) {
+        updates.push([meta.ownerId, meta.teamName]);
+      }
+    }
+    await updateCurrentTeamNames(managerMap, updates);
+  }
+  applyCurrentTeamNames(allSeasons, managerMap);
+
   const allTime = computeAggregates(allSeasons);
 
   // Use the most current Sleeper season's avatar as the site logo.

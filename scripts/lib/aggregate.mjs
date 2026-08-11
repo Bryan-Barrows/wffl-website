@@ -92,7 +92,7 @@ function computeCareerStandings(seasons) {
       agg.ties += row.ties;
       agg.pointsFor += row.pointsFor;
       agg.pointsAgainst += row.pointsAgainst;
-      agg.teamName = row.teamName; // most recent team name wins
+      agg.teamName = row.teamName; // every season's teamName is already normalized to the current Sleeper name (see applyCurrentTeamNames), so this just keeps the latest value
       agg.managerName = row.managerName;
       agg.years.push(season.year);
       if (row.isActive === false) agg.isActive = false;
