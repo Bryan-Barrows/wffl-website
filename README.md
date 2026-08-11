@@ -277,23 +277,26 @@ etc.) is regular prose that you'll update by hand if it ever changes.
 
 ## Proposed rule changes / discussion items
 
-The Constitution page also has a manually-maintained "Proposed Changes for
-Next Season" section — for rule changes already decided, and separately for
-open items to discuss/vote on. Edit `constitutionUpdates` in
-`data/league-data.json` (preserved across every auto-fetch, same as
-`draftCentral.keepers`):
+The Constitution page also has its own "Proposed Changes for Next Season"
+card — for rule changes already decided, and separately for open items to
+discuss/vote on. Same pattern as the constitution itself: it's a standalone
+Markdown file, **`data/proposed-changes.md`**, not part of `league-data.json`.
+Neither the Sleeper fetch script nor the Excel importer ever touches it.
 
-```json
-{
-  "constitutionUpdates": {
-    "ruleChanges": ["Playoff field expands from 6 to 8 teams starting next season."],
-    "discussionItems": ["Vote on switching from Half PPR to Full PPR scoring."]
-  }
-}
+Use two headers to split the two lists, each followed by a bullet list:
+
+```markdown
+# Rule Changes for Next Season
+
+- Playoff field expands from 6 to 8 teams starting next season.
+
+# To Discuss / Vote On
+
+- Vote on switching from Half PPR to Full PPR scoring.
 ```
 
-Each list is just plain strings — add, remove, or reword freely. Leave a list
-empty (`[]`) or omit `constitutionUpdates` entirely if there's nothing to note.
+Delete a section (or the whole file) if there's nothing to note there — the
+page shows a friendly empty state either way.
 
 ## Customizing
 

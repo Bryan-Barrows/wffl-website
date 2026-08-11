@@ -465,8 +465,10 @@ async function main() {
     isSampleData: false,
     lastUpdated: new Date().toISOString(),
     seasons: allSeasons,
-    constitutionText: undefined, // retired in favor of data/constitution.md; drops any leftover value
-    constitutionUpdates: existing.constitutionUpdates || null,
+    // Both retired in favor of standalone Markdown files (data/constitution.md,
+    // data/proposed-changes.md); drops any leftover value from before that move.
+    constitutionText: undefined,
+    constitutionUpdates: undefined,
     logoPath: logoPath || existing.logoPath || null,
     weeklyAwards: weeklyAwards || existing.weeklyAwards || null,
     draftCentral,

@@ -317,8 +317,10 @@ async function main() {
     seasons: allSeasons,
     allTime,
     logoPath: wasSample ? null : existing.logoPath || null,
-    constitutionText: undefined, // retired in favor of data/constitution.md; drops any leftover value
-    constitutionUpdates: wasSample ? null : existing.constitutionUpdates || null,
+    // Both retired in favor of standalone Markdown files (data/constitution.md,
+    // data/proposed-changes.md); drops any leftover value from before that move.
+    constitutionText: undefined,
+    constitutionUpdates: undefined,
     weeklyAwards: wasSample ? null : existing.weeklyAwards || null,
     draftCentral: wasSample ? null : existing.draftCentral || null,
   };

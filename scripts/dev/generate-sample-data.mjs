@@ -93,14 +93,18 @@ TBD — replace with your league's actual payout structure.
 TBD — replace with your league's actual last-place punishment tradition.
 `;
 
-const SAMPLE_CONSTITUTION_UPDATES = {
-  ruleChanges: [
-    "PLACEHOLDER — sample rule change: Playoff field expands from 6 to 8 teams starting next season.",
-  ],
-  discussionItems: [
-    "PLACEHOLDER — sample discussion item: Vote on switching from Half PPR to Full PPR scoring.",
-  ],
-};
+// data/proposed-changes.md is a separate plain file, same as constitution.md.
+const SAMPLE_PROPOSED_CHANGES_MD = `PLACEHOLDER — sample content. Replace \`data/proposed-changes.md\` with your
+league's real items once you have them.
+
+# Rule Changes for Next Season
+
+- Playoff field expands from 6 to 8 teams starting next season.
+
+# To Discuss / Vote On
+
+- Vote on switching from Half PPR to Full PPR scoring.
+`;
 
 const START_YEAR = 2012;
 const END_YEAR = 2025;
@@ -355,7 +359,6 @@ async function main() {
     isSampleData: true,
     lastUpdated: new Date().toISOString(),
     seasons,
-    constitutionUpdates: existing.constitutionUpdates || SAMPLE_CONSTITUTION_UPDATES,
     logoPath: existing.logoPath && !existing.isSampleData ? existing.logoPath : SAMPLE_LOGO_DATA_URI,
     weeklyAwards,
     draftCentral,
@@ -369,15 +372,21 @@ async function main() {
   await writeFile(DATA_PATH, JSON.stringify(output, null, 2) + "\n", "utf-8");
   console.log(`Wrote ${seasons.length} sample seasons to ${DATA_PATH}`);
 
-  // Only drop the sample constitution.md if there isn't already a real one —
-  // don't clobber real content with placeholder text on a re-run.
-  const constitutionPath = path.join(__dirname, "..", "..", "data", "constitution.md");
-  const alreadyHasReal = await readFile(constitutionPath, "utf-8")
+  // Only drop sample content into these standalone files if there isn't
+  // already something real there — don't clobber real content with
+  // placeholder text on a re-run.
+  await writeSampleFileIfNoRealContent("constitution.md", SAMPLE_CONSTITUTION_MD);
+  await writeSampleFileIfNoRealContent("proposed-changes.md", SAMPLE_PROPOSED_CHANGES_MD);
+}
+
+async function writeSampleFileIfNoRealContent(filename, sampleContent) {
+  const filePath = path.join(__dirname, "..", "..", "data", filename);
+  const alreadyHasReal = await readFile(filePath, "utf-8")
     .then((text) => !text.includes("PLACEHOLDER"))
     .catch(() => false);
   if (!alreadyHasReal) {
-    await writeFile(constitutionPath, SAMPLE_CONSTITUTION_MD, "utf-8");
-    console.log(`Wrote sample constitution to ${constitutionPath}`);
+    await writeFile(filePath, sampleContent, "utf-8");
+    console.log(`Wrote sample ${filename}`);
   }
 }
 

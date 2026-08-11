@@ -136,14 +136,7 @@
         );
       }
 
-      let constitutionMd = null;
-      try {
-        const res = await fetch("data/constitution.md", { cache: "no-store" });
-        if (res.ok) constitutionMd = await res.text();
-      } catch {
-        // no constitution file yet — empty state below handles it
-      }
-
+      const constitutionMd = await fetchTextFile("data/constitution.md");
       content.appendChild(
         el("div", { class: "card" }, [
           el("h2", {}, "Constitution"),
@@ -156,41 +149,35 @@
         ])
       );
 
-      content.appendChild(buildProposedChangesCard(data.constitutionUpdates));
+      const proposedChangesMd = await fetchTextFile("data/proposed-changes.md");
+      content.appendChild(
+        el("div", { class: "card" }, [
+          el("h2", {}, "📝 Proposed Changes for Next Season"),
+          proposedChangesMd
+            ? el("div", { class: "rules-content", html: renderMarkdown(proposedChangesMd) })
+            : emptyState([
+                "Nothing noted yet. Rule changes decided for next season, or open items to discuss/vote on, ",
+                "can be added to ",
+                el("code", {}, "data/proposed-changes.md"),
+                ".",
+              ]),
+        ])
+      );
     } catch (err) {
       content.innerHTML = "";
       content.appendChild(emptyState(`Couldn't load league data: ${err.message}`));
     }
   }
 
-  function buildProposedChangesCard(updates) {
-    const ruleChanges = updates?.ruleChanges || [];
-    const discussionItems = updates?.discussionItems || [];
-
-    const body = [];
-    if (ruleChanges.length === 0 && discussionItems.length === 0) {
-      body.push(
-        emptyState([
-          "Nothing noted yet. Rule changes decided for next season, or open items to discuss/vote on, ",
-          "can be added by hand to ",
-          el("code", {}, "constitutionUpdates"),
-          " in ",
-          el("code", {}, "data/league-data.json"),
-          ".",
-        ])
-      );
-    } else {
-      if (ruleChanges.length > 0) {
-        body.push(el("div", { class: "notes-subheading" }, "Rule Changes for Next Season"));
-        body.push(el("ul", { class: "notes-list" }, ruleChanges.map((item) => el("li", {}, item))));
-      }
-      if (discussionItems.length > 0) {
-        body.push(el("div", { class: "notes-subheading" }, "To Discuss / Vote On"));
-        body.push(el("ul", { class: "notes-list" }, discussionItems.map((item) => el("li", {}, item))));
-      }
+  // Fetches a plain-text/Markdown data file, returning null if it doesn't
+  // exist yet (404) rather than throwing — lets callers just check truthiness.
+  async function fetchTextFile(path) {
+    try {
+      const res = await fetch(path, { cache: "no-store" });
+      return res.ok ? await res.text() : null;
+    } catch {
+      return null;
     }
-
-    return el("div", { class: "card" }, [el("h2", {}, "📝 Proposed Changes for Next Season"), ...body]);
   }
 
   function buildSettingsSections(settings) {
