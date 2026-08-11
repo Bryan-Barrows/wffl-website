@@ -56,30 +56,41 @@ const SAMPLE_LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64
 </svg>`;
 const SAMPLE_LOGO_DATA_URI = `data:image/svg+xml;base64,${Buffer.from(SAMPLE_LOGO_SVG).toString("base64")}`;
 
-const SAMPLE_CONSTITUTION_TEXT = `PLACEHOLDER — this is sample text so you can see how the Constitution page
-looks. Replace this with your real league's rules once you upload them.
+// data/constitution.md is a separate plain file, not part of league-data.json
+// (see README) — this sample content demonstrates the Markdown rendering
+// (headers, bold, lists) so it can be visually checked without real content.
+const SAMPLE_CONSTITUTION_MD = `PLACEHOLDER — this is sample content so you can see how the Constitution page
+renders Markdown. Replace \`data/constitution.md\` with your real league's rules
+once you have them.
 
-1. LEAGUE FORMAT
-   12 teams, head-to-head, PPR scoring. 13-week regular season followed by a
-   3-week playoff bracket among the top 6 finishers.
+# League Format
 
-2. DRAFT
-   Snake draft order is randomized each year. Draft date/time set by
-   commissioner vote.
+12 teams, head-to-head, **PPR scoring**. 13-week regular season followed by a
+3-week playoff bracket among the top 6 finishers.
 
-3. SCORING
-   Standard PPR. See the auto-generated League Settings box on this page for
-   the exact scoring/roster rules currently on file (pulled automatically
-   from Sleeper).
+# Draft
 
-4. PLAYOFFS
-   Top 6 teams make the playoffs. Seeds 1-2 get a first-round bye.
+Snake draft order is randomized each year. Draft date/time set by commissioner
+vote.
 
-5. PAYOUTS
-   TBD — replace with your league's actual payout structure.
+# Scoring
 
-6. PENALTIES / LAST PLACE
-   TBD — replace with your league's actual last-place punishment tradition.
+Standard PPR — see the League Settings box above for the exact scoring/roster
+rules currently on file (pulled automatically from Sleeper).
+
+# Playoffs
+
+- Top 6 teams make the playoffs.
+- Seeds 1-2 get a first-round bye.
+- Championship and 3rd place games are played in the final week.
+
+# Payouts
+
+TBD — replace with your league's actual payout structure.
+
+# Penalties / Last Place
+
+TBD — replace with your league's actual last-place punishment tradition.
 `;
 
 const SAMPLE_CONSTITUTION_UPDATES = {
@@ -344,7 +355,6 @@ async function main() {
     isSampleData: true,
     lastUpdated: new Date().toISOString(),
     seasons,
-    constitutionText: existing.constitutionText || SAMPLE_CONSTITUTION_TEXT,
     constitutionUpdates: existing.constitutionUpdates || SAMPLE_CONSTITUTION_UPDATES,
     logoPath: existing.logoPath && !existing.isSampleData ? existing.logoPath : SAMPLE_LOGO_DATA_URI,
     weeklyAwards,
@@ -358,6 +368,17 @@ async function main() {
 
   await writeFile(DATA_PATH, JSON.stringify(output, null, 2) + "\n", "utf-8");
   console.log(`Wrote ${seasons.length} sample seasons to ${DATA_PATH}`);
+
+  // Only drop the sample constitution.md if there isn't already a real one —
+  // don't clobber real content with placeholder text on a re-run.
+  const constitutionPath = path.join(__dirname, "..", "..", "data", "constitution.md");
+  const alreadyHasReal = await readFile(constitutionPath, "utf-8")
+    .then((text) => !text.includes("PLACEHOLDER"))
+    .catch(() => false);
+  if (!alreadyHasReal) {
+    await writeFile(constitutionPath, SAMPLE_CONSTITUTION_MD, "utf-8");
+    console.log(`Wrote sample constitution to ${constitutionPath}`);
+  }
 }
 
 main();

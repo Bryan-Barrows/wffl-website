@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-08-10T21:31:44.229Z",
+  "lastUpdated": "2026-08-10T21:58:13.276Z",
   "seasons": [
     {
       "year": 2026,
@@ -19526,8 +19526,14 @@
       "previousLeagueId": null
     }
   ],
-  "constitutionText": null,
-  "constitutionUpdates": null,
+  "constitutionUpdates": {
+    "ruleChanges": [
+      "Keepers: the owner will now lose the pick the player was drafted with last year, not the round prior. This has been voted on and will go into effect in 2027."
+    ],
+    "discussionItems": [
+      "A proposal was raised to change the lottery system to offer more incentive for teams not to tank. This will be discussed at the draft."
+    ]
+  },
   "logoPath": null,
   "weeklyAwards": null,
   "draftCentral": null,

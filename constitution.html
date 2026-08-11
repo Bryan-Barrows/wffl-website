@@ -36,7 +36,83 @@
 </footer>
 
 <script src="js/data.js"></script>
+<script src="js/markdown.js"></script>
 <script>
+  // Scoring settings grouped for display. Only categories/fields actually
+  // present in the league's Sleeper scoring_settings show up — this list is
+  // just the menu of things we know how to label, not a claim every league
+  // uses all of them.
+  const SCORING_CATEGORIES = [
+    {
+      label: "Passing",
+      fields: [
+        ["pass_td", "Passing TD"],
+        ["pass_yd", "Passing Yards"],
+        ["pass_int", "Interception Thrown"],
+        ["pass_2pt", "2-pt Conversion (Pass)"],
+      ],
+    },
+    {
+      label: "Rushing",
+      fields: [
+        ["rush_td", "Rushing TD"],
+        ["rush_yd", "Rushing Yards"],
+        ["rush_2pt", "2-pt Conversion (Rush)"],
+      ],
+    },
+    {
+      label: "Receiving",
+      fields: [
+        ["rec", "Points per Reception"],
+        ["rec_yd", "Receiving Yards"],
+        ["rec_td", "Receiving TD"],
+        ["rec_2pt", "2-pt Conversion (Rec)"],
+        ["bonus_rec_te", "TE Reception Bonus"],
+      ],
+    },
+    {
+      label: "Turnovers & Misc",
+      fields: [
+        ["fum_lost", "Fumble Lost"],
+        ["fum_rec_td", "Fumble Return TD"],
+        ["safe", "Safety"],
+      ],
+    },
+    {
+      label: "Kicking",
+      fields: [
+        ["fgm_0_19", "FG Made 0-19 yds"],
+        ["fgm_20_29", "FG Made 20-29 yds"],
+        ["fgm_30_39", "FG Made 30-39 yds"],
+        ["fgm_40_49", "FG Made 40-49 yds"],
+        ["fgm_50p", "FG Made 50+ yds"],
+        ["fgmiss", "FG Missed"],
+        ["xpm", "Extra Point Made"],
+        ["xpmiss", "Extra Point Missed"],
+      ],
+    },
+    {
+      label: "Defense / Special Teams",
+      fields: [
+        ["def_td", "Defensive/ST TD"],
+        ["def_st_td", "Special Teams TD"],
+        ["def_st_ff", "ST Forced Fumble"],
+        ["def_st_fum_rec", "ST Fumble Recovery"],
+        ["blk_kick", "Blocked Kick"],
+        ["sack", "Sack"],
+        ["int", "Interception (Defense)"],
+        ["fum_rec", "Fumble Recovery (Defense)"],
+        ["pts_allow_0", "Points Allowed: 0"],
+        ["pts_allow_1_6", "Points Allowed: 1-6"],
+        ["pts_allow_7_13", "Points Allowed: 7-13"],
+        ["pts_allow_14_20", "Points Allowed: 14-20"],
+        ["pts_allow_21_27", "Points Allowed: 21-27"],
+        ["pts_allow_28_34", "Points Allowed: 28-34"],
+        ["pts_allow_35p", "Points Allowed: 35+"],
+      ],
+    },
+  ];
+
   async function render() {
     const content = document.getElementById("content");
     try {
@@ -49,22 +125,30 @@
       const banner = sampleBanner(data);
       if (banner) content.appendChild(banner);
 
-      const latestSeason = (data.seasons || [])[0];
-      if (latestSeason?.settings) {
+      const latestSeason = (data.seasons || []).find((s) => s.settings);
+      if (latestSeason) {
         content.appendChild(
           el("div", { class: "card" }, [
             el("h2", {}, "League Settings"),
             el("p", { class: "site-subtitle" }, `Auto-pulled from Sleeper for the ${latestSeason.year} season — always reflects the current rules.`),
-            buildSettingsList(latestSeason.settings),
+            buildSettingsSections(latestSeason.settings),
           ])
         );
+      }
+
+      let constitutionMd = null;
+      try {
+        const res = await fetch("data/constitution.md", { cache: "no-store" });
+        if (res.ok) constitutionMd = await res.text();
+      } catch {
+        // no constitution file yet — empty state below handles it
       }
 
       content.appendChild(
         el("div", { class: "card" }, [
           el("h2", {}, "Constitution"),
-          data.constitutionText
-            ? el("div", { class: "rules-content" }, data.constitutionText)
+          constitutionMd
+            ? el("div", { class: "rules-content", html: renderMarkdown(constitutionMd) })
             : emptyState([
                 "The full league constitution hasn't been added yet. Once your rules document is uploaded, ",
                 "it will appear here.",
@@ -109,27 +193,52 @@
     return el("div", { class: "card" }, [el("h2", {}, "📝 Proposed Changes for Next Season"), ...body]);
   }
 
-  function buildSettingsList(settings) {
+  function buildSettingsSections(settings) {
+    const wrap = el("div", {});
+
     const items = [];
     if (settings.numTeams != null) items.push(["Teams", settings.numTeams]);
     if (settings.playoffTeams != null) items.push(["Playoff Teams", settings.playoffTeams]);
     if (settings.playoffWeekStart != null) items.push(["Playoffs Start", `Week ${settings.playoffWeekStart}`]);
     if (settings.rosterPositions) items.push(["Roster", summarizeRoster(settings.rosterPositions)]);
-    if (settings.scoringSettings) {
-      const s = settings.scoringSettings;
-      const bits = [];
-      if (s.rec != null) bits.push(`${s.rec} pt/reception (${s.rec === 1 ? "Full PPR" : s.rec === 0.5 ? "Half PPR" : s.rec === 0 ? "Standard" : "PPR"})`);
-      if (s.pass_td != null) bits.push(`${s.pass_td} pt/passing TD`);
-      if (s.rush_td != null) bits.push(`${s.rush_td} pt/rushing TD`);
-      if (s.rec_td != null) bits.push(`${s.rec_td} pt/receiving TD`);
-      if (bits.length) items.push(["Scoring", bits.join(", ")]);
+    if (items.length > 0) {
+      wrap.appendChild(
+        el(
+          "ul",
+          { class: "settings-list" },
+          items.map(([k, v]) => el("li", {}, [el("span", { class: "k" }, k), el("span", {}, String(v))]))
+        )
+      );
     }
 
-    return el(
-      "ul",
-      { class: "settings-list" },
-      items.map(([k, v]) => el("li", {}, [el("span", { class: "k" }, k), el("span", {}, String(v))]))
-    );
+    const s = settings.scoringSettings;
+    if (s) {
+      SCORING_CATEGORIES.forEach((cat) => {
+        const catItems = cat.fields
+          .filter(([key]) => s[key] != null)
+          .map(([key, label]) => [label, formatScoringValue(key, s[key])]);
+        if (catItems.length === 0) return;
+        wrap.appendChild(el("div", { class: "notes-subheading" }, cat.label));
+        wrap.appendChild(
+          el(
+            "ul",
+            { class: "settings-list" },
+            catItems.map(([k, v]) => el("li", {}, [el("span", { class: "k" }, k), el("span", {}, v)]))
+          )
+        );
+      });
+    }
+
+    return wrap;
+  }
+
+  function formatScoringValue(key, value) {
+    // Yardage-based settings are stored as points-per-yard (e.g. 0.1 = 1pt/10yds).
+    if (/_yd$/.test(key) && value > 0 && value < 1) {
+      return `1 pt / ${Math.round(1 / value)} yds`;
+    }
+    const sign = value > 0 ? "+" : "";
+    return `${sign}${value} pt${Math.abs(value) === 1 ? "" : "s"}`;
   }
 
   function summarizeRoster(positions) {

@@ -465,7 +465,7 @@ async function main() {
     isSampleData: false,
     lastUpdated: new Date().toISOString(),
     seasons: allSeasons,
-    constitutionText: existing.constitutionText || null,
+    constitutionText: undefined, // retired in favor of data/constitution.md; drops any leftover value
     constitutionUpdates: existing.constitutionUpdates || null,
     logoPath: logoPath || existing.logoPath || null,
     weeklyAwards: weeklyAwards || existing.weeklyAwards || null,

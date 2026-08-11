@@ -317,7 +317,7 @@ async function main() {
     seasons: allSeasons,
     allTime,
     logoPath: wasSample ? null : existing.logoPath || null,
-    constitutionText: wasSample ? null : existing.constitutionText || null,
+    constitutionText: undefined, // retired in favor of data/constitution.md; drops any leftover value
     constitutionUpdates: wasSample ? null : existing.constitutionUpdates || null,
     weeklyAwards: wasSample ? null : existing.weeklyAwards || null,
     draftCentral: wasSample ? null : existing.draftCentral || null,

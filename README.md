@@ -24,9 +24,10 @@ placeholder-data preview mode works if you ever want to regenerate it.
   pair of managers.
 - **History** (`history.html`) — Hall of Fame (championship counts) and champions
   by season.
-- **Constitution** (`constitution.html`) — league rules, plus a "League Settings"
-  box that's auto-pulled from Sleeper (scoring, roster size, playoff format) so it
-  never goes stale.
+- **Constitution** (`constitution.html`) — league rules (from `data/constitution.md`,
+  rendered as Markdown), plus a "League Settings" box auto-pulled from Sleeper
+  (scoring, roster size, playoff format) so it never goes stale, and a manually
+  maintained "Proposed Changes for Next Season" section.
 
 ## How it works
 
@@ -245,13 +246,42 @@ script never touches it, so it survives every auto-update):
 `ownerId` should match the `personId` you used in `data/manager-map.json` so
 the keeper links to the right manager's profile.
 
+## League Constitution
+
+The full rules document lives at **`data/constitution.md`** — a plain
+Markdown file, not part of `league-data.json`. This is deliberate: it's the
+one piece of content you'll likely hand-edit repeatedly over time, and a
+standalone file is far easier to maintain than a string embedded in a large
+JSON blob (no escaping newlines, no risk of breaking unrelated site data with
+a stray character). Neither the Sleeper fetch script nor the Excel importer
+ever touches this file.
+
+Supported Markdown: `# `/`## `/`### ` headers, `**bold**`, `*italic*`,
+`- ` / `* ` bullet lists, `1. ` numbered lists, `---` horizontal rules, and
+plain paragraphs. GitHub also renders `.md` files natively, so editing it
+through GitHub's web UI (pencil icon) gives you a live preview before you
+commit.
+
+For anything already shown in the auto-pulled **League Settings** box above
+it on the page (team count, roster composition, playoff format, and the
+scoring categories it covers — passing/rushing/receiving/kicking/defense),
+don't hardcode the numbers in the Markdown — point to the box instead, e.g.:
+
+> *See the League Settings box above for current roster size and scoring —
+> it's pulled automatically from Sleeper and always reflects what's actually
+> in effect.*
+
+That way the two can never drift out of sync. Anything **not** covered by
+that box (payout structure, punishment traditions, draft-day procedures,
+etc.) is regular prose that you'll update by hand if it ever changes.
+
 ## Proposed rule changes / discussion items
 
 The Constitution page also has a manually-maintained "Proposed Changes for
 Next Season" section — for rule changes already decided, and separately for
 open items to discuss/vote on. Edit `constitutionUpdates` in
 `data/league-data.json` (preserved across every auto-fetch, same as
-`constitutionText` and `draftCentral.keepers`):
+`draftCentral.keepers`):
 
 ```json
 {
@@ -268,8 +298,7 @@ empty (`[]`) or omit `constitutionUpdates` entirely if there's nothing to note.
 ## Customizing
 
 - League name: edit `leagueName` in `data/league-data.json` (persists across auto-fetches).
-- League constitution text: edit `constitutionText` in `data/league-data.json`
-  (also persists across auto-fetches — the fetch script never touches it).
+- League constitution: edit `data/constitution.md` directly (see "League Constitution" above).
 - Colors/branding: `css/style.css`.
 - Update frequency: edit the `cron` line in `.github/workflows/update-data.yml`
   (currently once a day; you could set it hourly during the season).
