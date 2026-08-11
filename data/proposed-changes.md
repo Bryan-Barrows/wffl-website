@@ -5,3 +5,4 @@
 # To Discuss / Vote On
 
 - A proposal was raised to change the lottery system to offer more incentive for teams not to tank. This will be discussed at the draft.
+- Proposal to move to sleeper default playoff tiebreakers (points for instead of H2H)
