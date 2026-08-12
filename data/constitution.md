@@ -22,7 +22,7 @@
 - 1st place: $1,100
 - 2nd place: $475
 - 3rd place: $150
-- An additional $50 survivor-pool payout — separate from the regular payouts and unaffected by wins/losses. Each week, the team with the fewest points among those remaining is eliminated; the last team standing wins $50.
+- An additional $75 survivor-pool payout — separate from the regular payouts and unaffected by wins/losses. Each week, the team with the fewest points among those remaining is eliminated; the last team standing wins $50.
 
 # Draft / Lottery
 - A modified lottery is used to determine the draft order. The 6 teams that did not make the playoffs in the prior year go into the first pot — the last-place team has the highest chance at the first pick, and so on.
