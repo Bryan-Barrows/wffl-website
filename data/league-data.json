@@ -19791,13 +19791,14 @@
       }
     ],
     "keepers": [
-      { "ownerID": "p1", "playerName": "Bhayshul Tuten", "round": 11 },
-      { "ownerID": "p1", "playerName": "Harold Fannin", "round": 15 },
-      { "ownerID": "p9", "playerName": "Caleb Williams", "round": 12 },
-      { "ownerID": "p2", "playerName": "Jonathan Taylor", "round": 1 },
-      { "ownerID": "p2", "playerName": "Jaxson Dart", "round": 15 },
-      { "ownerID": "p5", "playerName": "Jaylen Waddle", "round": 4 },
-      { "ownerID": "p5", "playerName": "Chris Godwin", "round": 8 }
+      { "ownerId": "p1", "playerName": "Bhayshul Tuten", "round": 11 },
+      { "ownerId": "p1", "playerName": "Harold Fannin", "round": 15 },
+      { "ownerId": "p9", "playerName": "Caleb Williams", "round": 12 },
+      { "ownerId": "p2", "playerName": "Jonathan Taylor", "round": 1 },
+      { "ownerId": "p2", "playerName": "Jaxson Dart", "round": 15 },
+      { "ownerId": "p5", "playerName": "Jaylen Waddle", "round": 4 },
+      { "ownerId": "p5", "playerName": "Chris Godwin", "round": 8 },
+      { "ownerId": "p4", "playerName": "Rome Odunze", "round": 6 }
     ]
   },
   "allTime": {
