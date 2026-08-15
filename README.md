@@ -256,14 +256,22 @@ script never touches it, so it survives every auto-update):
 {
   "draftCentral": {
     "keepers": [
-      { "ownerId": "p1", "teamName": "...", "playerName": "...", "round": 4, "notes": "" }
+      { "ownerId": "p1", "playerName": "...", "round": 4, "notes": "" }
     ]
   }
 }
 ```
 
 `ownerId` should match the `personId` you used in `data/manager-map.json` so
-the keeper links to the right manager's profile.
+the keeper links to the right manager's profile. `round` is the draft round
+the keeper costs (per the "forfeit the pick one round earlier" rule in the
+Constitution). `notes` is optional — drop the field entirely, or leave it
+`""`, if there's nothing to add.
+
+You don't need a `teamName` field — the page looks that up live from
+`ownerId` the same way every other page does, so it always shows that
+manager's current Sleeper team name instead of whatever was true when you
+typed the entry in.
 
 ## League Constitution
 

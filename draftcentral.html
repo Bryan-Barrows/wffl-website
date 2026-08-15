@@ -81,7 +81,7 @@
         el("div", { class: "card" }, [
           el("h2", {}, "Keepers"),
           keepers.length > 0
-            ? el("div", { class: "table-scroll" }, buildKeepersTable(keepers))
+            ? el("div", { class: "table-scroll" }, buildKeepersTable(keepers, data))
             : emptyState(["No keepers entered yet. Keepers aren't tracked by Sleeper, so add them by hand to ", el("code", {}, "data/league-data.json"), " under ", el("code", {}, "draftCentral.keepers"), "."]),
         ])
       );
@@ -175,7 +175,7 @@
     return table;
   }
 
-  function buildKeepersTable(keepers) {
+  function buildKeepersTable(keepers, data) {
     const table = el("table");
     table.appendChild(
       el("thead", {}, [
@@ -184,9 +184,14 @@
     );
     const tbody = el("tbody");
     keepers.forEach((k) => {
+      // Team name is looked up live from ownerId (same source as everywhere
+      // else on the site) rather than read off the keeper entry itself, so a
+      // keeper you entered years ago still shows whatever team name that
+      // manager currently has on Sleeper instead of going stale.
+      const teamName = careerStanding(data, k.ownerId)?.teamName || k.teamName || "Unknown";
       tbody.appendChild(
         el("tr", {}, [
-          el("td", {}, managerLink(k.ownerId, k.teamName)),
+          el("td", {}, managerLink(k.ownerId, teamName)),
           el("td", {}, k.playerName),
           el("td", {}, k.round != null ? `Round ${k.round}` : "—"),
           el("td", {}, k.notes || "—"),
