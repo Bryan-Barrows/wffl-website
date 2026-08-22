@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-08-21T09:25:30.334Z",
+  "lastUpdated": "2026-08-22T09:17:22.878Z",
   "seasons": [
     {
       "year": 2026,
@@ -19788,6 +19788,66 @@
         "currentOwnerId": "p1",
         "previousTeamName": "RubeusHagrid",
         "previousOwnerId": "p10"
+      },
+      {
+        "round": 14,
+        "season": "2026",
+        "originalTeamName": "Sweetwater All Stars",
+        "originalOwnerId": "p1",
+        "currentTeamName": "RubeusHagrid",
+        "currentOwnerId": "p10",
+        "previousTeamName": "Sweetwater All Stars",
+        "previousOwnerId": "p1"
+      },
+      {
+        "round": 14,
+        "season": "2026",
+        "originalTeamName": "Tsar Putin",
+        "originalOwnerId": "p7",
+        "currentTeamName": "RubeusHagrid",
+        "currentOwnerId": "p10",
+        "previousTeamName": "Tsar Putin",
+        "previousOwnerId": "p7"
+      },
+      {
+        "round": 14,
+        "season": "2026",
+        "originalTeamName": "kenwinhamjr",
+        "originalOwnerId": "p3",
+        "currentTeamName": "PAFL Schefter",
+        "currentOwnerId": "p2",
+        "previousTeamName": "kenwinhamjr",
+        "previousOwnerId": "p3"
+      },
+      {
+        "round": 15,
+        "season": "2026",
+        "originalTeamName": "Sweetwater All Stars",
+        "originalOwnerId": "p1",
+        "currentTeamName": "Obi Wan Caproni",
+        "currentOwnerId": "p6",
+        "previousTeamName": "Sweetwater All Stars",
+        "previousOwnerId": "p1"
+      },
+      {
+        "round": 15,
+        "season": "2026",
+        "originalTeamName": "Tsar Putin",
+        "originalOwnerId": "p7",
+        "currentTeamName": "Obi Wan Caproni",
+        "currentOwnerId": "p6",
+        "previousTeamName": "Tsar Putin",
+        "previousOwnerId": "p7"
+      },
+      {
+        "round": 15,
+        "season": "2026",
+        "originalTeamName": "kenwinhamjr",
+        "originalOwnerId": "p3",
+        "currentTeamName": "RubeusHagrid",
+        "currentOwnerId": "p10",
+        "previousTeamName": "kenwinhamjr",
+        "previousOwnerId": "p3"
       }
     ],
     "keepers": [
