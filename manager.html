@@ -36,6 +36,7 @@
 </footer>
 
 <script src="js/data.js"></script>
+<script src="js/markdown.js"></script>
 <script>
   async function render() {
     const content = document.getElementById("content");
@@ -68,10 +69,15 @@
 
       document.title = `${career.teamName} – Manager Profile`;
 
+      const biosMd = await fetchTextFile("data/bios.md");
+      const bioSections = parseNamedSections(biosMd);
+      const bio = bioSections.get(career.managerName.toLowerCase());
+
       content.appendChild(
         el("div", { class: "card" }, [
           el("h2", {}, `${career.teamName}`),
           el("p", { class: "site-subtitle" }, `Managed by ${career.managerName} · ${career.seasonsPlayed} season${career.seasonsPlayed === 1 ? "" : "s"} (${career.years[0]}–${career.years[career.years.length - 1]})`),
+          bio ? el("div", { class: "rules-content", html: renderMarkdown(bio) }) : null,
           el("div", { class: "stat-row" }, [
             statTile(`${career.wins}-${career.losses}${career.ties ? `-${career.ties}` : ""}`, "Career Record"),
             statTile(winPct(career.wins, career.losses, career.ties), "Win %"),

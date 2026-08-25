@@ -169,17 +169,6 @@
     }
   }
 
-  // Fetches a plain-text/Markdown data file, returning null if it doesn't
-  // exist yet (404) rather than throwing — lets callers just check truthiness.
-  async function fetchTextFile(path) {
-    try {
-      const res = await fetch(path, { cache: "no-store" });
-      return res.ok ? await res.text() : null;
-    } catch {
-      return null;
-    }
-  }
-
   function buildSettingsSections(settings) {
     const wrap = el("div", {});
 

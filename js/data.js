@@ -87,6 +87,44 @@ function getParam(name) {
   return new URLSearchParams(location.search).get(name);
 }
 
+// Fetches a plain-text/Markdown data file, returning null if it doesn't
+// exist yet (404) rather than throwing — lets callers just check truthiness.
+async function fetchTextFile(path) {
+  try {
+    const res = await fetch(path, { cache: "no-store" });
+    return res.ok ? await res.text() : null;
+  } catch {
+    return null;
+  }
+}
+
+// Splits a Markdown file into named sections by its top-level (`# `)
+// headers, keyed by the header text (case-insensitive). Used for content
+// files that hold one hand-written block per manager, e.g. data/bios.md —
+// { "Bryan": "...", "Brendan": "...", ... }.
+function parseNamedSections(md) {
+  const sections = new Map();
+  if (!md) return sections;
+  const lines = md.replace(/\r\n/g, "\n").split("\n");
+  let current = null;
+  let buf = [];
+  const flush = () => {
+    if (current) sections.set(current.toLowerCase(), buf.join("\n").trim());
+  };
+  for (const line of lines) {
+    const m = line.match(/^#\s+(.+?)\s*$/);
+    if (m) {
+      flush();
+      current = m[1];
+      buf = [];
+    } else if (current) {
+      buf.push(line);
+    }
+  }
+  flush();
+  return sections;
+}
+
 function careerStanding(data, ownerId) {
   return (data.allTime?.standings || []).find((s) => s.ownerId === ownerId) || null;
 }
