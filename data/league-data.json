@@ -19872,12 +19872,7 @@
         "round": 15
       },
       {
-        "ownerId": "p9",
-        "playerName": "Caleb Williams",
-        "round": 12
-      },
-      {
-        "ownerId": "p2",
+        "ownerId": "p2,
         "playerName": "Jonathan Taylor",
         "round": 1
       },
@@ -19887,20 +19882,75 @@
         "round": 15
       },
       {
+        "ownerId": "p4",
+        "playerName": "Rome Odunze",
+        "round": 6
+      },
+      {
+        "ownerId": "p4",
+        "playerName": "Matt Stafford",
+        "round": 15
+      },
+      {
+        "ownerId": "p5",
+        "playerName": "James Cook",
+        "round": 2
+      },
+      {
         "ownerId": "p5",
         "playerName": "Jaylen Waddle",
         "round": 4
       },
       {
-        "ownerId": "p5",
-        "playerName": "Chris Godwin",
+        "ownerId": "p6",
+        "playerName": "Michael Wilson",
+        "round": 14
+      },
+      {
+        "ownerId": "p6",
+        "playerName": "Rico Dowdle",
+        "round": 14
+      },
+      {
+        "ownerId": "p7",
+        "playerName": "Cam Skattebo",
         "round": 8
       },
       {
-        "ownerId": "p4",
-        "playerName": "Rome Odunze",
-        "round": 6
-      }
+        "ownerId": "p9",
+        "playerName": "Ken Walker",
+        "round": 2
+      },
+      {
+        "ownerId": "p9",
+        "playerName": "Caleb Williams",
+        "round": 12
+      },
+      {
+        "ownerId": "p10",
+        "playerName": "Colston Loveland",
+        "round": 8
+      },
+      {
+        "ownerId": "p10",
+        "playerName": "Bhayshul Tuten",
+        "round": 11
+      },
+      {
+        "ownerId": "p11",
+        "playerName": "Javonte Williams",
+        "round": 7
+      },
+      {
+        "ownerId": "p12",
+        "playerName": "Travis Etienne",
+        "round": 7
+      },
+      {
+        "ownerId": "p12",
+        "playerName": "Christian Watson",
+        "round": 15
+      },
     ]
   },
   "allTime": {
