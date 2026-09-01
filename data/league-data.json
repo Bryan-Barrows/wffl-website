@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-08-31T16:30:20.476Z",
+  "lastUpdated": "2026-09-01T13:47:15.116Z",
   "seasons": [
     {
       "year": 2026,
@@ -19788,6 +19788,16 @@
         "currentOwnerId": "p1",
         "previousTeamName": "RubeusHagrid",
         "previousOwnerId": "p10"
+      },
+      {
+        "round": 10,
+        "season": "2026",
+        "originalTeamName": "Tsar Putin",
+        "originalOwnerId": "p7",
+        "currentTeamName": "Tedmastaflex",
+        "currentOwnerId": "p4",
+        "previousTeamName": "Tsar Putin",
+        "previousOwnerId": "p7"
       },
       {
         "round": 14,
