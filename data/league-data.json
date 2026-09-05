@@ -19912,6 +19912,16 @@
         "round": 15
       },
       {
+        "ownerId": "p3",
+        "playerName": "Alec Pierce",
+        "round": 13
+      },
+      {
+        "ownerId": "p3",
+        "playerName": "",
+        "round": -
+      },
+      {
         "ownerId": "p4",
         "playerName": "Rome Odunze",
         "round": 6
@@ -19954,12 +19964,12 @@
       {
         "ownerId": "p8",
         "playerName": "",
-        "round": 
+        "round": -
       },
       {
         "ownerId": "p8",
         "playerName": "",
-        "round": 
+        "round": -
       },
       {
         "ownerId": "p9",
@@ -19989,7 +19999,7 @@
       {
         "ownerId": "p11",
         "playerName": "",
-        "round": 
+        "round": -
       },
       {
         "ownerId": "p12",
