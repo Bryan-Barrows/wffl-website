@@ -19919,7 +19919,7 @@
       {
         "ownerId": "p3",
         "playerName": "",
-        "round": -
+        "round": 0
       },
       {
         "ownerId": "p4",
@@ -19964,12 +19964,12 @@
       {
         "ownerId": "p8",
         "playerName": "",
-        "round": -
+        "round": 0
       },
       {
         "ownerId": "p8",
         "playerName": "",
-        "round": -
+        "round": 0
       },
       {
         "ownerId": "p9",
@@ -19999,7 +19999,7 @@
       {
         "ownerId": "p11",
         "playerName": "",
-        "round": -
+        "round": 0
       },
       {
         "ownerId": "p12",
