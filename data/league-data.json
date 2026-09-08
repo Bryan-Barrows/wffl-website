@@ -3,12 +3,12 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-09-07T14:34:52.603Z",
+  "lastUpdated": "2026-09-08T13:09:52.408Z",
   "seasons": [
     {
       "year": 2026,
       "leagueId": "1378040940861607936",
-      "status": "pre_draft",
+      "status": "in_season",
       "name": "Whippany Fantasy Football League",
       "avatar": null,
       "source": "sleeper",
@@ -160,7 +160,1520 @@
       ],
       "champion": null,
       "runnerUp": null,
-      "games": [],
+      "games": [
+        {
+          "week": 1,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          }
+        },
+        {
+          "week": 1,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 1,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 1,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 1,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 1,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 2,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 2,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          }
+        },
+        {
+          "week": 2,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 2,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 2,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 2,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 3,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          }
+        },
+        {
+          "week": 3,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 3,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 3,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 3,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 3,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 4,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          }
+        },
+        {
+          "week": 4,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 4,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 4,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 4,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 4,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 5,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 5,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 5,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 5,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 5,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 5,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 6,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 6,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 6,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          }
+        },
+        {
+          "week": 6,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 6,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 6,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 7,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 7,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 7,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 7,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 7,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 7,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 8,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          }
+        },
+        {
+          "week": 8,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 8,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 8,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 8,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 8,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 9,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 9,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          }
+        },
+        {
+          "week": 9,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 9,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 9,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 9,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 10,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 10,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 10,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 10,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 10,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 10,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 11,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 11,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 11,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 11,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 11,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 11,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 12,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 12,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          }
+        },
+        {
+          "week": 12,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 12,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 12,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 12,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 13,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 13,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 13,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 13,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 13,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 13,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 14,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          }
+        },
+        {
+          "week": 14,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 14,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 14,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 14,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 14,
+          "isPlayoff": false,
+          "teamA": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 15,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 15,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          }
+        },
+        {
+          "week": 15,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 15,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 15,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 15,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 16,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 16,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 16,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          }
+        },
+        {
+          "week": 16,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 16,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 16,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 17,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 17,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          }
+        },
+        {
+          "week": 17,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 17,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          }
+        },
+        {
+          "week": 17,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        },
+        {
+          "week": 17,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          }
+        },
+        {
+          "week": 18,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p1",
+            "teamName": "Sweetwater All Stars",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p8",
+            "teamName": "The Buka Buka Tribe",
+            "score": 0
+          }
+        },
+        {
+          "week": 18,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p7",
+            "teamName": "Tsar Putin",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p2",
+            "teamName": "PAFL Schefter",
+            "score": 0
+          }
+        },
+        {
+          "week": 18,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p3",
+            "teamName": "kenwinhamjr",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p12",
+            "teamName": "Huy Phung’s Dung Dynasty",
+            "score": 0
+          }
+        },
+        {
+          "week": 18,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p4",
+            "teamName": "Tedmastaflex",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p9",
+            "teamName": "JSimsRL",
+            "score": 0
+          }
+        },
+        {
+          "week": 18,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p5",
+            "teamName": "BoatBoyz",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p10",
+            "teamName": "RubeusHagrid",
+            "score": 0
+          }
+        },
+        {
+          "week": 18,
+          "isPlayoff": true,
+          "teamA": {
+            "ownerId": "p6",
+            "teamName": "Obi Wan Caproni",
+            "score": 0
+          },
+          "teamB": {
+            "ownerId": "p11",
+            "teamName": "Chop Shop",
+            "score": 0
+          }
+        }
+      ],
       "settings": {
         "numTeams": 12,
         "playoffWeekStart": 15,
@@ -19608,12 +21121,37 @@
     }
   ],
   "logoPath": null,
-  "weeklyAwards": null,
+  "weeklyAwards": {
+    "year": 2026,
+    "week": 18,
+    "mostPoints": {
+      "ownerId": "p1",
+      "teamName": "Sweetwater All Stars",
+      "points": 0,
+      "opponentTeamName": "The Buka Buka Tribe"
+    },
+    "fewestPoints": {
+      "ownerId": "p1",
+      "teamName": "Sweetwater All Stars",
+      "points": 0,
+      "opponentTeamName": "The Buka Buka Tribe"
+    },
+    "biggestMargin": null,
+    "topPlayer": {
+      "playerId": "11566",
+      "playerName": "Jayden Daniels",
+      "position": "QB",
+      "nflTeam": "WAS",
+      "points": 0,
+      "fantasyTeamName": "Sweetwater All Stars",
+      "fantasyOwnerId": "p1"
+    }
+  },
   "draftCentral": {
     "year": 2026,
     "draftId": "1378040940878393344",
-    "status": "pre_draft",
-    "startTime": "2026-09-08T00:00:00.000Z",
+    "status": "complete",
+    "startTime": "2026-09-08T00:00:08.043Z",
     "draftOrder": [
       {
         "pick": 1,
@@ -20019,7 +21557,7 @@
         "ownerId": "p1",
         "managerName": "Bryan",
         "teamName": "Sweetwater All Stars",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 103,
         "losses": 82,
         "ties": 2,
@@ -20055,14 +21593,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p4",
         "managerName": "Ted",
         "teamName": "Tedmastaflex",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 99,
         "losses": 87,
         "ties": 1,
@@ -20096,14 +21635,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p11",
         "managerName": "Dave",
         "teamName": "Chop Shop",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 96,
         "losses": 90,
         "ties": 1,
@@ -20135,14 +21675,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p12",
         "managerName": "Lou",
         "teamName": "Huy Phung’s Dung Dynasty",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 94,
         "losses": 93,
         "ties": 0,
@@ -20174,14 +21715,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p8",
         "managerName": "Mark",
         "teamName": "The Buka Buka Tribe",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 94,
         "losses": 91,
         "ties": 2,
@@ -20212,14 +21754,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p6",
         "managerName": "Steve",
         "teamName": "Obi Wan Caproni",
-        "seasonsPlayed": 13,
+        "seasonsPlayed": 14,
         "wins": 91,
         "losses": 83,
         "ties": 0,
@@ -20252,14 +21795,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p10",
         "managerName": "Lefty",
         "teamName": "RubeusHagrid",
-        "seasonsPlayed": 11,
+        "seasonsPlayed": 12,
         "wins": 85,
         "losses": 62,
         "ties": 1,
@@ -20291,52 +21835,15 @@
           2022,
           2023,
           2024,
-          2025
-        ]
-      },
-      {
-        "ownerId": "p5",
-        "managerName": "Luke",
-        "teamName": "BoatBoyz",
-        "seasonsPlayed": 14,
-        "wins": 84,
-        "losses": 102,
-        "ties": 1,
-        "pointsFor": 21483.86,
-        "pointsAgainst": 21935.63,
-        "championships": 1,
-        "championshipYears": [
-          2023
-        ],
-        "runnerUps": 1,
-        "runnerUpYears": [
-          2020
-        ],
-        "thirdPlaces": 0,
-        "thirdPlaceYears": [],
-        "isActive": true,
-        "years": [
-          2012,
-          2013,
-          2014,
-          2015,
-          2016,
-          2017,
-          2018,
-          2019,
-          2020,
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p7",
         "managerName": "Tim",
         "teamName": "Tsar Putin",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 84,
         "losses": 103,
         "ties": 0,
@@ -20370,14 +21877,54 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
+        ]
+      },
+      {
+        "ownerId": "p5",
+        "managerName": "Luke",
+        "teamName": "BoatBoyz",
+        "seasonsPlayed": 15,
+        "wins": 84,
+        "losses": 102,
+        "ties": 1,
+        "pointsFor": 21483.86,
+        "pointsAgainst": 21935.63,
+        "championships": 1,
+        "championshipYears": [
+          2023
+        ],
+        "runnerUps": 1,
+        "runnerUpYears": [
+          2020
+        ],
+        "thirdPlaces": 0,
+        "thirdPlaceYears": [],
+        "isActive": true,
+        "years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p2",
         "managerName": "Brendan",
         "teamName": "PAFL Schefter",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 84,
         "losses": 101,
         "ties": 2,
@@ -20390,9 +21937,10 @@
           2012,
           2014
         ],
-        "thirdPlaces": 1,
+        "thirdPlaces": 2,
         "thirdPlaceYears": [
-          2022
+          2022,
+          2026
         ],
         "isActive": true,
         "years": [
@@ -20409,14 +21957,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p9",
         "managerName": "Justin",
         "teamName": "JSimsRL",
-        "seasonsPlayed": 14,
+        "seasonsPlayed": 15,
         "wins": 83,
         "losses": 102,
         "ties": 2,
@@ -20447,14 +21996,15 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
         "ownerId": "p3",
         "managerName": "Ken",
         "teamName": "kenwinhamjr",
-        "seasonsPlayed": 13,
+        "seasonsPlayed": 14,
         "wins": 82,
         "losses": 92,
         "ties": 0,
@@ -20482,7 +22032,8 @@
           2022,
           2023,
           2024,
-          2025
+          2025,
+          2026
         ]
       },
       {
@@ -20546,16 +22097,6 @@
         ]
       },
       {
-        "ownerId": "p11",
-        "managerName": "Dave",
-        "teamName": "Chop Shop",
-        "count": 2,
-        "years": [
-          2013,
-          2014
-        ]
-      },
-      {
         "ownerId": "p1",
         "managerName": "Bryan",
         "teamName": "Sweetwater All Stars",
@@ -20566,12 +22107,31 @@
         ]
       },
       {
-        "ownerId": "p10",
-        "managerName": "Lefty",
-        "teamName": "RubeusHagrid",
+        "ownerId": "p11",
+        "managerName": "Dave",
+        "teamName": "Chop Shop",
+        "count": 2,
+        "years": [
+          2013,
+          2014
+        ]
+      },
+      {
+        "ownerId": "p7",
+        "managerName": "Tim",
+        "teamName": "Tsar Putin",
         "count": 1,
         "years": [
-          2025
+          2015
+        ]
+      },
+      {
+        "ownerId": "p3",
+        "managerName": "Ken",
+        "teamName": "kenwinhamjr",
+        "count": 1,
+        "years": [
+          2021
         ]
       },
       {
@@ -20581,15 +22141,6 @@
         "count": 1,
         "years": [
           2012
-        ]
-      },
-      {
-        "ownerId": "p6",
-        "managerName": "Steve",
-        "teamName": "Obi Wan Caproni",
-        "count": 1,
-        "years": [
-          2019
         ]
       },
       {
@@ -20611,21 +22162,21 @@
         ]
       },
       {
-        "ownerId": "p7",
-        "managerName": "Tim",
-        "teamName": "Tsar Putin",
+        "ownerId": "p10",
+        "managerName": "Lefty",
+        "teamName": "RubeusHagrid",
         "count": 1,
         "years": [
-          2015
+          2025
         ]
       },
       {
-        "ownerId": "p3",
-        "managerName": "Ken",
-        "teamName": "kenwinhamjr",
+        "ownerId": "p6",
+        "managerName": "Steve",
+        "teamName": "Obi Wan Caproni",
         "count": 1,
         "years": [
-          2021
+          2019
         ]
       }
     ],
@@ -20639,12 +22190,12 @@
         "opponentTeamName": "Tsar Putin"
       },
       "fewestPointsGame": {
-        "year": 2018,
-        "week": 16,
-        "ownerId": "p11",
-        "teamName": "Chop Shop",
-        "points": 32,
-        "opponentTeamName": "Tedmastaflex"
+        "year": 2026,
+        "week": 1,
+        "ownerId": "p1",
+        "teamName": "Sweetwater All Stars",
+        "points": 0,
+        "opponentTeamName": "The Buka Buka Tribe"
       },
       "mostPointsSeason": {
         "year": 2022,
@@ -20654,11 +22205,11 @@
         "points": 2025.74
       },
       "fewestPointsSeason": {
-        "year": 2015,
-        "ownerId": "p2",
-        "teamName": "PAFL Schefter",
-        "managerName": "Brendan",
-        "points": 1211
+        "year": 2026,
+        "ownerId": "p1",
+        "teamName": "Sweetwater All Stars",
+        "managerName": "Bryan",
+        "points": 0
       },
       "biggestBlowout": {
         "year": 2018,
@@ -20711,49 +22262,17 @@
       {
         "ownerIds": [
           "p1",
-          "p4"
-        ],
-        "wins": {
-          "p1": 8,
-          "p4": 8
-        },
-        "ties": 0,
-        "meetings": 16,
-        "pointsBy": {
-          "p1": 1901.6399999999999,
-          "p4": 1910.76
-        }
-      },
-      {
-        "ownerIds": [
-          "p5",
           "p8"
         ],
         "wins": {
-          "p8": 10,
-          "p5": 9
+          "p1": 14,
+          "p8": 8
         },
-        "ties": 0,
-        "meetings": 19,
+        "ties": 3,
+        "meetings": 25,
         "pointsBy": {
-          "p8": 2199.94,
-          "p5": 2289.63
-        }
-      },
-      {
-        "ownerIds": [
-          "p10",
-          "p3"
-        ],
-        "wins": {
-          "p3": 2,
-          "p10": 8
-        },
-        "ties": 0,
-        "meetings": 10,
-        "pointsBy": {
-          "p3": 1061.94,
-          "p10": 1122.03
+          "p1": 3012.2,
+          "p8": 2634.33
         }
       },
       {
@@ -20765,8 +22284,8 @@
           "p7": 8,
           "p11": 12
         },
-        "ties": 0,
-        "meetings": 20,
+        "ties": 1,
+        "meetings": 21,
         "pointsBy": {
           "p7": 2226.06,
           "p11": 2405.5299999999997
@@ -20774,226 +22293,66 @@
       },
       {
         "ownerIds": [
-          "p6",
+          "p2",
           "p9"
-        ],
-        "wins": {
-          "p9": 6,
-          "p6": 10
-        },
-        "ties": 0,
-        "meetings": 16,
-        "pointsBy": {
-          "p9": 1718.4499999999998,
-          "p6": 2032.33
-        }
-      },
-      {
-        "ownerIds": [
-          "p12",
-          "p2"
         ],
         "wins": {
           "p2": 5,
-          "p12": 11
+          "p9": 10
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 2,
+        "meetings": 17,
         "pointsBy": {
-          "p2": 1715.04,
-          "p12": 1849.97
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p5"
-        ],
-        "wins": {
-          "p1": 7,
-          "p5": 8
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p1": 1803.4599999999998,
-          "p5": 1800.7600000000002
+          "p2": 1703.67,
+          "p9": 1847.72
         }
       },
       {
         "ownerIds": [
           "p12",
-          "p8"
-        ],
-        "wins": {
-          "p8": 6,
-          "p12": 8
-        },
-        "ties": 0,
-        "meetings": 14,
-        "pointsBy": {
-          "p8": 1554.3400000000001,
-          "p12": 1649.76
-        }
-      },
-      {
-        "ownerIds": [
-          "p11",
           "p3"
         ],
         "wins": {
-          "p3": 8,
-          "p11": 5
+          "p3": 9,
+          "p12": 7
         },
-        "ties": 0,
-        "meetings": 13,
-        "pointsBy": {
-          "p3": 1543.56,
-          "p11": 1512.38
-        }
-      },
-      {
-        "ownerIds": [
-          "p7",
-          "p9"
-        ],
-        "wins": {
-          "p7": 9,
-          "p9": 11
-        },
-        "ties": 0,
-        "meetings": 20,
-        "pointsBy": {
-          "p7": 2276.49,
-          "p9": 2303.94
-        }
-      },
-      {
-        "ownerIds": [
-          "p2",
-          "p4"
-        ],
-        "wins": {
-          "p2": 9,
-          "p4": 8
-        },
-        "ties": 1,
+        "ties": 2,
         "meetings": 18,
         "pointsBy": {
-          "p2": 1943.43,
-          "p4": 1914.49
-        }
-      },
-      {
-        "ownerIds": [
-          "p10",
-          "p6"
-        ],
-        "wins": {
-          "p10": 5,
-          "p6": 6
-        },
-        "ties": 0,
-        "meetings": 11,
-        "pointsBy": {
-          "p10": 1267.19,
-          "p6": 1328.4299999999998
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p2"
-        ],
-        "wins": {
-          "p1": 13,
-          "p2": 11
-        },
-        "ties": 0,
-        "meetings": 24,
-        "pointsBy": {
-          "p1": 3031.56,
-          "p2": 2868.18
-        }
-      },
-      {
-        "ownerIds": [
-          "p12",
-          "p5"
-        ],
-        "wins": {
-          "p12": 14,
-          "p5": 7
-        },
-        "ties": 0,
-        "meetings": 21,
-        "pointsBy": {
-          "p12": 2584.12,
-          "p5": 2427.8
+          "p3": 1792.27,
+          "p12": 1798.51
         }
       },
       {
         "ownerIds": [
           "p4",
-          "p8"
+          "p6"
         ],
         "wins": {
-          "p8": 8,
-          "p4": 8
+          "p4": 6,
+          "p6": 10
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 2,
+        "meetings": 18,
         "pointsBy": {
-          "p8": 1746.6599999999999,
-          "p4": 1776.56
-        }
-      },
-      {
-        "ownerIds": [
-          "p3",
-          "p7"
-        ],
-        "wins": {
-          "p7": 10,
-          "p3": 11
-        },
-        "ties": 0,
-        "meetings": 21,
-        "pointsBy": {
-          "p7": 2515.21,
-          "p3": 2423.46
+          "p4": 1796.61,
+          "p6": 1935.28
         }
       },
       {
         "ownerIds": [
           "p10",
-          "p9"
+          "p5"
         ],
         "wins": {
-          "p9": 13,
-          "p10": 7
+          "p5": 6,
+          "p10": 9
         },
-        "ties": 0,
-        "meetings": 20,
+        "ties": 2,
+        "meetings": 17,
         "pointsBy": {
-          "p9": 2470.48,
-          "p10": 2265.6499999999996
-        }
-      },
-      {
-        "ownerIds": [
-          "p11",
-          "p6"
-        ],
-        "wins": {
-          "p6": 13,
-          "p11": 11
-        },
-        "ties": 0,
-        "meetings": 24,
-        "pointsBy": {
-          "p6": 2766.79,
-          "p11": 2885.6
+          "p5": 1701.9,
+          "p10": 1817.8799999999999
         }
       },
       {
@@ -21005,8 +22364,8 @@
           "p1": 13,
           "p12": 13
         },
-        "ties": 0,
-        "meetings": 26,
+        "ties": 1,
+        "meetings": 27,
         "pointsBy": {
           "p1": 2972.46,
           "p12": 3096.5
@@ -21014,130 +22373,34 @@
       },
       {
         "ownerIds": [
-          "p3",
-          "p6"
-        ],
-        "wins": {
-          "p3": 8,
-          "p6": 12
-        },
-        "ties": 0,
-        "meetings": 20,
-        "pointsBy": {
-          "p3": 2377.8899999999994,
-          "p6": 2472.44
-        }
-      },
-      {
-        "ownerIds": [
-          "p4",
-          "p5"
-        ],
-        "wins": {
-          "p4": 14,
-          "p5": 9
-        },
-        "ties": 0,
-        "meetings": 23,
-        "pointsBy": {
-          "p4": 2803.58,
-          "p5": 2742.0699999999997
-        }
-      },
-      {
-        "ownerIds": [
-          "p11",
-          "p9"
-        ],
-        "wins": {
-          "p9": 9,
-          "p11": 13
-        },
-        "ties": 0,
-        "meetings": 22,
-        "pointsBy": {
-          "p9": 2514.91,
-          "p11": 2633.79
-        }
-      },
-      {
-        "ownerIds": [
-          "p10",
+          "p2",
           "p7"
         ],
         "wins": {
-          "p7": 6,
-          "p10": 6
+          "p7": 7,
+          "p2": 8
         },
-        "ties": 0,
-        "meetings": 12,
+        "ties": 3,
+        "meetings": 18,
         "pointsBy": {
-          "p7": 1450.9099999999999,
-          "p10": 1483.66
-        }
-      },
-      {
-        "ownerIds": [
-          "p2",
-          "p8"
-        ],
-        "wins": {
-          "p2": 8,
-          "p8": 13
-        },
-        "ties": 0,
-        "meetings": 21,
-        "pointsBy": {
-          "p2": 2308.56,
-          "p8": 2316.7000000000003
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p8"
-        ],
-        "wins": {
-          "p1": 14,
-          "p8": 8
-        },
-        "ties": 1,
-        "meetings": 23,
-        "pointsBy": {
-          "p1": 3012.2,
-          "p8": 2634.33
-        }
-      },
-      {
-        "ownerIds": [
-          "p12",
-          "p4"
-        ],
-        "wins": {
-          "p12": 16,
-          "p4": 9
-        },
-        "ties": 0,
-        "meetings": 25,
-        "pointsBy": {
-          "p12": 2956.9200000000005,
-          "p4": 2854.0299999999997
+          "p7": 1686.99,
+          "p2": 1608.79
         }
       },
       {
         "ownerIds": [
           "p10",
-          "p11"
+          "p8"
         ],
         "wins": {
-          "p10": 16,
-          "p11": 5
+          "p8": 7,
+          "p10": 7
         },
-        "ties": 0,
-        "meetings": 21,
+        "ties": 3,
+        "meetings": 17,
         "pointsBy": {
-          "p10": 2757.45,
-          "p11": 2302.77
+          "p8": 1583.58,
+          "p10": 1490.3400000000001
         }
       },
       {
@@ -21149,8 +22412,8 @@
           "p3": 9,
           "p9": 5
         },
-        "ties": 0,
-        "meetings": 14,
+        "ties": 1,
+        "meetings": 15,
         "pointsBy": {
           "p3": 1710.97,
           "p9": 1503.35
@@ -21158,18 +22421,482 @@
       },
       {
         "ownerIds": [
-          "p2",
+          "p4",
           "p5"
         ],
         "wins": {
-          "p2": 9,
+          "p4": 14,
+          "p5": 9
+        },
+        "ties": 2,
+        "meetings": 25,
+        "pointsBy": {
+          "p4": 2803.58,
+          "p5": 2742.0699999999997
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p6"
+        ],
+        "wins": {
+          "p6": 13,
+          "p11": 11
+        },
+        "ties": 2,
+        "meetings": 26,
+        "pointsBy": {
+          "p6": 2766.79,
+          "p11": 2885.6
+        }
+      },
+      {
+        "ownerIds": [
+          "p1",
+          "p7"
+        ],
+        "wins": {
+          "p1": 13,
+          "p7": 5
+        },
+        "ties": 2,
+        "meetings": 20,
+        "pointsBy": {
+          "p1": 2234.98,
+          "p7": 1944.4
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p2"
+        ],
+        "wins": {
+          "p2": 10,
+          "p11": 7
+        },
+        "ties": 1,
+        "meetings": 18,
+        "pointsBy": {
+          "p2": 2158.3099999999995,
+          "p11": 2050.25
+        }
+      },
+      {
+        "ownerIds": [
+          "p6",
+          "p8"
+        ],
+        "wins": {
+          "p8": 10,
+          "p6": 4
+        },
+        "ties": 1,
+        "meetings": 15,
+        "pointsBy": {
+          "p8": 1707.17,
+          "p6": 1619.69
+        }
+      },
+      {
+        "ownerIds": [
+          "p3",
+          "p4"
+        ],
+        "wins": {
+          "p3": 7,
+          "p4": 12
+        },
+        "ties": 3,
+        "meetings": 22,
+        "pointsBy": {
+          "p3": 2111.67,
+          "p4": 2318.8999999999996
+        }
+      },
+      {
+        "ownerIds": [
+          "p12",
+          "p5"
+        ],
+        "wins": {
+          "p12": 14,
+          "p5": 7
+        },
+        "ties": 1,
+        "meetings": 22,
+        "pointsBy": {
+          "p12": 2584.12,
+          "p5": 2427.8
+        }
+      },
+      {
+        "ownerIds": [
+          "p10",
+          "p9"
+        ],
+        "wins": {
+          "p9": 13,
+          "p10": 7
+        },
+        "ties": 1,
+        "meetings": 21,
+        "pointsBy": {
+          "p9": 2470.48,
+          "p10": 2265.6499999999996
+        }
+      },
+      {
+        "ownerIds": [
+          "p1",
+          "p2"
+        ],
+        "wins": {
+          "p1": 13,
+          "p2": 11
+        },
+        "ties": 2,
+        "meetings": 26,
+        "pointsBy": {
+          "p1": 3031.56,
+          "p2": 2868.18
+        }
+      },
+      {
+        "ownerIds": [
+          "p3",
+          "p7"
+        ],
+        "wins": {
+          "p7": 10,
+          "p3": 11
+        },
+        "ties": 3,
+        "meetings": 24,
+        "pointsBy": {
+          "p7": 2515.21,
+          "p3": 2423.46
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p8"
+        ],
+        "wins": {
+          "p8": 6,
+          "p11": 10
+        },
+        "ties": 2,
+        "meetings": 18,
+        "pointsBy": {
+          "p8": 1794.21,
+          "p11": 1937.8200000000002
+        }
+      },
+      {
+        "ownerIds": [
+          "p10",
+          "p12"
+        ],
+        "wins": {
+          "p12": 4,
+          "p10": 11
+        },
+        "ties": 3,
+        "meetings": 18,
+        "pointsBy": {
+          "p12": 1681.97,
+          "p10": 1798.11
+        }
+      },
+      {
+        "ownerIds": [
+          "p6",
+          "p9"
+        ],
+        "wins": {
+          "p9": 6,
+          "p6": 10
+        },
+        "ties": 2,
+        "meetings": 18,
+        "pointsBy": {
+          "p9": 1718.4499999999998,
+          "p6": 2032.33
+        }
+      },
+      {
+        "ownerIds": [
+          "p1",
+          "p5"
+        ],
+        "wins": {
+          "p1": 7,
           "p5": 8
         },
-        "ties": 0,
+        "ties": 3,
+        "meetings": 18,
+        "pointsBy": {
+          "p1": 1803.4599999999998,
+          "p5": 1800.7600000000002
+        }
+      },
+      {
+        "ownerIds": [
+          "p4",
+          "p7"
+        ],
+        "wins": {
+          "p7": 6,
+          "p4": 9
+        },
+        "ties": 1,
+        "meetings": 16,
+        "pointsBy": {
+          "p7": 1763.51,
+          "p4": 1838.2
+        }
+      },
+      {
+        "ownerIds": [
+          "p2",
+          "p3"
+        ],
+        "wins": {
+          "p2": 7,
+          "p3": 9
+        },
+        "ties": 1,
         "meetings": 17,
         "pointsBy": {
-          "p2": 1884.96,
-          "p5": 1930.24
+          "p2": 1890.8600000000001,
+          "p3": 1871.26
+        }
+      },
+      {
+        "ownerIds": [
+          "p12",
+          "p8"
+        ],
+        "wins": {
+          "p8": 6,
+          "p12": 8
+        },
+        "ties": 1,
+        "meetings": 15,
+        "pointsBy": {
+          "p8": 1554.3400000000001,
+          "p12": 1649.76
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p9"
+        ],
+        "wins": {
+          "p9": 9,
+          "p11": 13
+        },
+        "ties": 3,
+        "meetings": 25,
+        "pointsBy": {
+          "p9": 2514.91,
+          "p11": 2633.79
+        }
+      },
+      {
+        "ownerIds": [
+          "p10",
+          "p6"
+        ],
+        "wins": {
+          "p10": 5,
+          "p6": 6
+        },
+        "ties": 3,
+        "meetings": 14,
+        "pointsBy": {
+          "p10": 1267.19,
+          "p6": 1328.4299999999998
+        }
+      },
+      {
+        "ownerIds": [
+          "p1",
+          "p11"
+        ],
+        "wins": {
+          "p1": 9,
+          "p11": 9
+        },
+        "ties": 2,
+        "meetings": 20,
+        "pointsBy": {
+          "p1": 2256.1000000000004,
+          "p11": 2267.76
+        }
+      },
+      {
+        "ownerIds": [
+          "p12",
+          "p7"
+        ],
+        "wins": {
+          "p7": 11,
+          "p12": 7
+        },
+        "ties": 1,
+        "meetings": 19,
+        "pointsBy": {
+          "p7": 2142.71,
+          "p12": 1985.04
+        }
+      },
+      {
+        "ownerIds": [
+          "p2",
+          "p8"
+        ],
+        "wins": {
+          "p2": 8,
+          "p8": 13
+        },
+        "ties": 1,
+        "meetings": 22,
+        "pointsBy": {
+          "p2": 2308.56,
+          "p8": 2316.7000000000003
+        }
+      },
+      {
+        "ownerIds": [
+          "p3",
+          "p5"
+        ],
+        "wins": {
+          "p3": 7,
+          "p5": 6
+        },
+        "ties": 2,
+        "meetings": 15,
+        "pointsBy": {
+          "p3": 1416.1399999999999,
+          "p5": 1467.01
+        }
+      },
+      {
+        "ownerIds": [
+          "p10",
+          "p4"
+        ],
+        "wins": {
+          "p4": 9,
+          "p10": 6
+        },
+        "ties": 1,
+        "meetings": 16,
+        "pointsBy": {
+          "p4": 1812.4499999999998,
+          "p10": 1641.76
+        }
+      },
+      {
+        "ownerIds": [
+          "p1",
+          "p3"
+        ],
+        "wins": {
+          "p1": 10,
+          "p3": 5
+        },
+        "ties": 2,
+        "meetings": 17,
+        "pointsBy": {
+          "p1": 1850.31,
+          "p3": 1642.71
+        }
+      },
+      {
+        "ownerIds": [
+          "p5",
+          "p7"
+        ],
+        "wins": {
+          "p7": 12,
+          "p5": 7
+        },
+        "ties": 1,
+        "meetings": 20,
+        "pointsBy": {
+          "p7": 2307.92,
+          "p5": 1993.39
+        }
+      },
+      {
+        "ownerIds": [
+          "p10",
+          "p2"
+        ],
+        "wins": {
+          "p2": 6,
+          "p10": 13
+        },
+        "ties": 1,
+        "meetings": 20,
+        "pointsBy": {
+          "p2": 2065.66,
+          "p10": 2190.9
+        }
+      },
+      {
+        "ownerIds": [
+          "p8",
+          "p9"
+        ],
+        "wins": {
+          "p8": 11,
+          "p9": 10
+        },
+        "ties": 3,
+        "meetings": 24,
+        "pointsBy": {
+          "p8": 2411.33,
+          "p9": 2390.84
+        }
+      },
+      {
+        "ownerIds": [
+          "p12",
+          "p6"
+        ],
+        "wins": {
+          "p12": 7,
+          "p6": 8
+        },
+        "ties": 2,
+        "meetings": 17,
+        "pointsBy": {
+          "p12": 1769.6999999999998,
+          "p6": 1849.8400000000001
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p4"
+        ],
+        "wins": {
+          "p4": 10,
+          "p11": 9
+        },
+        "ties": 1,
+        "meetings": 20,
+        "pointsBy": {
+          "p4": 2285.15,
+          "p11": 2207.6800000000003
         }
       },
       {
@@ -21181,8 +22908,8 @@
           "p7": 7,
           "p6": 16
         },
-        "ties": 0,
-        "meetings": 23,
+        "ties": 1,
+        "meetings": 24,
         "pointsBy": {
           "p7": 2664.15,
           "p6": 2945.55
@@ -21190,18 +22917,114 @@
       },
       {
         "ownerIds": [
+          "p3",
+          "p8"
+        ],
+        "wins": {
+          "p8": 12,
+          "p3": 6
+        },
+        "ties": 1,
+        "meetings": 19,
+        "pointsBy": {
+          "p8": 2181.29,
+          "p3": 2124.95
+        }
+      },
+      {
+        "ownerIds": [
+          "p12",
+          "p4"
+        ],
+        "wins": {
+          "p12": 16,
+          "p4": 9
+        },
+        "ties": 1,
+        "meetings": 26,
+        "pointsBy": {
+          "p12": 2956.9200000000005,
+          "p4": 2854.0299999999997
+        }
+      },
+      {
+        "ownerIds": [
+          "p5",
+          "p9"
+        ],
+        "wins": {
+          "p9": 6,
+          "p5": 12
+        },
+        "ties": 1,
+        "meetings": 19,
+        "pointsBy": {
+          "p9": 2078.48,
+          "p5": 2161.84
+        }
+      },
+      {
+        "ownerIds": [
+          "p10",
+          "p11"
+        ],
+        "wins": {
+          "p10": 16,
+          "p11": 5
+        },
+        "ties": 1,
+        "meetings": 22,
+        "pointsBy": {
+          "p10": 2757.45,
+          "p11": 2302.77
+        }
+      },
+      {
+        "ownerIds": [
           "p1",
+          "p10"
+        ],
+        "wins": {
+          "p1": 7,
+          "p10": 7
+        },
+        "ties": 1,
+        "meetings": 15,
+        "pointsBy": {
+          "p1": 1699.25,
+          "p10": 1703.76
+        }
+      },
+      {
+        "ownerIds": [
+          "p2",
           "p6"
         ],
         "wins": {
-          "p1": 10,
-          "p6": 8
+          "p2": 9,
+          "p6": 4
         },
-        "ties": 0,
+        "ties": 2,
+        "meetings": 15,
+        "pointsBy": {
+          "p2": 1588.52,
+          "p6": 1416.65
+        }
+      },
+      {
+        "ownerIds": [
+          "p4",
+          "p8"
+        ],
+        "wins": {
+          "p8": 8,
+          "p4": 8
+        },
+        "ties": 2,
         "meetings": 18,
         "pointsBy": {
-          "p1": 2324.71,
-          "p6": 2107.1499999999996
+          "p8": 1746.6599999999999,
+          "p4": 1776.56
         }
       },
       {
@@ -21213,8 +23036,8 @@
           "p12": 6,
           "p9": 8
         },
-        "ties": 0,
-        "meetings": 14,
+        "ties": 1,
+        "meetings": 15,
         "pointsBy": {
           "p12": 1590.58,
           "p9": 1667.6
@@ -21229,8 +23052,8 @@
           "p5": 4,
           "p11": 12
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 2,
+        "meetings": 18,
         "pointsBy": {
           "p5": 1763.38,
           "p11": 1804.1599999999999
@@ -21238,338 +23061,66 @@
       },
       {
         "ownerIds": [
-          "p10",
+          "p1",
           "p4"
         ],
         "wins": {
-          "p4": 9,
-          "p10": 6
+          "p1": 8,
+          "p4": 8
         },
-        "ties": 0,
-        "meetings": 15,
+        "ties": 1,
+        "meetings": 17,
         "pointsBy": {
-          "p4": 1812.4499999999998,
-          "p10": 1641.76
-        }
-      },
-      {
-        "ownerIds": [
-          "p2",
-          "p7"
-        ],
-        "wins": {
-          "p7": 7,
-          "p2": 8
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p7": 1686.99,
-          "p2": 1608.79
-        }
-      },
-      {
-        "ownerIds": [
-          "p3",
-          "p8"
-        ],
-        "wins": {
-          "p8": 12,
-          "p3": 6
-        },
-        "ties": 0,
-        "meetings": 18,
-        "pointsBy": {
-          "p8": 2181.29,
-          "p3": 2124.95
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p3"
-        ],
-        "wins": {
-          "p1": 10,
-          "p3": 5
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p1": 1850.31,
-          "p3": 1642.71
-        }
-      },
-      {
-        "ownerIds": [
-          "p11",
-          "p12"
-        ],
-        "wins": {
-          "p12": 6,
-          "p11": 9
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p12": 1771.02,
-          "p11": 1946.44
-        }
-      },
-      {
-        "ownerIds": [
-          "p10",
-          "p5"
-        ],
-        "wins": {
-          "p5": 6,
-          "p10": 9
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p5": 1701.9,
-          "p10": 1817.8799999999999
+          "p1": 1901.6399999999999,
+          "p4": 1910.76
         }
       },
       {
         "ownerIds": [
           "p7",
-          "p8"
+          "p9"
         ],
         "wins": {
           "p7": 9,
-          "p8": 7
+          "p9": 11
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 2,
+        "meetings": 22,
         "pointsBy": {
-          "p7": 1880.8200000000002,
-          "p8": 1860.1999999999998
-        }
-      },
-      {
-        "ownerIds": [
-          "p4",
-          "p9"
-        ],
-        "wins": {
-          "p4": 13,
-          "p9": 2
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p4": 1854.4699999999998,
-          "p9": 1533.67
+          "p7": 2276.49,
+          "p9": 2303.94
         }
       },
       {
         "ownerIds": [
           "p2",
-          "p6"
+          "p5"
         ],
         "wins": {
           "p2": 9,
-          "p6": 4
+          "p5": 8
         },
-        "ties": 0,
-        "meetings": 13,
-        "pointsBy": {
-          "p2": 1588.52,
-          "p6": 1416.65
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p7"
-        ],
-        "wins": {
-          "p1": 13,
-          "p7": 5
-        },
-        "ties": 0,
-        "meetings": 18,
-        "pointsBy": {
-          "p1": 2234.98,
-          "p7": 1944.4
-        }
-      },
-      {
-        "ownerIds": [
-          "p10",
-          "p12"
-        ],
-        "wins": {
-          "p12": 4,
-          "p10": 11
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p12": 1681.97,
-          "p10": 1798.11
-        }
-      },
-      {
-        "ownerIds": [
-          "p5",
-          "p9"
-        ],
-        "wins": {
-          "p9": 6,
-          "p5": 12
-        },
-        "ties": 0,
-        "meetings": 18,
-        "pointsBy": {
-          "p9": 2078.48,
-          "p5": 2161.84
-        }
-      },
-      {
-        "ownerIds": [
-          "p11",
-          "p4"
-        ],
-        "wins": {
-          "p4": 10,
-          "p11": 9
-        },
-        "ties": 0,
+        "ties": 2,
         "meetings": 19,
         "pointsBy": {
-          "p4": 2285.15,
-          "p11": 2207.6800000000003
-        }
-      },
-      {
-        "ownerIds": [
-          "p6",
-          "p8"
-        ],
-        "wins": {
-          "p8": 10,
-          "p6": 4
-        },
-        "ties": 0,
-        "meetings": 14,
-        "pointsBy": {
-          "p8": 1707.17,
-          "p6": 1619.69
-        }
-      },
-      {
-        "ownerIds": [
-          "p2",
-          "p3"
-        ],
-        "wins": {
-          "p2": 7,
-          "p3": 9
-        },
-        "ties": 0,
-        "meetings": 16,
-        "pointsBy": {
-          "p2": 1890.8600000000001,
-          "p3": 1871.26
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p11"
-        ],
-        "wins": {
-          "p1": 9,
-          "p11": 9
-        },
-        "ties": 1,
-        "meetings": 19,
-        "pointsBy": {
-          "p1": 2256.1000000000004,
-          "p11": 2267.76
-        }
-      },
-      {
-        "ownerIds": [
-          "p8",
-          "p9"
-        ],
-        "wins": {
-          "p8": 11,
-          "p9": 10
-        },
-        "ties": 1,
-        "meetings": 22,
-        "pointsBy": {
-          "p8": 2411.33,
-          "p9": 2390.84
-        }
-      },
-      {
-        "ownerIds": [
-          "p10",
-          "p2"
-        ],
-        "wins": {
-          "p2": 6,
-          "p10": 13
-        },
-        "ties": 0,
-        "meetings": 19,
-        "pointsBy": {
-          "p2": 2065.66,
-          "p10": 2190.9
-        }
-      },
-      {
-        "ownerIds": [
-          "p12",
-          "p6"
-        ],
-        "wins": {
-          "p12": 7,
-          "p6": 8
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p12": 1769.6999999999998,
-          "p6": 1849.8400000000001
+          "p2": 1884.96,
+          "p5": 1930.24
         }
       },
       {
         "ownerIds": [
           "p3",
-          "p4"
+          "p6"
         ],
         "wins": {
-          "p3": 7,
-          "p4": 12
+          "p3": 8,
+          "p6": 12
         },
-        "ties": 0,
-        "meetings": 19,
+        "ties": 1,
+        "meetings": 21,
         "pointsBy": {
-          "p3": 2111.67,
-          "p4": 2318.8999999999996
-        }
-      },
-      {
-        "ownerIds": [
-          "p5",
-          "p7"
-        ],
-        "wins": {
-          "p7": 12,
-          "p5": 7
-        },
-        "ties": 0,
-        "meetings": 19,
-        "pointsBy": {
-          "p7": 2307.92,
-          "p5": 1993.39
+          "p3": 2377.8899999999994,
+          "p6": 2472.44
         }
       },
       {
@@ -21581,8 +23132,8 @@
           "p1": 10,
           "p9": 6
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 2,
+        "meetings": 18,
         "pointsBy": {
           "p1": 1980.4099999999999,
           "p9": 1897.35
@@ -21590,66 +23141,66 @@
       },
       {
         "ownerIds": [
-          "p11",
-          "p2"
+          "p7",
+          "p8"
         ],
         "wins": {
-          "p2": 10,
-          "p11": 7
+          "p7": 9,
+          "p8": 7
         },
-        "ties": 0,
-        "meetings": 17,
+        "ties": 2,
+        "meetings": 18,
         "pointsBy": {
-          "p2": 2158.3099999999995,
-          "p11": 2050.25
+          "p7": 1880.8200000000002,
+          "p8": 1860.1999999999998
+        }
+      },
+      {
+        "ownerIds": [
+          "p2",
+          "p4"
+        ],
+        "wins": {
+          "p2": 9,
+          "p4": 8
+        },
+        "ties": 3,
+        "meetings": 20,
+        "pointsBy": {
+          "p2": 1943.43,
+          "p4": 1914.49
         }
       },
       {
         "ownerIds": [
           "p10",
-          "p8"
-        ],
-        "wins": {
-          "p8": 7,
-          "p10": 7
-        },
-        "ties": 0,
-        "meetings": 14,
-        "pointsBy": {
-          "p8": 1583.58,
-          "p10": 1490.3400000000001
-        }
-      },
-      {
-        "ownerIds": [
-          "p4",
-          "p7"
-        ],
-        "wins": {
-          "p7": 6,
-          "p4": 9
-        },
-        "ties": 0,
-        "meetings": 15,
-        "pointsBy": {
-          "p7": 1763.51,
-          "p4": 1838.2
-        }
-      },
-      {
-        "ownerIds": [
-          "p12",
           "p3"
         ],
         "wins": {
-          "p3": 9,
-          "p12": 7
+          "p3": 2,
+          "p10": 8
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 1,
+        "meetings": 11,
         "pointsBy": {
-          "p3": 1792.27,
-          "p12": 1798.51
+          "p3": 1061.94,
+          "p10": 1122.03
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p12"
+        ],
+        "wins": {
+          "p12": 6,
+          "p11": 9
+        },
+        "ties": 3,
+        "meetings": 18,
+        "pointsBy": {
+          "p12": 1771.02,
+          "p11": 1946.44
         }
       },
       {
@@ -21661,8 +23212,8 @@
           "p5": 9,
           "p6": 6
         },
-        "ties": 0,
-        "meetings": 15,
+        "ties": 1,
+        "meetings": 16,
         "pointsBy": {
           "p5": 1835.6399999999999,
           "p6": 1885.29
@@ -21670,98 +23221,98 @@
       },
       {
         "ownerIds": [
-          "p3",
-          "p5"
-        ],
-        "wins": {
-          "p3": 7,
-          "p5": 6
-        },
-        "ties": 0,
-        "meetings": 13,
-        "pointsBy": {
-          "p3": 1416.1399999999999,
-          "p5": 1467.01
-        }
-      },
-      {
-        "ownerIds": [
-          "p2",
-          "p9"
-        ],
-        "wins": {
-          "p2": 5,
-          "p9": 10
-        },
-        "ties": 1,
-        "meetings": 16,
-        "pointsBy": {
-          "p2": 1703.67,
-          "p9": 1847.72
-        }
-      },
-      {
-        "ownerIds": [
-          "p4",
+          "p1",
           "p6"
         ],
         "wins": {
-          "p4": 6,
-          "p6": 10
+          "p1": 10,
+          "p6": 8
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 1,
+        "meetings": 19,
         "pointsBy": {
-          "p4": 1796.61,
-          "p6": 1935.28
+          "p1": 2324.71,
+          "p6": 2107.1499999999996
         }
       },
       {
         "ownerIds": [
-          "p11",
-          "p8"
+          "p10",
+          "p7"
         ],
         "wins": {
-          "p8": 6,
-          "p11": 10
+          "p7": 6,
+          "p10": 6
         },
-        "ties": 0,
-        "meetings": 16,
+        "ties": 1,
+        "meetings": 13,
         "pointsBy": {
-          "p8": 1794.21,
-          "p11": 1937.8200000000002
-        }
-      },
-      {
-        "ownerIds": [
-          "p1",
-          "p10"
-        ],
-        "wins": {
-          "p1": 7,
-          "p10": 7
-        },
-        "ties": 0,
-        "meetings": 14,
-        "pointsBy": {
-          "p1": 1699.25,
-          "p10": 1703.76
+          "p7": 1450.9099999999999,
+          "p10": 1483.66
         }
       },
       {
         "ownerIds": [
           "p12",
-          "p7"
+          "p2"
         ],
         "wins": {
-          "p7": 11,
-          "p12": 7
+          "p2": 5,
+          "p12": 11
         },
-        "ties": 0,
+        "ties": 2,
         "meetings": 18,
         "pointsBy": {
-          "p7": 2142.71,
-          "p12": 1985.04
+          "p2": 1715.04,
+          "p12": 1849.97
+        }
+      },
+      {
+        "ownerIds": [
+          "p5",
+          "p8"
+        ],
+        "wins": {
+          "p8": 10,
+          "p5": 9
+        },
+        "ties": 1,
+        "meetings": 20,
+        "pointsBy": {
+          "p8": 2199.94,
+          "p5": 2289.63
+        }
+      },
+      {
+        "ownerIds": [
+          "p11",
+          "p3"
+        ],
+        "wins": {
+          "p3": 8,
+          "p11": 5
+        },
+        "ties": 1,
+        "meetings": 14,
+        "pointsBy": {
+          "p3": 1543.56,
+          "p11": 1512.38
+        }
+      },
+      {
+        "ownerIds": [
+          "p4",
+          "p9"
+        ],
+        "wins": {
+          "p4": 13,
+          "p9": 2
+        },
+        "ties": 2,
+        "meetings": 17,
+        "pointsBy": {
+          "p4": 1854.4699999999998,
+          "p9": 1533.67
         }
       },
       {
