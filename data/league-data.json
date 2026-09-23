@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-09-22T13:45:50.574Z",
+  "lastUpdated": "2026-09-23T13:57:25.084Z",
   "seasons": [
     {
       "year": 2026,
@@ -21138,10 +21138,10 @@
     },
     "biggestMargin": null,
     "topPlayer": {
-      "playerId": "11566",
-      "playerName": "Jayden Daniels",
+      "playerId": "5849",
+      "playerName": "Kyler Murray",
       "position": "QB",
-      "nflTeam": "WAS",
+      "nflTeam": "MIN",
       "points": 0,
       "fantasyTeamName": "Sweetwater All Stars",
       "fantasyOwnerId": "p1"
