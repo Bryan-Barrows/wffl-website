@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-09-24T13:53:46.150Z",
+  "lastUpdated": "2026-09-25T14:17:46.556Z",
   "seasons": [
     {
       "year": 2026,
@@ -149,7 +149,7 @@
           "rosterId": 10,
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "wins": 0,
           "losses": 2,
           "ties": 0,
@@ -241,7 +241,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 60.64
           }
         },
@@ -283,7 +283,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 75.52
           }
         },
@@ -335,7 +335,7 @@
           "teamA": {
             "ownerId": "p1",
             "teamName": "Sweetwater All Stars",
-            "score": 0
+            "score": 35.3
           },
           "teamB": {
             "ownerId": "p7",
@@ -382,7 +382,7 @@
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 0
+            "score": 35
           }
         },
         {
@@ -391,7 +391,7 @@
           "teamA": {
             "ownerId": "p12",
             "teamName": "Huy Phung’s Dung Dynasty",
-            "score": 0
+            "score": 41.08
           },
           "teamB": {
             "ownerId": "p5",
@@ -405,12 +405,12 @@
           "teamA": {
             "ownerId": "p9",
             "teamName": "JSimsRL",
-            "score": 0
+            "score": 21
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
-            "score": 0
+            "teamName": "Dan Flashes",
+            "score": -5.5
           }
         },
         {
@@ -465,7 +465,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -572,7 +572,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           },
           "teamB": {
@@ -647,7 +647,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -703,7 +703,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -824,7 +824,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           },
           "teamB": {
@@ -871,7 +871,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -927,7 +927,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1081,7 +1081,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1137,7 +1137,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1193,7 +1193,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1328,7 +1328,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           },
           "teamB": {
@@ -1403,7 +1403,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1473,7 +1473,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1580,7 +1580,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           },
           "teamB": {
@@ -1655,7 +1655,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 0
           }
         },
@@ -1767,7 +1767,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 10,
           "losses": 4,
@@ -1912,7 +1912,7 @@
       "champion": {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "RubeusHagrid"
+        "teamName": "Dan Flashes"
       },
       "runnerUp": {
         "ownerId": "p12",
@@ -1958,7 +1958,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 114.63
           }
         },
@@ -2079,7 +2079,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 119.65
           },
           "teamB": {
@@ -2154,7 +2154,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129.42
           }
         },
@@ -2238,7 +2238,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 187.42
           }
         },
@@ -2289,7 +2289,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 117.27
           },
           "teamB": {
@@ -2392,7 +2392,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 141.14
           }
         },
@@ -2462,7 +2462,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 98.58
           }
         },
@@ -2532,7 +2532,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 119.98
           }
         },
@@ -2630,7 +2630,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 98.76
           }
         },
@@ -2714,7 +2714,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 132.8
           }
         },
@@ -2798,7 +2798,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 111.64
           }
         },
@@ -2905,7 +2905,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 141.21
           },
           "teamB": {
@@ -2994,7 +2994,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 104.43
           }
         },
@@ -3022,7 +3022,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 103.34
           }
         },
@@ -3129,7 +3129,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 163.55
           },
           "teamB": {
@@ -3157,7 +3157,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 113.49
           },
           "teamB": {
@@ -3218,7 +3218,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 8,
           "losses": 6,
@@ -3539,7 +3539,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 154.2
           }
         },
@@ -3679,7 +3679,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 127.24
           }
         },
@@ -3707,7 +3707,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 133.94
           }
         },
@@ -3861,7 +3861,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 120.54
           }
         },
@@ -3959,7 +3959,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 120.7
           }
         },
@@ -4043,7 +4043,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 162.6
           }
         },
@@ -4071,7 +4071,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 132.4
           }
         },
@@ -4183,7 +4183,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 113.66
           }
         },
@@ -4211,7 +4211,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 103.96
           }
         },
@@ -4337,7 +4337,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 117.74
           }
         },
@@ -4393,7 +4393,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 107.6
           }
         },
@@ -4435,7 +4435,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 127.6
           }
         },
@@ -4477,7 +4477,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 95.64
           }
         },
@@ -4528,7 +4528,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 93.34
           },
           "teamB": {
@@ -4542,7 +4542,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105.18
           },
           "teamB": {
@@ -4556,7 +4556,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 147.26
           },
           "teamB": {
@@ -4570,7 +4570,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 149.94
           },
           "teamB": {
@@ -4633,7 +4633,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 9,
           "losses": 5,
@@ -4771,7 +4771,7 @@
       "runnerUp": {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "RubeusHagrid"
+        "teamName": "Dan Flashes"
       },
       "games": [
         {
@@ -4966,7 +4966,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 128.24
           }
         },
@@ -5092,7 +5092,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 139.32
           }
         },
@@ -5232,7 +5232,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 92.8
           }
         },
@@ -5260,7 +5260,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 83.18
           }
         },
@@ -5330,7 +5330,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 142.94
           }
         },
@@ -5456,7 +5456,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 124.8
           }
         },
@@ -5498,7 +5498,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 149.86
           }
         },
@@ -5610,7 +5610,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105.8
           }
         },
@@ -5736,7 +5736,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 81.64
           }
         },
@@ -5834,7 +5834,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 150.4
           }
         },
@@ -5904,7 +5904,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 114.92
           }
         },
@@ -5941,7 +5941,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 120.74
           },
           "teamB": {
@@ -5955,7 +5955,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 139.68
           },
           "teamB": {
@@ -5969,7 +5969,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 134.52
           },
           "teamB": {
@@ -5983,7 +5983,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 151.1
           },
           "teamB": {
@@ -5997,7 +5997,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 138.5
           },
           "teamB": {
@@ -6156,7 +6156,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 5,
           "losses": 9,
@@ -6337,7 +6337,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 91
           }
         },
@@ -6589,7 +6589,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 56.86
           }
         },
@@ -6673,7 +6673,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 124.54
           }
         },
@@ -6827,7 +6827,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 72.36
           }
         },
@@ -6967,7 +6967,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 85.8
           }
         },
@@ -6995,7 +6995,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 68.2
           }
         },
@@ -7051,7 +7051,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 85.58
           }
         },
@@ -7191,7 +7191,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129.48
           }
         },
@@ -7303,7 +7303,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 71.4
           }
         },
@@ -7331,7 +7331,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 91.48
           }
         },
@@ -7401,7 +7401,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 133.26
           }
         },
@@ -7415,7 +7415,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 139.04
           }
         },
@@ -7438,7 +7438,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 128.32
           },
           "teamB": {
@@ -7452,7 +7452,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 98.94
           },
           "teamB": {
@@ -7523,7 +7523,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 9,
           "losses": 5,
@@ -7764,7 +7764,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 123.6
           }
         },
@@ -7918,7 +7918,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 111.26
           }
         },
@@ -8086,7 +8086,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 124.3
           }
         },
@@ -8114,7 +8114,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 163.94
           }
         },
@@ -8184,7 +8184,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129.94
           }
         },
@@ -8282,7 +8282,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 109.4
           }
         },
@@ -8366,7 +8366,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 159.46
           }
         },
@@ -8520,7 +8520,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 116.44
           }
         },
@@ -8604,7 +8604,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 118.36
           }
         },
@@ -8688,7 +8688,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 122.72
           }
         },
@@ -8702,7 +8702,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 115.22
           }
         },
@@ -8730,7 +8730,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 132.62
           }
         },
@@ -8814,7 +8814,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 91.32
           }
         },
@@ -8828,7 +8828,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 90.7
           }
         },
@@ -8842,7 +8842,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 134.66
           }
         },
@@ -8870,7 +8870,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 133.38
           }
         },
@@ -8884,7 +8884,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 165.6
           }
         }
@@ -9010,7 +9010,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 6,
           "losses": 7,
@@ -9177,7 +9177,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 132.98
           }
         },
@@ -9429,7 +9429,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 102.38
           }
         },
@@ -9527,7 +9527,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 102.2
           }
         },
@@ -9611,7 +9611,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 144.38
           }
         },
@@ -9709,7 +9709,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 118.62
           }
         },
@@ -9779,7 +9779,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 112.24
           }
         },
@@ -9905,7 +9905,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 154.4
           }
         },
@@ -10003,7 +10003,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105.24
           }
         },
@@ -10073,7 +10073,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 103.32
           }
         },
@@ -10115,7 +10115,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 93.66
           }
         },
@@ -10157,7 +10157,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 125.9
           }
         },
@@ -10213,7 +10213,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 86.24
           }
         },
@@ -10227,7 +10227,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 117
           }
         }
@@ -10305,7 +10305,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 6,
           "losses": 7,
@@ -10548,7 +10548,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 130.2
           }
         },
@@ -10590,7 +10590,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 96.2
           }
         },
@@ -10702,7 +10702,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 120.3
           }
         },
@@ -10884,7 +10884,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 137.9
           }
         },
@@ -10954,7 +10954,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 84.3
           }
         },
@@ -11038,7 +11038,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 111.7
           }
         },
@@ -11108,7 +11108,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 114.3
           }
         },
@@ -11304,7 +11304,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 158.4
           }
         },
@@ -11346,7 +11346,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105.4
           }
         },
@@ -11402,7 +11402,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 97.8
           }
         },
@@ -11430,7 +11430,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 106.8
           }
         },
@@ -11514,7 +11514,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 97.9
           }
         },
@@ -11542,7 +11542,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105.9
           }
         },
@@ -11570,7 +11570,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 86.6
           }
         }
@@ -11648,7 +11648,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 9,
           "losses": 4,
@@ -11863,7 +11863,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 148
           }
         },
@@ -12003,7 +12003,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 71
           }
         },
@@ -12185,7 +12185,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105
           }
         },
@@ -12255,7 +12255,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 98
           }
         },
@@ -12325,7 +12325,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 123
           }
         },
@@ -12395,7 +12395,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 154
           }
         },
@@ -12437,7 +12437,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 106
           }
         },
@@ -12591,7 +12591,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 150
           }
         },
@@ -12717,7 +12717,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 120
           }
         },
@@ -12740,7 +12740,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 135
           },
           "teamB": {
@@ -12754,7 +12754,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 97
           },
           "teamB": {
@@ -12768,7 +12768,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 124
           },
           "teamB": {
@@ -12782,7 +12782,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 137
           },
           "teamB": {
@@ -12796,7 +12796,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 157
           },
           "teamB": {
@@ -12967,7 +12967,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 7,
           "losses": 6,
@@ -13206,7 +13206,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 112
           }
         },
@@ -13290,7 +13290,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 109
           }
         },
@@ -13346,7 +13346,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 103
           }
         },
@@ -13528,7 +13528,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 81
           }
         },
@@ -13654,7 +13654,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 89
           }
         },
@@ -13724,7 +13724,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 116
           }
         },
@@ -13752,7 +13752,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 94
           }
         },
@@ -13780,7 +13780,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 115
           }
         },
@@ -13892,7 +13892,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 109
           }
         },
@@ -13948,7 +13948,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 63
           }
         },
@@ -14060,7 +14060,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129
           }
         },
@@ -14083,7 +14083,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 134
           },
           "teamB": {
@@ -14097,7 +14097,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 89
           },
           "teamB": {
@@ -14111,7 +14111,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 98
           },
           "teamB": {
@@ -14125,7 +14125,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 135
           },
           "teamB": {
@@ -14139,7 +14139,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 112
           },
           "teamB": {
@@ -14298,7 +14298,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 7,
           "losses": 6,
@@ -14549,7 +14549,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129
           }
         },
@@ -14661,7 +14661,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 98
           }
         },
@@ -14913,7 +14913,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 102
           }
         },
@@ -14969,7 +14969,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 146
           }
         },
@@ -15053,7 +15053,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 139
           }
         },
@@ -15165,7 +15165,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 77
           }
         },
@@ -15235,7 +15235,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 77
           }
         },
@@ -15291,7 +15291,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 138
           }
         },
@@ -15389,7 +15389,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 126
           }
         },
@@ -15431,7 +15431,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 92
           }
         },
@@ -15440,7 +15440,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129
           },
           "teamB": {
@@ -15454,7 +15454,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 105
           },
           "teamB": {
@@ -15468,7 +15468,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 107
           },
           "teamB": {
@@ -15482,7 +15482,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 106
           },
           "teamB": {
@@ -15496,7 +15496,7 @@
           "isPlayoff": false,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 116
           },
           "teamB": {
@@ -15510,7 +15510,7 @@
           "isPlayoff": true,
           "teamA": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 124
           },
           "teamB": {
@@ -19782,7 +19782,7 @@
         {
           "ownerId": "p10",
           "managerName": "Lefty",
-          "teamName": "RubeusHagrid",
+          "teamName": "Dan Flashes",
           "isActive": true,
           "wins": 9,
           "losses": 3,
@@ -20005,7 +20005,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 129
           }
         },
@@ -20089,7 +20089,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 117
           }
         },
@@ -20201,7 +20201,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 84
           }
         },
@@ -20383,7 +20383,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 103
           }
         },
@@ -20551,7 +20551,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 131
           }
         },
@@ -20691,7 +20691,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 119
           }
         },
@@ -20733,7 +20733,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 150
           }
         },
@@ -20817,7 +20817,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 124
           }
         },
@@ -20901,7 +20901,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 75
           }
         },
@@ -20915,7 +20915,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 131
           }
         },
@@ -20957,7 +20957,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 108
           }
         },
@@ -21013,7 +21013,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 133
           }
         },
@@ -21027,7 +21027,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 104
           }
         },
@@ -21083,7 +21083,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 147
           }
         },
@@ -21097,7 +21097,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 158
           }
         },
@@ -21111,7 +21111,7 @@
           },
           "teamB": {
             "ownerId": "p10",
-            "teamName": "RubeusHagrid",
+            "teamName": "Dan Flashes",
             "score": 146
           }
         }
@@ -21222,7 +21222,7 @@
       {
         "pick": 12,
         "ownerId": "p10",
-        "teamName": "RubeusHagrid",
+        "teamName": "Dan Flashes",
         "managerName": "Lefty"
       }
     ],
@@ -21240,11 +21240,11 @@
       {
         "round": 2,
         "season": "2026",
-        "originalTeamName": "RubeusHagrid",
+        "originalTeamName": "Dan Flashes",
         "originalOwnerId": "p10",
         "currentTeamName": "Tsar Putin",
         "currentOwnerId": "p7",
-        "previousTeamName": "RubeusHagrid",
+        "previousTeamName": "Dan Flashes",
         "previousOwnerId": "p10"
       },
       {
@@ -21262,7 +21262,7 @@
         "season": "2026",
         "originalTeamName": "Sweetwater All Stars",
         "originalOwnerId": "p1",
-        "currentTeamName": "RubeusHagrid",
+        "currentTeamName": "Dan Flashes",
         "currentOwnerId": "p10",
         "previousTeamName": "Sweetwater All Stars",
         "previousOwnerId": "p1"
@@ -21270,11 +21270,11 @@
       {
         "round": 4,
         "season": "2026",
-        "originalTeamName": "RubeusHagrid",
+        "originalTeamName": "Dan Flashes",
         "originalOwnerId": "p10",
         "currentTeamName": "Sweetwater All Stars",
         "currentOwnerId": "p1",
-        "previousTeamName": "RubeusHagrid",
+        "previousTeamName": "Dan Flashes",
         "previousOwnerId": "p10"
       },
       {
@@ -21310,21 +21310,21 @@
       {
         "round": 5,
         "season": "2026",
-        "originalTeamName": "RubeusHagrid",
+        "originalTeamName": "Dan Flashes",
         "originalOwnerId": "p10",
         "currentTeamName": "Tsar Putin",
         "currentOwnerId": "p7",
-        "previousTeamName": "RubeusHagrid",
+        "previousTeamName": "Dan Flashes",
         "previousOwnerId": "p10"
       },
       {
         "round": 6,
         "season": "2026",
-        "originalTeamName": "RubeusHagrid",
+        "originalTeamName": "Dan Flashes",
         "originalOwnerId": "p10",
         "currentTeamName": "Sweetwater All Stars",
         "currentOwnerId": "p1",
-        "previousTeamName": "RubeusHagrid",
+        "previousTeamName": "Dan Flashes",
         "previousOwnerId": "p10"
       },
       {
@@ -21352,7 +21352,7 @@
         "season": "2026",
         "originalTeamName": "Sweetwater All Stars",
         "originalOwnerId": "p1",
-        "currentTeamName": "RubeusHagrid",
+        "currentTeamName": "Dan Flashes",
         "currentOwnerId": "p10",
         "previousTeamName": "Sweetwater All Stars",
         "previousOwnerId": "p1"
@@ -21362,7 +21362,7 @@
         "season": "2026",
         "originalTeamName": "Tsar Putin",
         "originalOwnerId": "p7",
-        "currentTeamName": "RubeusHagrid",
+        "currentTeamName": "Dan Flashes",
         "currentOwnerId": "p10",
         "previousTeamName": "Tsar Putin",
         "previousOwnerId": "p7"
@@ -21412,7 +21412,7 @@
         "season": "2026",
         "originalTeamName": "kenwinhamjr",
         "originalOwnerId": "p3",
-        "currentTeamName": "RubeusHagrid",
+        "currentTeamName": "Dan Flashes",
         "currentOwnerId": "p10",
         "previousTeamName": "kenwinhamjr",
         "previousOwnerId": "p3"
@@ -21843,7 +21843,7 @@
       {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "RubeusHagrid",
+        "teamName": "Dan Flashes",
         "seasonsPlayed": 12,
         "wins": 85,
         "losses": 64,
@@ -22174,7 +22174,7 @@
       {
         "ownerId": "p10",
         "managerName": "Lefty",
-        "teamName": "RubeusHagrid",
+        "teamName": "Dan Flashes",
         "count": 1,
         "years": [
           2025
@@ -22193,10 +22193,10 @@
       "fewestPointsGame": {
         "year": 2026,
         "week": 3,
-        "ownerId": "p1",
-        "teamName": "Sweetwater All Stars",
-        "points": 0,
-        "opponentTeamName": "Tsar Putin"
+        "ownerId": "p10",
+        "teamName": "Dan Flashes",
+        "points": -5.5,
+        "opponentTeamName": "JSimsRL"
       },
       "mostPointsSeason": {
         "year": 2022,
@@ -22208,7 +22208,7 @@
       "fewestPointsSeason": {
         "year": 2026,
         "ownerId": "p10",
-        "teamName": "RubeusHagrid",
+        "teamName": "Dan Flashes",
         "managerName": "Lefty",
         "points": 136.16
       },
@@ -22458,13 +22458,13 @@
           "p7"
         ],
         "wins": {
-          "p1": 13,
+          "p1": 14,
           "p7": 5
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 20,
         "pointsBy": {
-          "p1": 2234.98,
+          "p1": 2270.2799999999997,
           "p7": 1944.4
         }
       },
@@ -22507,13 +22507,13 @@
         ],
         "wins": {
           "p3": 7,
-          "p4": 12
+          "p4": 13
         },
-        "ties": 3,
+        "ties": 2,
         "meetings": 22,
         "pointsBy": {
           "p3": 2111.67,
-          "p4": 2318.8999999999996
+          "p4": 2353.8999999999996
         }
       },
       {
@@ -22522,13 +22522,13 @@
           "p5"
         ],
         "wins": {
-          "p12": 14,
+          "p12": 15,
           "p5": 7
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 22,
         "pointsBy": {
-          "p12": 2584.12,
+          "p12": 2625.2,
           "p5": 2427.8
         }
       },
@@ -22538,14 +22538,14 @@
           "p9"
         ],
         "wins": {
-          "p9": 13,
+          "p9": 14,
           "p10": 7
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 21,
         "pointsBy": {
-          "p9": 2470.48,
-          "p10": 2265.6499999999996
+          "p9": 2491.48,
+          "p10": 2260.1499999999996
         }
       },
       {
