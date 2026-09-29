@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-09-28T17:09:40.231Z",
+  "lastUpdated": "2026-09-29T15:12:58.027Z",
   "seasons": [
     {
       "year": 2026,
@@ -14,28 +14,76 @@
       "source": "sleeper",
       "standings": [
         {
+          "rosterId": 6,
+          "ownerId": "p12",
+          "managerName": "Lou",
+          "teamName": "Huy Phung’s Dung Dynasty",
+          "wins": 3,
+          "losses": 0,
+          "ties": 0,
+          "pointsFor": 392.02,
+          "pointsAgainst": 317.43,
+          "rank": 1
+        },
+        {
+          "rosterId": 4,
+          "ownerId": "p8",
+          "managerName": "Mark",
+          "teamName": "The Buka Buka Tribe",
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "pointsFor": 441.8,
+          "pointsAgainst": 346.17,
+          "rank": 2
+        },
+        {
+          "rosterId": 8,
+          "ownerId": "p9",
+          "managerName": "Justin",
+          "teamName": "JSimsRL",
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "pointsFor": 396.85,
+          "pointsAgainst": 310.57,
+          "rank": 3
+        },
+        {
+          "rosterId": 3,
+          "ownerId": "p2",
+          "managerName": "Brendan",
+          "teamName": "PAFL Schefter",
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "pointsFor": 375.86,
+          "pointsAgainst": 350.11,
+          "rank": 4
+        },
+        {
+          "rosterId": 1,
+          "ownerId": "p1",
+          "managerName": "Bryan",
+          "teamName": "Sweetwater All Stars",
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "pointsFor": 366.37,
+          "pointsAgainst": 357.38,
+          "rank": 5
+        },
+        {
           "rosterId": 12,
           "ownerId": "p11",
           "managerName": "Dave",
           "teamName": "Chop Shop",
           "wins": 2,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "pointsFor": 274.76,
-          "pointsAgainst": 221.28,
-          "rank": 1
-        },
-        {
-          "rosterId": 6,
-          "ownerId": "p12",
-          "managerName": "Lou",
-          "teamName": "Huy Phung’s Dung Dynasty",
-          "wins": 2,
-          "losses": 0,
-          "ties": 0,
-          "pointsFor": 267.94,
-          "pointsAgainst": 217.21,
-          "rank": 2
+          "pointsFor": 364.7,
+          "pointsAgainst": 349.99,
+          "rank": 6
         },
         {
           "rosterId": 9,
@@ -43,59 +91,23 @@
           "managerName": "Luke",
           "teamName": "BoatBoyz",
           "wins": 2,
-          "losses": 0,
-          "ties": 0,
-          "pointsFor": 259.58,
-          "pointsAgainst": 183.12,
-          "rank": 3
-        },
-        {
-          "rosterId": 4,
-          "ownerId": "p8",
-          "managerName": "Mark",
-          "teamName": "The Buka Buka Tribe",
-          "wins": 1,
           "losses": 1,
           "ties": 0,
-          "pointsFor": 294.78,
-          "pointsAgainst": 214.18,
-          "rank": 4
-        },
-        {
-          "rosterId": 3,
-          "ownerId": "p2",
-          "managerName": "Brendan",
-          "teamName": "PAFL Schefter",
-          "wins": 1,
-          "losses": 1,
-          "ties": 0,
-          "pointsFor": 247.15,
-          "pointsAgainst": 260.17,
-          "rank": 5
-        },
-        {
-          "rosterId": 8,
-          "ownerId": "p9",
-          "managerName": "Justin",
-          "teamName": "JSimsRL",
-          "wins": 1,
-          "losses": 1,
-          "ties": 0,
-          "pointsFor": 245.58,
-          "pointsAgainst": 230.43,
-          "rank": 6
-        },
-        {
-          "rosterId": 1,
-          "ownerId": "p1",
-          "managerName": "Bryan",
-          "teamName": "Sweetwater All Stars",
-          "wins": 1,
-          "losses": 1,
-          "ties": 0,
-          "pointsFor": 242.65,
-          "pointsAgainst": 256.09,
+          "pointsFor": 359.8,
+          "pointsAgainst": 307.2,
           "rank": 7
+        },
+        {
+          "rosterId": 5,
+          "ownerId": "p3",
+          "managerName": "Ken",
+          "teamName": "kenwinhamjr",
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "pointsFor": 358.03,
+          "pointsAgainst": 354.92,
+          "rank": 8
         },
         {
           "rosterId": 11,
@@ -103,22 +115,10 @@
           "managerName": "Steve",
           "teamName": "Obi Wan Caproni",
           "wins": 1,
-          "losses": 1,
+          "losses": 2,
           "ties": 0,
-          "pointsFor": 219.74,
-          "pointsAgainst": 204.65,
-          "rank": 8
-        },
-        {
-          "rosterId": 5,
-          "ownerId": "p3",
-          "managerName": "Ken",
-          "teamName": "kenwinhamjr",
-          "wins": 1,
-          "losses": 1,
-          "ties": 0,
-          "pointsFor": 217,
-          "pointsAgainst": 246.48,
+          "pointsFor": 351.73,
+          "pointsAgainst": 351.67,
           "rank": 9
         },
         {
@@ -127,10 +127,10 @@
           "managerName": "Tim",
           "teamName": "Tsar Putin",
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "ties": 0,
-          "pointsFor": 233.61,
-          "pointsAgainst": 266.06,
+          "pointsFor": 334.9,
+          "pointsAgainst": 389.78,
           "rank": 10
         },
         {
@@ -139,10 +139,10 @@
           "managerName": "Ted",
           "teamName": "Tedmastaflex",
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "ties": 0,
-          "pointsFor": 197.93,
-          "pointsAgainst": 253.17,
+          "pointsFor": 306.37,
+          "pointsAgainst": 394.2,
           "rank": 11
         },
         {
@@ -151,10 +151,10 @@
           "managerName": "Lefty",
           "teamName": "Dan Flashes",
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "ties": 0,
-          "pointsFor": 136.16,
-          "pointsAgainst": 284.04,
+          "pointsFor": 216.3,
+          "pointsAgainst": 435.31,
           "rank": 12
         }
       ],
@@ -335,7 +335,7 @@
           "teamA": {
             "ownerId": "p1",
             "teamName": "Sweetwater All Stars",
-            "score": 111.22
+            "score": 123.72
           },
           "teamB": {
             "ownerId": "p7",
@@ -354,7 +354,7 @@
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 79.14
+            "score": 89.94
           }
         },
         {
@@ -382,7 +382,7 @@
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 99.44
+            "score": 108.44
           }
         },
         {
@@ -396,7 +396,7 @@
           "teamB": {
             "ownerId": "p5",
             "teamName": "BoatBoyz",
-            "score": 87.6
+            "score": 100.22
           }
         },
         {
@@ -405,12 +405,12 @@
           "teamA": {
             "ownerId": "p9",
             "teamName": "JSimsRL",
-            "score": 151.22
+            "score": 151.27
           },
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 73.04
+            "score": 80.14
           }
         },
         {
@@ -21558,11 +21558,11 @@
         "managerName": "Bryan",
         "teamName": "Sweetwater All Stars",
         "seasonsPlayed": 15,
-        "wins": 104,
+        "wins": 105,
         "losses": 83,
         "ties": 2,
-        "pointsFor": 22962.19,
-        "pointsAgainst": 21999.41,
+        "pointsFor": 23085.91,
+        "pointsAgainst": 22100.7,
         "championships": 2,
         "championshipYears": [
           2018,
@@ -21603,10 +21603,10 @@
         "teamName": "Tedmastaflex",
         "seasonsPlayed": 15,
         "wins": 99,
-        "losses": 89,
+        "losses": 90,
         "ties": 1,
-        "pointsFor": 22056.58,
-        "pointsAgainst": 21742.93,
+        "pointsFor": 22165.02,
+        "pointsAgainst": 21883.96,
         "championships": 3,
         "championshipYears": [
           2016,
@@ -21645,10 +21645,10 @@
         "teamName": "Chop Shop",
         "seasonsPlayed": 15,
         "wins": 98,
-        "losses": 90,
+        "losses": 91,
         "ties": 1,
-        "pointsFor": 22557.25,
-        "pointsAgainst": 22239.82,
+        "pointsFor": 22647.19,
+        "pointsAgainst": 22368.53,
         "championships": 2,
         "championshipYears": [
           2013,
@@ -21684,11 +21684,11 @@
         "managerName": "Lou",
         "teamName": "Huy Phung’s Dung Dynasty",
         "seasonsPlayed": 15,
-        "wins": 96,
+        "wins": 97,
         "losses": 93,
         "ties": 0,
-        "pointsFor": 21885.07,
-        "pointsAgainst": 21703.14,
+        "pointsFor": 22009.15,
+        "pointsAgainst": 21803.36,
         "championships": 1,
         "championshipYears": [
           2012
@@ -21724,11 +21724,11 @@
         "managerName": "Mark",
         "teamName": "The Buka Buka Tribe",
         "seasonsPlayed": 15,
-        "wins": 95,
+        "wins": 96,
         "losses": 92,
         "ties": 2,
-        "pointsFor": 21453.29,
-        "pointsAgainst": 21890.42,
+        "pointsFor": 21600.31,
+        "pointsAgainst": 22022.41,
         "championships": 0,
         "championshipYears": [],
         "runnerUps": 3,
@@ -21764,10 +21764,10 @@
         "teamName": "Obi Wan Caproni",
         "seasonsPlayed": 14,
         "wins": 92,
-        "losses": 84,
+        "losses": 85,
         "ties": 0,
-        "pointsFor": 21151.52,
-        "pointsAgainst": 20620.92,
+        "pointsFor": 21283.51,
+        "pointsAgainst": 20767.94,
         "championships": 1,
         "championshipYears": [
           2019
@@ -21805,10 +21805,10 @@
         "teamName": "BoatBoyz",
         "seasonsPlayed": 15,
         "wins": 86,
-        "losses": 102,
+        "losses": 103,
         "ties": 1,
-        "pointsFor": 21743.44,
-        "pointsAgainst": 22118.75,
+        "pointsFor": 21843.66,
+        "pointsAgainst": 22242.83,
         "championships": 1,
         "championshipYears": [
           2023
@@ -21817,10 +21817,8 @@
         "runnerUpYears": [
           2020
         ],
-        "thirdPlaces": 1,
-        "thirdPlaceYears": [
-          2026
-        ],
+        "thirdPlaces": 0,
+        "thirdPlaceYears": [],
         "isActive": true,
         "years": [
           2012,
@@ -21841,55 +21839,15 @@
         ]
       },
       {
-        "ownerId": "p10",
-        "managerName": "Lefty",
-        "teamName": "Dan Flashes",
-        "seasonsPlayed": 12,
-        "wins": 85,
-        "losses": 64,
-        "ties": 1,
-        "pointsFor": 17473.19,
-        "pointsAgainst": 17332.4,
-        "championships": 1,
-        "championshipYears": [
-          2025
-        ],
-        "runnerUps": 1,
-        "runnerUpYears": [
-          2023
-        ],
-        "thirdPlaces": 3,
-        "thirdPlaceYears": [
-          2012,
-          2016,
-          2024
-        ],
-        "isActive": true,
-        "years": [
-          2012,
-          2016,
-          2017,
-          2018,
-          2019,
-          2020,
-          2021,
-          2022,
-          2023,
-          2024,
-          2025,
-          2026
-        ]
-      },
-      {
         "ownerId": "p2",
         "managerName": "Brendan",
         "teamName": "PAFL Schefter",
         "seasonsPlayed": 15,
-        "wins": 85,
+        "wins": 86,
         "losses": 102,
         "ties": 2,
-        "pointsFor": 21379.7,
-        "pointsAgainst": 21687.98,
+        "pointsFor": 21508.41,
+        "pointsAgainst": 21777.92,
         "championships": 0,
         "championshipYears": [],
         "runnerUps": 2,
@@ -21925,11 +21883,11 @@
         "managerName": "Justin",
         "teamName": "JSimsRL",
         "seasonsPlayed": 15,
-        "wins": 84,
+        "wins": 85,
         "losses": 103,
         "ties": 2,
-        "pointsFor": 21461.59,
-        "pointsAgainst": 22018.02,
+        "pointsFor": 21612.86,
+        "pointsAgainst": 22098.16,
         "championships": 1,
         "championshipYears": [
           2020
@@ -21938,11 +21896,89 @@
         "runnerUpYears": [
           2017
         ],
+        "thirdPlaces": 1,
+        "thirdPlaceYears": [
+          2026
+        ],
+        "isActive": true,
+        "years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      {
+        "ownerId": "p10",
+        "managerName": "Lefty",
+        "teamName": "Dan Flashes",
+        "seasonsPlayed": 12,
+        "wins": 85,
+        "losses": 65,
+        "ties": 1,
+        "pointsFor": 17553.33,
+        "pointsAgainst": 17483.67,
+        "championships": 1,
+        "championshipYears": [
+          2025
+        ],
+        "runnerUps": 1,
+        "runnerUpYears": [
+          2023
+        ],
+        "thirdPlaces": 3,
+        "thirdPlaceYears": [
+          2012,
+          2016,
+          2024
+        ],
+        "isActive": true,
+        "years": [
+          2012,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      {
+        "ownerId": "p3",
+        "managerName": "Ken",
+        "teamName": "kenwinhamjr",
+        "seasonsPlayed": 14,
+        "wins": 84,
+        "losses": 93,
+        "ties": 0,
+        "pointsFor": 20332.29,
+        "pointsAgainst": 20677.11,
+        "championships": 1,
+        "championshipYears": [
+          2021
+        ],
+        "runnerUps": 0,
+        "runnerUpYears": [],
         "thirdPlaces": 0,
         "thirdPlaceYears": [],
         "isActive": true,
         "years": [
-          2012,
           2013,
           2014,
           2015,
@@ -21965,10 +22001,10 @@
         "teamName": "Tsar Putin",
         "seasonsPlayed": 15,
         "wins": 84,
-        "losses": 105,
+        "losses": 106,
         "ties": 0,
-        "pointsFor": 21829.28,
-        "pointsAgainst": 22037.52,
+        "pointsFor": 21930.57,
+        "pointsAgainst": 22161.24,
         "championships": 1,
         "championshipYears": [
           2015
@@ -21985,42 +22021,6 @@
         "isActive": true,
         "years": [
           2012,
-          2013,
-          2014,
-          2015,
-          2016,
-          2017,
-          2018,
-          2019,
-          2020,
-          2021,
-          2022,
-          2023,
-          2024,
-          2025,
-          2026
-        ]
-      },
-      {
-        "ownerId": "p3",
-        "managerName": "Ken",
-        "teamName": "kenwinhamjr",
-        "seasonsPlayed": 14,
-        "wins": 83,
-        "losses": 93,
-        "ties": 0,
-        "pointsFor": 20191.26,
-        "pointsAgainst": 20568.67,
-        "championships": 1,
-        "championshipYears": [
-          2021
-        ],
-        "runnerUps": 0,
-        "runnerUpYears": [],
-        "thirdPlaces": 0,
-        "thirdPlaceYears": [],
-        "isActive": true,
-        "years": [
           2013,
           2014,
           2015,
@@ -22098,16 +22098,6 @@
         ]
       },
       {
-        "ownerId": "p11",
-        "managerName": "Dave",
-        "teamName": "Chop Shop",
-        "count": 2,
-        "years": [
-          2013,
-          2014
-        ]
-      },
-      {
         "ownerId": "p1",
         "managerName": "Bryan",
         "teamName": "Sweetwater All Stars",
@@ -22115,6 +22105,16 @@
         "years": [
           2018,
           2024
+        ]
+      },
+      {
+        "ownerId": "p11",
+        "managerName": "Dave",
+        "teamName": "Chop Shop",
+        "count": 2,
+        "years": [
+          2013,
+          2014
         ]
       },
       {
@@ -22127,15 +22127,6 @@
         ]
       },
       {
-        "ownerId": "p5",
-        "managerName": "Luke",
-        "teamName": "BoatBoyz",
-        "count": 1,
-        "years": [
-          2023
-        ]
-      },
-      {
         "ownerId": "p9",
         "managerName": "Justin",
         "teamName": "JSimsRL",
@@ -22145,12 +22136,12 @@
         ]
       },
       {
-        "ownerId": "p6",
-        "managerName": "Steve",
-        "teamName": "Obi Wan Caproni",
+        "ownerId": "p5",
+        "managerName": "Luke",
+        "teamName": "BoatBoyz",
         "count": 1,
         "years": [
-          2019
+          2023
         ]
       },
       {
@@ -22160,6 +22151,15 @@
         "count": 1,
         "years": [
           2021
+        ]
+      },
+      {
+        "ownerId": "p6",
+        "managerName": "Steve",
+        "teamName": "Obi Wan Caproni",
+        "count": 1,
+        "years": [
+          2019
         ]
       },
       {
@@ -22210,7 +22210,7 @@
         "ownerId": "p10",
         "teamName": "Dan Flashes",
         "managerName": "Lefty",
-        "points": 136.16
+        "points": 216.3
       },
       "biggestBlowout": {
         "year": 2018,
@@ -22464,7 +22464,7 @@
         "ties": 1,
         "meetings": 20,
         "pointsBy": {
-          "p1": 2346.2,
+          "p1": 2358.7,
           "p7": 2045.69
         }
       },
@@ -22481,7 +22481,7 @@
         "meetings": 18,
         "pointsBy": {
           "p2": 2287.0199999999995,
-          "p11": 2129.39
+          "p11": 2140.1899999999996
         }
       },
       {
@@ -22513,7 +22513,7 @@
         "meetings": 22,
         "pointsBy": {
           "p3": 2252.7,
-          "p4": 2418.34
+          "p4": 2427.34
         }
       },
       {
@@ -22529,7 +22529,7 @@
         "meetings": 22,
         "pointsBy": {
           "p12": 2708.2,
-          "p5": 2515.3999999999996
+          "p5": 2528.02
         }
       },
       {
@@ -22544,8 +22544,8 @@
         "ties": 0,
         "meetings": 21,
         "pointsBy": {
-          "p9": 2621.7,
-          "p10": 2338.69
+          "p9": 2621.75,
+          "p10": 2345.79
         }
       },
       {
