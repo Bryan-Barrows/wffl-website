@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-09-30T15:27:37.901Z",
+  "lastUpdated": "2026-10-01T15:48:46.431Z",
   "seasons": [
     {
       "year": 2026,
@@ -105,7 +105,7 @@
           "wins": 2,
           "losses": 1,
           "ties": 0,
-          "pointsFor": 358.03,
+          "pointsFor": 358.28,
           "pointsAgainst": 354.92,
           "rank": 8
         },
@@ -142,7 +142,7 @@
           "losses": 3,
           "ties": 0,
           "pointsFor": 306.37,
-          "pointsAgainst": 394.2,
+          "pointsAgainst": 394.45,
           "rank": 11
         },
         {
@@ -377,7 +377,7 @@
           "teamA": {
             "ownerId": "p3",
             "teamName": "kenwinhamjr",
-            "score": 141.03
+            "score": 141.28
           },
           "teamB": {
             "ownerId": "p4",
@@ -21606,7 +21606,7 @@
         "losses": 90,
         "ties": 1,
         "pointsFor": 22165.02,
-        "pointsAgainst": 21883.96,
+        "pointsAgainst": 21884.21,
         "championships": 3,
         "championshipYears": [
           2016,
@@ -21967,7 +21967,7 @@
         "wins": 84,
         "losses": 93,
         "ties": 0,
-        "pointsFor": 20332.29,
+        "pointsFor": 20332.54,
         "pointsAgainst": 20677.11,
         "championships": 1,
         "championshipYears": [
@@ -22512,7 +22512,7 @@
         "ties": 2,
         "meetings": 22,
         "pointsBy": {
-          "p3": 2252.7,
+          "p3": 2252.95,
           "p4": 2427.34
         }
       },
