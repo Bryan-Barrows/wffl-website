@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-01T15:48:46.431Z",
+  "lastUpdated": "2026-10-02T15:10:30.971Z",
   "seasons": [
     {
       "year": 2026,
@@ -452,7 +452,7 @@
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 0
+            "score": 15.6
           }
         },
         {
@@ -461,7 +461,7 @@
           "teamA": {
             "ownerId": "p12",
             "teamName": "Huy Phung’s Dung Dynasty",
-            "score": 0
+            "score": 10.1
           },
           "teamB": {
             "ownerId": "p10",
@@ -480,7 +480,7 @@
           "teamB": {
             "ownerId": "p5",
             "teamName": "BoatBoyz",
-            "score": 0
+            "score": 18.2
           }
         },
         {
@@ -494,7 +494,7 @@
           "teamB": {
             "ownerId": "p6",
             "teamName": "Obi Wan Caproni",
-            "score": 0
+            "score": 11.7
           }
         },
         {
@@ -22427,13 +22427,13 @@
         ],
         "wins": {
           "p4": 14,
-          "p5": 10
+          "p5": 11
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 25,
         "pointsBy": {
           "p4": 2926.0600000000004,
-          "p5": 2878.7300000000005
+          "p5": 2896.9300000000003
         }
       },
       {
@@ -22587,13 +22587,13 @@
         ],
         "wins": {
           "p8": 6,
-          "p11": 10
+          "p11": 11
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 18,
         "pointsBy": {
           "p8": 1794.21,
-          "p11": 1937.8200000000002
+          "p11": 1953.42
         }
       },
       {
@@ -22602,13 +22602,13 @@
           "p12"
         ],
         "wins": {
-          "p12": 4,
+          "p12": 5,
           "p10": 11
         },
-        "ties": 3,
+        "ties": 2,
         "meetings": 18,
         "pointsBy": {
-          "p12": 1681.97,
+          "p12": 1692.07,
           "p10": 1798.11
         }
       },
@@ -22619,13 +22619,13 @@
         ],
         "wins": {
           "p9": 6,
-          "p6": 10
+          "p6": 11
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 18,
         "pointsBy": {
           "p9": 1718.4499999999998,
-          "p6": 2032.33
+          "p6": 2044.03
         }
       },
       {
