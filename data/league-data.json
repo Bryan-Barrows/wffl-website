@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-03T14:03:30.806Z",
+  "lastUpdated": "2026-10-04T14:29:53.346Z",
   "seasons": [
     {
       "year": 2026,
@@ -424,7 +424,7 @@
           "teamB": {
             "ownerId": "p2",
             "teamName": "PAFL Schefter",
-            "score": 0
+            "score": 2.5
           }
         },
         {
@@ -452,7 +452,7 @@
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 15.6
+            "score": 20.7
           }
         },
         {
@@ -461,12 +461,12 @@
           "teamA": {
             "ownerId": "p12",
             "teamName": "Huy Phung’s Dung Dynasty",
-            "score": 10.1
+            "score": 13.2
           },
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 0
+            "score": 5.6
           }
         },
         {
@@ -22555,13 +22555,13 @@
         ],
         "wins": {
           "p1": 13,
-          "p2": 11
+          "p2": 12
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 26,
         "pointsBy": {
           "p1": 3031.56,
-          "p2": 2868.18
+          "p2": 2870.68
         }
       },
       {
@@ -22593,7 +22593,7 @@
         "meetings": 18,
         "pointsBy": {
           "p8": 1794.21,
-          "p11": 1953.42
+          "p11": 1958.52
         }
       },
       {
@@ -22608,8 +22608,8 @@
         "ties": 2,
         "meetings": 18,
         "pointsBy": {
-          "p12": 1692.07,
-          "p10": 1798.11
+          "p12": 1695.17,
+          "p10": 1803.71
         }
       },
       {
