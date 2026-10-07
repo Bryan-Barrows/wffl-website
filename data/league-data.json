@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-06T15:32:40.010Z",
+  "lastUpdated": "2026-10-07T15:53:55.570Z",
   "seasons": [
     {
       "year": 2026,
@@ -22,7 +22,7 @@
           "losses": 0,
           "ties": 0,
           "pointsFor": 513.14,
-          "pointsAgainst": 404.19,
+          "pointsAgainst": 404.69,
           "rank": 1
         },
         {
@@ -153,7 +153,7 @@
           "wins": 0,
           "losses": 4,
           "ties": 0,
-          "pointsFor": 303.06,
+          "pointsFor": 303.56,
           "pointsAgainst": 556.43,
           "rank": 12
         }
@@ -466,7 +466,7 @@
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 86.76
+            "score": 87.26
           }
         },
         {
@@ -21138,10 +21138,10 @@
     },
     "biggestMargin": null,
     "topPlayer": {
-      "playerId": "5849",
-      "playerName": "Kyler Murray",
+      "playerId": "3257",
+      "playerName": "Jacoby Brissett",
       "position": "QB",
-      "nflTeam": "MIN",
+      "nflTeam": "ARI",
       "points": 0,
       "fantasyTeamName": "Sweetwater All Stars",
       "fantasyOwnerId": "p1"
@@ -21688,7 +21688,7 @@
         "losses": 93,
         "ties": 0,
         "pointsFor": 22130.27,
-        "pointsAgainst": 21890.12,
+        "pointsAgainst": 21890.62,
         "championships": 1,
         "championshipYears": [
           2012
@@ -21962,7 +21962,7 @@
         "wins": 85,
         "losses": 66,
         "ties": 1,
-        "pointsFor": 17640.09,
+        "pointsFor": 17640.59,
         "pointsAgainst": 17604.79,
         "championships": 1,
         "championshipYears": [
@@ -22209,7 +22209,7 @@
         "ownerId": "p10",
         "teamName": "Dan Flashes",
         "managerName": "Lefty",
-        "points": 303.06
+        "points": 303.56
       },
       "biggestBlowout": {
         "year": 2018,
@@ -22608,7 +22608,7 @@
         "meetings": 18,
         "pointsBy": {
           "p12": 1803.09,
-          "p10": 1884.87
+          "p10": 1885.37
         }
       },
       {
