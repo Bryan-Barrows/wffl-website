@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-10T14:54:22.633Z",
+  "lastUpdated": "2026-10-11T15:11:21.866Z",
   "seasons": [
     {
       "year": 2026,
@@ -517,12 +517,12 @@
           "teamA": {
             "ownerId": "p7",
             "teamName": "Tsar Putin",
-            "score": 12.64
+            "score": 29.64
           },
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 31.5
+            "score": 36.3
           }
         },
         {
@@ -545,7 +545,7 @@
           "teamA": {
             "ownerId": "p8",
             "teamName": "The Buka Buka Tribe",
-            "score": 17.2
+            "score": 20
           },
           "teamB": {
             "ownerId": "p12",
@@ -564,7 +564,7 @@
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 14.2
+            "score": 26.26
           }
         },
         {
@@ -573,7 +573,7 @@
           "teamA": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 0
+            "score": 12.4
           },
           "teamB": {
             "ownerId": "p6",
@@ -22655,8 +22655,8 @@
         "ties": 0,
         "meetings": 16,
         "pointsBy": {
-          "p7": 1776.15,
-          "p4": 1869.7
+          "p7": 1793.15,
+          "p4": 1874.5
         }
       },
       {
@@ -22687,7 +22687,7 @@
         "ties": 0,
         "meetings": 15,
         "pointsBy": {
-          "p8": 1571.54,
+          "p8": 1574.3400000000001,
           "p12": 1652.66
         }
       },
@@ -22704,7 +22704,7 @@
         "meetings": 25,
         "pointsBy": {
           "p9": 2514.91,
-          "p11": 2647.99
+          "p11": 2660.05
         }
       },
       {
@@ -22713,13 +22713,13 @@
           "p6"
         ],
         "wins": {
-          "p10": 5,
+          "p10": 6,
           "p6": 6
         },
-        "ties": 3,
+        "ties": 2,
         "meetings": 14,
         "pointsBy": {
-          "p10": 1267.19,
+          "p10": 1279.59,
           "p6": 1328.4299999999998
         }
       },
