@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-20T13:57:27.006Z",
+  "lastUpdated": "2026-10-21T14:13:31.217Z",
   "seasons": [
     {
       "year": 2026,
@@ -21138,10 +21138,10 @@
     },
     "biggestMargin": null,
     "topPlayer": {
-      "playerId": "9509",
-      "playerName": "Bijan Robinson",
-      "position": "RB",
-      "nflTeam": "ATL",
+      "playerId": "1373",
+      "playerName": "Geno Smith",
+      "position": "QB",
+      "nflTeam": "NYJ",
       "points": 0,
       "fantasyTeamName": "Sweetwater All Stars",
       "fantasyOwnerId": "p1"
