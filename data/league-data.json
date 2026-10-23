@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-22T14:13:27.068Z",
+  "lastUpdated": "2026-10-23T13:55:40.667Z",
   "seasons": [
     {
       "year": 2026,
@@ -671,12 +671,12 @@
           "teamA": {
             "ownerId": "p1",
             "teamName": "Sweetwater All Stars",
-            "score": 0
+            "score": 46.2
           },
           "teamB": {
             "ownerId": "p3",
             "teamName": "kenwinhamjr",
-            "score": 0
+            "score": 27.44
           }
         },
         {
@@ -685,7 +685,7 @@
           "teamA": {
             "ownerId": "p7",
             "teamName": "Tsar Putin",
-            "score": 0
+            "score": 14.1
           },
           "teamB": {
             "ownerId": "p5",
@@ -704,7 +704,7 @@
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 0
+            "score": 21.2
           }
         },
         {
@@ -713,12 +713,12 @@
           "teamA": {
             "ownerId": "p8",
             "teamName": "The Buka Buka Tribe",
-            "score": 0
+            "score": 5.3
           },
           "teamB": {
             "ownerId": "p9",
             "teamName": "JSimsRL",
-            "score": 0
+            "score": 22.12
           }
         },
         {
@@ -741,12 +741,12 @@
           "teamA": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 0
+            "score": 10.9
           },
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 0
+            "score": 26.8
           }
         },
         {
@@ -22193,10 +22193,10 @@
       "fewestPointsGame": {
         "year": 2026,
         "week": 7,
-        "ownerId": "p1",
-        "teamName": "Sweetwater All Stars",
+        "ownerId": "p5",
+        "teamName": "BoatBoyz",
         "points": 0,
-        "opponentTeamName": "kenwinhamjr"
+        "opponentTeamName": "Tsar Putin"
       },
       "mostPointsSeason": {
         "year": 2022,
@@ -22810,14 +22810,14 @@
           "p3"
         ],
         "wins": {
-          "p1": 10,
+          "p1": 11,
           "p3": 5
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 17,
         "pointsBy": {
-          "p1": 1850.31,
-          "p3": 1642.71
+          "p1": 1896.51,
+          "p3": 1670.1499999999999
         }
       },
       {
@@ -22826,13 +22826,13 @@
           "p7"
         ],
         "wins": {
-          "p7": 12,
+          "p7": 13,
           "p5": 7
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 20,
         "pointsBy": {
-          "p7": 2307.92,
+          "p7": 2322.02,
           "p5": 1993.39
         }
       },
@@ -22843,13 +22843,13 @@
         ],
         "wins": {
           "p2": 6,
-          "p10": 13
+          "p10": 14
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 20,
         "pointsBy": {
           "p2": 2065.66,
-          "p10": 2190.9
+          "p10": 2212.1000000000004
         }
       },
       {
@@ -22859,13 +22859,13 @@
         ],
         "wins": {
           "p8": 11,
-          "p9": 10
+          "p9": 11
         },
-        "ties": 3,
+        "ties": 2,
         "meetings": 24,
         "pointsBy": {
-          "p8": 2411.33,
-          "p9": 2390.84
+          "p8": 2416.63,
+          "p9": 2412.96
         }
       },
       {
@@ -22891,13 +22891,13 @@
         ],
         "wins": {
           "p4": 10,
-          "p11": 9
+          "p11": 10
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 20,
         "pointsBy": {
-          "p4": 2285.15,
-          "p11": 2207.6800000000003
+          "p4": 2296.05,
+          "p11": 2234.48
         }
       },
       {
