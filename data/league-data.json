@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-27T15:00:41.535Z",
+  "lastUpdated": "2026-10-28T15:36:50.306Z",
   "seasons": [
     {
       "year": 2026,
@@ -94,7 +94,7 @@
           "losses": 4,
           "ties": 0,
           "pointsFor": 805.23,
-          "pointsAgainst": 902.03,
+          "pointsAgainst": 901.93,
           "rank": 7
         },
         {
@@ -129,7 +129,7 @@
           "wins": 3,
           "losses": 4,
           "ties": 0,
-          "pointsFor": 660.19,
+          "pointsFor": 660.09,
           "pointsAgainst": 846.11,
           "rank": 10
         },
@@ -704,7 +704,7 @@
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 131.68
+            "score": 131.58
           }
         },
         {
@@ -21847,7 +21847,7 @@
         "wins": 88,
         "losses": 66,
         "ties": 1,
-        "pointsFor": 17997.22,
+        "pointsFor": 17997.12,
         "pointsAgainst": 17894.47,
         "championships": 1,
         "championshipYears": [
@@ -21888,7 +21888,7 @@
         "losses": 105,
         "ties": 2,
         "pointsFor": 21937.78,
-        "pointsAgainst": 22329.84,
+        "pointsAgainst": 22329.74,
         "championships": 0,
         "championshipYears": [],
         "runnerUps": 2,
@@ -22209,7 +22209,7 @@
         "ownerId": "p10",
         "teamName": "Dan Flashes",
         "managerName": "Lefty",
-        "points": 660.19
+        "points": 660.09
       },
       "biggestBlowout": {
         "year": 2018,
@@ -22848,7 +22848,7 @@
         "meetings": 20,
         "pointsBy": {
           "p2": 2174.13,
-          "p10": 2322.58
+          "p10": 2322.4800000000005
         }
       },
       {
