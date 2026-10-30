@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-10-29T15:43:23.823Z",
+  "lastUpdated": "2026-10-30T15:25:25.567Z",
   "seasons": [
     {
       "year": 2026,
@@ -760,7 +760,7 @@
           "teamB": {
             "ownerId": "p2",
             "teamName": "PAFL Schefter",
-            "score": 0
+            "score": 14.35
           }
         },
         {
@@ -774,7 +774,7 @@
           "teamB": {
             "ownerId": "p6",
             "teamName": "Obi Wan Caproni",
-            "score": 0
+            "score": 35.26
           }
         },
         {
@@ -783,7 +783,7 @@
           "teamA": {
             "ownerId": "p8",
             "teamName": "The Buka Buka Tribe",
-            "score": 0
+            "score": 23.2
           },
           "teamB": {
             "ownerId": "p3",
@@ -797,12 +797,12 @@
           "teamA": {
             "ownerId": "p12",
             "teamName": "Huy Phung’s Dung Dynasty",
-            "score": 0
+            "score": 17.3
           },
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 0
+            "score": 17.3
           }
         },
         {
@@ -811,12 +811,12 @@
           "teamA": {
             "ownerId": "p9",
             "teamName": "JSimsRL",
-            "score": 0
+            "score": 20.9
           },
           "teamB": {
             "ownerId": "p5",
             "teamName": "BoatBoyz",
-            "score": 0
+            "score": 21.4
           }
         },
         {
@@ -22554,13 +22554,13 @@
         ],
         "wins": {
           "p1": 13,
-          "p2": 12
+          "p2": 13
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 26,
         "pointsBy": {
           "p1": 3144.14,
-          "p2": 3019.3
+          "p2": 3033.65
         }
       },
       {
@@ -22906,13 +22906,13 @@
         ],
         "wins": {
           "p7": 7,
-          "p6": 16
+          "p6": 17
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 24,
         "pointsBy": {
           "p7": 2664.15,
-          "p6": 2945.55
+          "p6": 2980.8099999999995
         }
       },
       {
@@ -22921,13 +22921,13 @@
           "p8"
         ],
         "wins": {
-          "p8": 12,
+          "p8": 13,
           "p3": 6
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 19,
         "pointsBy": {
-          "p8": 2181.29,
+          "p8": 2204.4900000000002,
           "p3": 2124.95
         }
       },
@@ -22943,8 +22943,8 @@
         "ties": 1,
         "meetings": 26,
         "pointsBy": {
-          "p12": 2956.9200000000005,
-          "p4": 2854.0299999999997
+          "p12": 2974.2200000000003,
+          "p4": 2871.33
         }
       },
       {
@@ -22954,13 +22954,13 @@
         ],
         "wins": {
           "p9": 6,
-          "p5": 12
+          "p5": 13
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 19,
         "pointsBy": {
-          "p9": 2078.48,
-          "p5": 2161.84
+          "p9": 2099.38,
+          "p5": 2183.24
         }
       },
       {
