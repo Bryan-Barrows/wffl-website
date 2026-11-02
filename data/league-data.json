@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-11-01T15:34:17.723Z",
+  "lastUpdated": "2026-11-02T18:58:05.930Z",
   "seasons": [
     {
       "year": 2026,
@@ -755,12 +755,12 @@
           "teamA": {
             "ownerId": "p1",
             "teamName": "Sweetwater All Stars",
-            "score": 0
+            "score": 118.48
           },
           "teamB": {
             "ownerId": "p2",
             "teamName": "PAFL Schefter",
-            "score": 14.35
+            "score": 122.05
           }
         },
         {
@@ -769,12 +769,12 @@
           "teamA": {
             "ownerId": "p7",
             "teamName": "Tsar Putin",
-            "score": 0
+            "score": 90.7
           },
           "teamB": {
             "ownerId": "p6",
             "teamName": "Obi Wan Caproni",
-            "score": 35.26
+            "score": 134.51
           }
         },
         {
@@ -783,12 +783,12 @@
           "teamA": {
             "ownerId": "p8",
             "teamName": "The Buka Buka Tribe",
-            "score": 23.2
+            "score": 137.81
           },
           "teamB": {
             "ownerId": "p3",
             "teamName": "kenwinhamjr",
-            "score": 0
+            "score": 100.31
           }
         },
         {
@@ -797,12 +797,12 @@
           "teamA": {
             "ownerId": "p12",
             "teamName": "Huy Phung’s Dung Dynasty",
-            "score": 17.3
+            "score": 138.88
           },
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 17.3
+            "score": 82.58
           }
         },
         {
@@ -811,12 +811,12 @@
           "teamA": {
             "ownerId": "p9",
             "teamName": "JSimsRL",
-            "score": 20.9
+            "score": 151.6
           },
           "teamB": {
             "ownerId": "p5",
             "teamName": "BoatBoyz",
-            "score": 21.4
+            "score": 83.61
           }
         },
         {
@@ -825,12 +825,12 @@
           "teamA": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 0
+            "score": 88.38
           },
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 0
+            "score": 91.35
           }
         },
         {
@@ -22191,11 +22191,11 @@
       },
       "fewestPointsGame": {
         "year": 2026,
-        "week": 8,
+        "week": 9,
         "ownerId": "p1",
         "teamName": "Sweetwater All Stars",
         "points": 0,
-        "opponentTeamName": "PAFL Schefter"
+        "opponentTeamName": "BoatBoyz"
       },
       "mostPointsSeason": {
         "year": 2022,
@@ -22559,8 +22559,8 @@
         "ties": 0,
         "meetings": 26,
         "pointsBy": {
-          "p1": 3144.14,
-          "p2": 3033.65
+          "p1": 3262.6199999999994,
+          "p2": 3141.35
         }
       },
       {
@@ -22911,8 +22911,8 @@
         "ties": 0,
         "meetings": 24,
         "pointsBy": {
-          "p7": 2664.15,
-          "p6": 2980.8099999999995
+          "p7": 2754.8500000000004,
+          "p6": 3080.06
         }
       },
       {
@@ -22927,8 +22927,8 @@
         "ties": 0,
         "meetings": 19,
         "pointsBy": {
-          "p8": 2204.4900000000002,
-          "p3": 2124.95
+          "p8": 2319.1,
+          "p3": 2225.2599999999998
         }
       },
       {
@@ -22937,14 +22937,14 @@
           "p4"
         ],
         "wins": {
-          "p12": 16,
+          "p12": 17,
           "p4": 9
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 26,
         "pointsBy": {
-          "p12": 2974.2200000000003,
-          "p4": 2871.33
+          "p12": 3095.8,
+          "p4": 2936.6099999999997
         }
       },
       {
@@ -22953,14 +22953,14 @@
           "p9"
         ],
         "wins": {
-          "p9": 6,
-          "p5": 13
+          "p9": 7,
+          "p5": 12
         },
         "ties": 0,
         "meetings": 19,
         "pointsBy": {
-          "p9": 2099.38,
-          "p5": 2183.24
+          "p9": 2230.08,
+          "p5": 2245.45
         }
       },
       {
@@ -22970,13 +22970,13 @@
         ],
         "wins": {
           "p10": 16,
-          "p11": 5
+          "p11": 6
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 22,
         "pointsBy": {
-          "p10": 2757.45,
-          "p11": 2302.77
+          "p10": 2845.83,
+          "p11": 2394.12
         }
       },
       {
