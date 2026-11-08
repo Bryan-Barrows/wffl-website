@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-11-07T15:16:11.728Z",
+  "lastUpdated": "2026-11-08T15:39:39.316Z",
   "seasons": [
     {
       "year": 2026,
@@ -839,12 +839,12 @@
           "teamA": {
             "ownerId": "p1",
             "teamName": "Sweetwater All Stars",
-            "score": 8.9
+            "score": 15.8
           },
           "teamB": {
             "ownerId": "p5",
             "teamName": "BoatBoyz",
-            "score": 0
+            "score": 1.8
           }
         },
         {
@@ -853,12 +853,12 @@
           "teamA": {
             "ownerId": "p7",
             "teamName": "Tsar Putin",
-            "score": 20.4
+            "score": 25.9
           },
           "teamB": {
             "ownerId": "p2",
             "teamName": "PAFL Schefter",
-            "score": 0
+            "score": 1.8
           }
         },
         {
@@ -867,12 +867,12 @@
           "teamA": {
             "ownerId": "p8",
             "teamName": "The Buka Buka Tribe",
-            "score": 0
+            "score": 3.2
           },
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 0
+            "score": -0.75
           }
         },
         {
@@ -886,7 +886,7 @@
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 0
+            "score": 2.5
           }
         },
         {
@@ -895,7 +895,7 @@
           "teamA": {
             "ownerId": "p12",
             "teamName": "Huy Phung’s Dung Dynasty",
-            "score": 5.58
+            "score": 23.32
           },
           "teamB": {
             "ownerId": "p6",
@@ -909,7 +909,7 @@
           "teamA": {
             "ownerId": "p9",
             "teamName": "JSimsRL",
-            "score": 10.25
+            "score": 38.55
           },
           "teamB": {
             "ownerId": "p11",
@@ -22192,10 +22192,10 @@
       "fewestPointsGame": {
         "year": 2026,
         "week": 9,
-        "ownerId": "p5",
-        "teamName": "BoatBoyz",
-        "points": 0,
-        "opponentTeamName": "Sweetwater All Stars"
+        "ownerId": "p10",
+        "teamName": "Dan Flashes",
+        "points": -0.75,
+        "opponentTeamName": "The Buka Buka Tribe"
       },
       "mostPointsSeason": {
         "year": 2022,
@@ -22383,8 +22383,8 @@
         "ties": 1,
         "meetings": 18,
         "pointsBy": {
-          "p7": 1822.95,
-          "p2": 1729.2899999999997
+          "p7": 1828.45,
+          "p2": 1731.09
         }
       },
       {
@@ -22393,14 +22393,14 @@
           "p8"
         ],
         "wins": {
-          "p8": 8,
+          "p8": 9,
           "p10": 7
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 17,
         "pointsBy": {
-          "p8": 1744.7,
-          "p10": 1565.86
+          "p8": 1747.9,
+          "p10": 1565.11
         }
       },
       {
@@ -22506,13 +22506,13 @@
         ],
         "wins": {
           "p3": 8,
-          "p4": 12
+          "p4": 13
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 22,
         "pointsBy": {
           "p3": 2252.95,
-          "p4": 2427.34
+          "p4": 2429.84
         }
       },
       {
@@ -22639,8 +22639,8 @@
         "ties": 1,
         "meetings": 18,
         "pointsBy": {
-          "p1": 1942.79,
-          "p5": 1883.81
+          "p1": 1949.69,
+          "p5": 1885.6100000000001
         }
       },
       {
@@ -22697,13 +22697,13 @@
           "p9"
         ],
         "wins": {
-          "p9": 9,
-          "p11": 15
+          "p9": 10,
+          "p11": 14
         },
         "ties": 1,
         "meetings": 25,
         "pointsBy": {
-          "p9": 2625.13,
+          "p9": 2653.4300000000003,
           "p11": 2769.01
         }
       },
@@ -22879,7 +22879,7 @@
         "ties": 0,
         "meetings": 17,
         "pointsBy": {
-          "p12": 1861.4399999999998,
+          "p12": 1879.1799999999998,
           "p6": 1939.81
         }
       },
