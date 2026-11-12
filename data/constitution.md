@@ -1,7 +1,7 @@
 
 # Keepers
 - Two players may be kept from a previous year's team for the following year. There is a 2-year contract on each keeper, meaning a player cannot be kept for more than 2 seasons.
-- In order to keep a player, the team forfeits the draft pick one round earlier than they were selected in the prior year's draft.
+- In order to keep a player, the team forfeits the draft pick they were selected in the prior year's draft.
 - First round picks cannot be kept.
 - If a keeper is picked up as a free agent (not drafted at all the year prior), the team will lose the last possible draft pick.
 - If a player is drafted and then traded or released — the player, if kept, will still count as where they were originally drafted.
@@ -25,7 +25,7 @@
 - An additional $75 survivor-pool payout — separate from the regular payouts and unaffected by wins/losses. Each week, the team with the fewest points among those remaining is eliminated; the last team standing wins $50.
 
 # Draft / Lottery
-- A modified lottery is used to determine the draft order. The 6 teams that did not make the playoffs in the prior year go into the first pot — the last-place team has the highest chance at the first pick, and so on.
+- A modified lottery is used to determine the draft order. The 6 teams that did not make the playoffs in the prior year go into the first pot — sixth place gets the best odds to choose their draft position first, then fifth, etc
 - The winner of the consolation bracket (for teams that didn't make the playoffs) gets one additional ball in the lottery, regardless of their initial position.
 - The 2 teams knocked out in the first round of the playoffs are placed in a lottery for picks 5-8, following the same rules as above.
 - The final four teams pick in reverse order of how they finished, with the prior year's champion making the final pick of the first round and the first pick of the second round.
