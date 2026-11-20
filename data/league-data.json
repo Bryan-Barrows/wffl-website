@@ -3,7 +3,7 @@
   "platform": "sleeper",
   "currentLeagueId": "1378040940861607936",
   "isSampleData": false,
-  "lastUpdated": "2026-11-19T17:49:12.048Z",
+  "lastUpdated": "2026-11-20T17:24:43.238Z",
   "seasons": [
     {
       "year": 2026,
@@ -1007,12 +1007,12 @@
           "teamA": {
             "ownerId": "p1",
             "teamName": "Sweetwater All Stars",
-            "score": 0
+            "score": 6.7
           },
           "teamB": {
             "ownerId": "p4",
             "teamName": "Tedmastaflex",
-            "score": 0
+            "score": 5.7
           }
         },
         {
@@ -1035,7 +1035,7 @@
           "teamA": {
             "ownerId": "p2",
             "teamName": "PAFL Schefter",
-            "score": 0
+            "score": 20.46
           },
           "teamB": {
             "ownerId": "p5",
@@ -1054,7 +1054,7 @@
           "teamB": {
             "ownerId": "p11",
             "teamName": "Chop Shop",
-            "score": 0
+            "score": 15.4
           }
         },
         {
@@ -1063,7 +1063,7 @@
           "teamA": {
             "ownerId": "p3",
             "teamName": "kenwinhamjr",
-            "score": 0
+            "score": 31.25
           },
           "teamB": {
             "ownerId": "p6",
@@ -1082,7 +1082,7 @@
           "teamB": {
             "ownerId": "p10",
             "teamName": "Dan Flashes",
-            "score": 0
+            "score": 4.9
           }
         },
         {
@@ -22192,10 +22192,10 @@
       "fewestPointsGame": {
         "year": 2026,
         "week": 11,
-        "ownerId": "p1",
-        "teamName": "Sweetwater All Stars",
+        "ownerId": "p7",
+        "teamName": "Tsar Putin",
         "points": 0,
-        "opponentTeamName": "Tedmastaflex"
+        "opponentTeamName": "JSimsRL"
       },
       "mostPointsSeason": {
         "year": 2022,
@@ -22586,13 +22586,13 @@
         ],
         "wins": {
           "p8": 7,
-          "p11": 10
+          "p11": 11
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 18,
         "pointsBy": {
           "p8": 1923.98,
-          "p11": 2050.8
+          "p11": 2066.2
         }
       },
       {
@@ -22602,13 +22602,13 @@
         ],
         "wins": {
           "p12": 5,
-          "p10": 11
+          "p10": 12
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 18,
         "pointsBy": {
           "p12": 1803.09,
-          "p10": 1885.37
+          "p10": 1890.2699999999998
         }
       },
       {
@@ -23065,14 +23065,14 @@
           "p4"
         ],
         "wins": {
-          "p1": 8,
+          "p1": 9,
           "p4": 8
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 17,
         "pointsBy": {
-          "p1": 1901.6399999999999,
-          "p4": 1910.76
+          "p1": 1908.3400000000001,
+          "p4": 1916.46
         }
       },
       {
@@ -23097,13 +23097,13 @@
           "p5"
         ],
         "wins": {
-          "p2": 9,
+          "p2": 10,
           "p5": 8
         },
-        "ties": 2,
+        "ties": 1,
         "meetings": 19,
         "pointsBy": {
-          "p2": 1884.96,
+          "p2": 1905.42,
           "p5": 1930.24
         }
       },
@@ -23113,13 +23113,13 @@
           "p6"
         ],
         "wins": {
-          "p3": 8,
+          "p3": 9,
           "p6": 12
         },
-        "ties": 1,
+        "ties": 0,
         "meetings": 21,
         "pointsBy": {
-          "p3": 2377.8899999999994,
+          "p3": 2409.14,
           "p6": 2472.44
         }
       },
